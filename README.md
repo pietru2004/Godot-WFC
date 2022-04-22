@@ -1,5 +1,5 @@
 # Godot-WFC
- Hello, this is my implementation of <a href="https://github.com/mxgmn/WaveFunctionCollapse">WFC algoritm</a> with gui for making tile rules and 3 generators.
+ Hello, this is my implementation of <a href="https://github.com/mxgmn/WaveFunctionCollapse">WFC algorithm</a> with gui for making tile rules and 3 generators.
  
  
  
@@ -10,4 +10,4 @@
   Picks tiles to check randomly for each Y Height
  
  # FullyRuledGridMap
-  This generator does not limit max height, but you can choose. Can it go <b>DOWN</b> and can it go <b>UP</b>. Additionaly it checks for cell with lowest possible solutions for that cell. (As in <a href="https://github.com/mxgmn/WaveFunctionCollapse">WFC algoritm</a>)
+  This generator does not limit max height, but you can choose. Can it go <b>DOWN</b> and can it go <b>UP</b>. Additionaly it checks for cell with lowest possible solutions for that cell. (As in <a href="https://github.com/mxgmn/WaveFunctionCollapse">WFC algorithm</a>)
