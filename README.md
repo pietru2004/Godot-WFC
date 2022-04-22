@@ -3,6 +3,9 @@
  
  
  
+ 
+ <b>Generators</b> - demo in editor 3D view
+ 
  # RuledLinearGridMap
   Uses only x_plus, y_plus and z_plus fields and checks in linear order on each Z field on each X row of current Y height.
 
