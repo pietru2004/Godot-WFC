@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/bridge_center_stone.obj-ec15c6f7be0da83f6412aea553bbe0b9.mesh"
+
+[deps]
+
+files=[ "res://.import/bridge_center_stone.obj-ec15c6f7be0da83f6412aea553bbe0b9.mesh" ]
+
+source_file="res://Assets/Kenney/Nature/bridge_center_stone.obj"
+dest_files=[ "res://.import/bridge_center_stone.obj-ec15c6f7be0da83f6412aea553bbe0b9.mesh", "res://.import/bridge_center_stone.obj-ec15c6f7be0da83f6412aea553bbe0b9.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

@@ -1,0 +1,55 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "TextureRect",
+"class": "Block",
+"language": "GDScript",
+"path": "res://scripts/Block.gd"
+}, {
+"base": "GridMap",
+"class": "FullyRuledGridMap",
+"language": "GDScript",
+"path": "res://addons/WFC_Based_Gen/nodes/FullyRuledGridMap.gd"
+}, {
+"base": "GridMap",
+"class": "RuledLinearGridMap",
+"language": "GDScript",
+"path": "res://addons/WFC_Based_Gen/nodes/RuledLinearGridMap.gd"
+}, {
+"base": "GridMap",
+"class": "RuledRandomVerticalGridMap",
+"language": "GDScript",
+"path": "res://addons/WFC_Based_Gen/nodes/RuledRandomVerticalGridMap.gd"
+} ]
+_global_script_class_icons={
+"Block": "",
+"FullyRuledGridMap": "",
+"RuledLinearGridMap": "",
+"RuledRandomVerticalGridMap": ""
+}
+
+[application]
+
+config/name="Wave Function Collapse"
+run/main_scene="res://scenes/MainScene.tscn"
+config/icon="res://icon.png"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/WFC_Based_Gen/plugin.cfg" )
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

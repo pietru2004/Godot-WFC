@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/ground_riverEndClosed.obj-364d6370c23aca58842dbdd16a18c3ca.mesh"
+
+[deps]
+
+files=[ "res://.import/ground_riverEndClosed.obj-364d6370c23aca58842dbdd16a18c3ca.mesh" ]
+
+source_file="res://Assets/Kenney/Nature/ground_riverEndClosed.obj"
+dest_files=[ "res://.import/ground_riverEndClosed.obj-364d6370c23aca58842dbdd16a18c3ca.mesh", "res://.import/ground_riverEndClosed.obj-364d6370c23aca58842dbdd16a18c3ca.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

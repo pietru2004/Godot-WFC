@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/fence_corner.obj-79227804712af6bfb6be62a4c9c734bd.mesh"
+
+[deps]
+
+files=[ "res://.import/fence_corner.obj-79227804712af6bfb6be62a4c9c734bd.mesh" ]
+
+source_file="res://Assets/Kenney/Nature/fence_corner.obj"
+dest_files=[ "res://.import/fence_corner.obj-79227804712af6bfb6be62a4c9c734bd.mesh", "res://.import/fence_corner.obj-79227804712af6bfb6be62a4c9c734bd.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/Block.gd" type="Script" id=1]
+
+[node name="TextureRect" type="TextureRect"]
+margin_right = 10.0
+margin_bottom = 10.0
+rect_min_size = Vector2( 10, 10 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+block_name = "Sea"
+aviable_near = [ "Sea", "Sand" ]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_scale = Vector2( 0.992467, 1.02128 )
+color = Color( 0, 1, 0.952941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
