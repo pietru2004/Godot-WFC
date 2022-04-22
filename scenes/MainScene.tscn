@@ -151,4 +151,3 @@ __meta__ = {
 TilesDataPath = "res://demo/demo_tile_set.wgts"
 map_size = 30
 allow_above_start_height = false
-regen_lock = false
