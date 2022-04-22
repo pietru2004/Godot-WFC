@@ -10,7 +10,7 @@ const blocks_list = {
 const block_size = 2
 
 
-onready var map = get_node("Node2D")
+onready var map = get_node("Demo-2D")
 var x:=0
 func _process(_delta):
 	if x<1000:
