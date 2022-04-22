@@ -28,7 +28,7 @@ func make_visible(visible):
 
 
 func get_plugin_name():
-	return "WFC Based Map Gen"
+	return "WFC Rule Creator"
 
 
 func get_plugin_icon():
