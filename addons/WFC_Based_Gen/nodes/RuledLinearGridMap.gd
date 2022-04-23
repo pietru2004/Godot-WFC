@@ -16,11 +16,13 @@ func regen(value=true):
 	if open_file(TilesDataPath) and !regen_lock:
 		var MeshLib := MeshLibrary.new()
 		for i in range(tiles_list.size()):
-			var mesh = load(tiles_data[tiles_list[i]]["mesh_path"])
 			MeshLib.create_item(i)
 			MeshLib.set_item_name(i,tiles_list[i])
-			MeshLib.set_item_mesh(i,mesh)
-			MeshLib.set_item_shapes(i,[mesh.create_trimesh_shape()])
+			if tiles_data[tiles_list[i]]["mesh_path"].length()>0:
+				var mesh = load(tiles_data[tiles_list[i]]["mesh_path"])
+				if mesh!=null:
+					MeshLib.set_item_mesh(i,mesh)
+					MeshLib.set_item_shapes(i,[mesh.create_trimesh_shape()])
 		mesh_library=MeshLib
 		generate()
 
