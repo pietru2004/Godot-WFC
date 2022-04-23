@@ -12,6 +12,27 @@ export(bool) var press_to_regen setget regen
 var tiles_list := []
 var tiles_data := {}
 
+func save_data():
+	var data = {}
+	var used = get_used_cells()
+	var cell_data : Array = []
+	for i in range(used.size()):
+		var cell : Vector3 = used[i]
+		cell_data.append({"pos":cell,"id":get_cell_item(cell.x,cell.y,cell.z),"orientation":get_cell_item_orientation(cell.x,cell.y,cell.z)})
+	data["cell_data"]=cell_data
+	return data
+
+func load_data(data):
+	clear()
+	clear_baked_meshes()
+	var used = get_used_cells()
+	var cell_data : Array = data["cell_data"]
+	for i in range(cell_data.size()):
+		var cell_dt : Dictionary = used[i]
+		var pos = cell_dt["pos"]
+		var id = cell_dt["id"]
+		var orientation = cell_dt["orientation"]
+		set_cell_item(pos.x,pos.y,pos.z,id,orientation)
 
 func regen(value=true):
 	if open_file(TilesDataPath) and !regen_lock:
@@ -52,38 +73,33 @@ func generate():
 			var z_p = get_cell_item(x,y,z+1)
 			var list := []
 			
+			if (x_m>=0 or y_m>=0 or z_m>=0) or (y==x and x==z and z==0):
+				for key in tiles_data.keys():
+					list.append(key)
+			
 			if z_m>=0:
-				list=tiles_data[tiles_list[z_m]]["z_plus"].duplicate()
+				if list.size()>0:
+					list=compare(tiles_data[tiles_list[z_m]]["z_plus"].duplicate(),list.duplicate())
 			
 			if y_m>=0:
 				if list.size()>0:
 					list=compare(tiles_data[tiles_list[y_m]]["y_plus"].duplicate(),list.duplicate())
-				else:
-					list=tiles_data[tiles_list[y_m]]["y_plus"].duplicate()
 			
 			if x_m>=0:
 				if list.size()>0:
 					list=compare(tiles_data[tiles_list[x_m]]["x_plus"].duplicate(),list.duplicate())
-				else:
-					list=tiles_data[tiles_list[x_m]]["x_plus"].duplicate()
 			
 			if z_p>=0:
 				if list.size()>0:
 					list=compare(tiles_data[tiles_list[z_p]]["z_minus"].duplicate(),list.duplicate())
-				else:
-					list=tiles_data[tiles_list[z_p]]["z_minus"].duplicate()
 			
 			if y_p>=0:
 				if list.size()>0:
 					list=compare(tiles_data[tiles_list[y_p]]["y_minus"].duplicate(),list.duplicate())
-				else:
-					list=tiles_data[tiles_list[y_p]]["y_minus"].duplicate()
 			
 			if x_p>=0:
 				if list.size()>0:
 					list=compare(tiles_data[tiles_list[x_p]]["x_minus"].duplicate(),list.duplicate())
-				else:
-					list=tiles_data[tiles_list[x_p]]["x_minus"].duplicate()
 			
 			if list.size()==0 and y==0 and y_p==x_p and x_p==z_p and z_p==y_m and y_m==x_m and x_m==z_m and z_m==-1:
 				for key in tiles_data.keys():
