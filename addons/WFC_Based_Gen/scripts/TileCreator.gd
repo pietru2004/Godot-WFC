@@ -58,20 +58,44 @@ func _on_ItemList_item_selected(index):
 		get_parent().main_model.mesh=load(mesh_path)
 	else:
 		get_parent().clear_models_mesh()
-	match(tiles_data[tiles_list[cur_tile_index]]["orientation"]):
-		rot_indexes.front:
-			get_parent().get_node("VBoxContainer/rotN").text="Cur Rotation:\n Front"
-		rot_indexes.right:
-			get_parent().get_node("VBoxContainer/rotN").text="Cur Rotation:\n Right"
-		rot_indexes.left:
-			get_parent().get_node("VBoxContainer/rotN").text="Cur Rotation:\n Left"
-		rot_indexes.back:
-			get_parent().get_node("VBoxContainer/rotN").text="Cur Rotation:\n Back"
+	print(tiles_data[tiles_list[cur_tile_index]]["orientation"])
+	print(rot_indexes)
+#	-------------------------
+#	IDK - THIS stoped working
+#	match tiles_data[tiles_list[cur_tile_index]]["orientation"]:
+#		rot_indexes.front:
+#			get_parent().get_node("VBoxContainer/rotN").text="Cur Rotation:\n Front"
+#			get_parent().main_model.rotation_degrees=Vector3(0,0,0)
+#		rot_indexes.right:
+#			get_parent().get_node("VBoxContainer/rotN").text="Cur Rotation:\n Right"
+#			get_parent().main_model.rotation_degrees=Vector3(0,-90,0)
+#		rot_indexes.left:
+#			get_parent().get_node("VBoxContainer/rotN").text="Cur Rotation:\n Left"
+#			get_parent().main_model.rotation_degrees=Vector3(0,90,0)
+#		rot_indexes.back:
+#			get_parent().get_node("VBoxContainer/rotN").text="Cur Rotation:\n Back"
+#			get_parent().main_model.rotation_degrees=Vector3(0,180,0)
+#	----------------------
+#	\/ THIS WORKS...
+	var orientation=tiles_data[tiles_list[cur_tile_index]]["orientation"]
+	if orientation==rot_indexes.front:
+		get_parent().get_node("VBoxContainer/rotN").text="Cur Rotation:\n Front"
+		get_parent().main_model.rotation_degrees=Vector3(0,0,0)
+	elif orientation==rot_indexes.right:
+		get_parent().get_node("VBoxContainer/rotN").text="Cur Rotation:\n Right"
+		get_parent().main_model.rotation_degrees=Vector3(0,-90,0)
+	elif orientation==rot_indexes.left:
+		get_parent().get_node("VBoxContainer/rotN").text="Cur Rotation:\n Left"
+		get_parent().main_model.rotation_degrees=Vector3(0,90,0)
+	elif orientation==rot_indexes.back:
+		get_parent().get_node("VBoxContainer/rotN").text="Cur Rotation:\n Back"
+		get_parent().main_model.rotation_degrees=Vector3(0,180,0)
 
 
 func _on_ItemList_nothing_selected():
 	get_node("CurEdit").text=""
 	cur_tile_index=-1
+	get_parent().main_model.rotation_degrees=Vector3(0,0,0)
 	get_parent().clear_models_mesh()
 
 func set_tile_orientation(val):
@@ -81,15 +105,19 @@ func set_tile_orientation(val):
 			"front":
 				rot=rot_indexes.front
 				get_parent().get_node("VBoxContainer/rotN").text="Cur Rotation:\n Front"
+				get_parent().main_model.rotation_degrees=Vector3(0,0,0)
 			"right":
 				rot=rot_indexes.right
 				get_parent().get_node("VBoxContainer/rotN").text="Cur Rotation:\n Right"
+				get_parent().main_model.rotation_degrees=Vector3(0,-90,0)
 			"left":
 				rot=rot_indexes.left
 				get_parent().get_node("VBoxContainer/rotN").text="Cur Rotation:\n Left"
+				get_parent().main_model.rotation_degrees=Vector3(0,90,0)
 			"back":
 				rot=rot_indexes.back
 				get_parent().get_node("VBoxContainer/rotN").text="Cur Rotation:\n Back"
+				get_parent().main_model.rotation_degrees=Vector3(0,180,0)
 		tiles_data[tiles_list[cur_tile_index]]["orientation"]=rot
 
 func _on_OptionButton_item_selected(index):
