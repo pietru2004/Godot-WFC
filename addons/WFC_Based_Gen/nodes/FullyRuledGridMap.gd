@@ -5,6 +5,7 @@ class_name FullyRuledGridMap
 export(String) var TilesDataPath
 export(int) var map_size = 10
 export(int) var map_start_height = 0
+export(int) var map_max_height = 3
 export(bool) var allow_above_start_height = true
 export(bool) var allow_under_start_height = false
 export(bool) var regen_lock = true
@@ -55,13 +56,14 @@ func generate():
 				set_cell_item(x,y,z,id,tiles_data[tiles_list[id]]["orientation"])
 		
 		
-		var y_p = get_cell_item(x,y+1,z)
-		if allow_above_start_height and y_p==-1 and !(y<map_start_height):
-			tiles.append(Vector3(x,y+1,z))
-		
-		var y_m = get_cell_item(x,y-1,z)
-		if allow_under_start_height and y_m==-1 and !(y>map_start_height):
-			tiles.append(Vector3(x,y-1,z))
+		if abs(y)<map_max_height:
+			var y_p = get_cell_item(x,y+1,z)
+			if allow_above_start_height and y_p==-1 and !(y<map_start_height):
+				tiles.append(Vector3(x,y+1,z))
+			
+			var y_m = get_cell_item(x,y-1,z)
+			if allow_under_start_height and y_m==-1 and !(y>map_start_height):
+				tiles.append(Vector3(x,y-1,z))
 
 func get_lowest_list_tile_and_remove() -> Vector3:
 	var tile_counts := {}
