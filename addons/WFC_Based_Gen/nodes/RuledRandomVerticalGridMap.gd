@@ -36,6 +36,7 @@ func load_data(data):
 
 func regen(value=true):
 	if open_file(TilesDataPath) and !regen_lock:
+		self.clear()
 		var MeshLib := MeshLibrary.new()
 		for i in range(tiles_list.size()):
 			MeshLib.create_item(i)
@@ -49,7 +50,6 @@ func regen(value=true):
 		generate()
 
 func generate():
-	self.clear()
 	for y in range(map_max_height):
 		var tiles := []
 		for x in range(map_size):
