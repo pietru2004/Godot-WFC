@@ -58,8 +58,8 @@ func _on_ItemList_item_selected(index):
 		get_parent().main_model.mesh=load(mesh_path)
 	else:
 		get_parent().clear_models_mesh()
-	print(tiles_data[tiles_list[cur_tile_index]]["orientation"])
-	print(rot_indexes)
+	#print(tiles_data[tiles_list[cur_tile_index]]["orientation"])
+	#print(rot_indexes)
 #	-------------------------
 #	IDK - THIS stoped working
 #	match tiles_data[tiles_list[cur_tile_index]]["orientation"]:
