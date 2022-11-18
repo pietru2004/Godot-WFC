@@ -12,7 +12,7 @@ _global_script_classes=[ {
 "base": "TextureRect",
 "class": "Block",
 "language": "GDScript",
-"path": "res://scripts/Block.gd"
+"path": "res://demo/scripts/Block.gd"
 }, {
 "base": "GridMap",
 "class": "FullyRuledGridMap",
@@ -28,18 +28,30 @@ _global_script_classes=[ {
 "class": "RuledRandomVerticalGridMap",
 "language": "GDScript",
 "path": "res://addons/WFC_Based_Gen/nodes/RuledRandomVerticalGridMap.gd"
+}, {
+"base": "GridMap",
+"class": "WFCDataCreator",
+"language": "GDScript",
+"path": "res://addons/WFC_Based_Gen/nodes/WFCDataCreator.gd"
+}, {
+"base": "GridMap",
+"class": "WFCMapGenerator",
+"language": "GDScript",
+"path": "res://addons/WFC_Based_Gen/nodes/WFCMapGenerator.gd"
 } ]
 _global_script_class_icons={
 "Block": "",
 "FullyRuledGridMap": "",
 "RuledLinearGridMap": "",
-"RuledRandomVerticalGridMap": ""
+"RuledRandomVerticalGridMap": "",
+"WFCDataCreator": "",
+"WFCMapGenerator": ""
 }
 
 [application]
 
 config/name="Wave Function Collapse"
-run/main_scene="res://scenes/MainScene.tscn"
+run/main_scene="res://demo/MainScene.tscn"
 config/icon="res://icon.png"
 
 [editor_plugins]

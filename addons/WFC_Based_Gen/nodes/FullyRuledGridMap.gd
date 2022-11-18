@@ -2,6 +2,33 @@ tool
 extends GridMap
 class_name FullyRuledGridMap
 
+##
+## Fully Ruled GridMap Generator script
+##
+## @desc:
+##     This Generator uses Data set created using WFC Rule Creator panel.
+##     This Generator creates Mesh Library during generation.
+##     
+##     Generation is WFC Ruled -> adds all xz positions to list then selects
+##     randomly tile to set that has lowest possible number of solutions.
+##     
+##     If allow_above_start_height is true generator will add tile above after
+##     item in cell in setted
+##     
+##     If allow_under_start_height is true generator will add tile above after
+##     item in cell in setted
+##     
+##     Use regen() function to completly regenerate map with recreating MeshLib.
+##     
+##     Set regen_lock variable to disallow run of regen() function.
+##     (It is binded to press_to_regen button)
+##     
+##     Use generate() function to generate new map.
+##     
+##     Use save_data() function to retrieve data of current cell placement.
+##     Use load_data(data) function to load data of saved cell placement.
+##     
+
 export(String) var TilesDataPath
 export(int) var map_size = 10
 export(int) var map_start_height = 0

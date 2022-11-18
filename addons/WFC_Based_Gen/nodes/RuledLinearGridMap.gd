@@ -2,6 +2,27 @@ tool
 extends GridMap
 class_name RuledLinearGridMap
 
+##
+## Ruled Linear GridMap Generator script
+##
+## @desc:
+##     This Generator uses Data set created using WFC Rule Creator panel.
+##     This Generator creates Mesh Library during generation.
+##     
+##     Generation is LINEAR -> each z pos on each x pos on each y pos
+##     
+##     Use regen() function to completly regenerate map with recreating MeshLib.
+##     
+##     Set regen_lock variable to disallow run of regen() function.
+##     (It is binded to press_to_regen button)
+##     
+##     Use generate() function to generate new map.
+##     
+##     Use save_data() function to retrieve data of current cell placement.
+##     Use load_data(data) function to load data of saved cell placement.
+##     
+
+
 export(String) var TilesDataPath
 export(int) var map_size = 10
 export(bool) var regen_lock = true

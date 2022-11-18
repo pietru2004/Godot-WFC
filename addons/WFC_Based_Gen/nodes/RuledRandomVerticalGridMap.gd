@@ -8,6 +8,25 @@ export(int) var map_max_height = 6
 export(bool) var regen_lock = true
 export(bool) var press_to_regen setget regen
 
+##
+## Ruled Random Vertical GridMap Generator script
+##
+## @desc:
+##     This Generator uses Data set created using WFC Rule Creator panel.
+##     This Generator creates Mesh Library during generation.
+##     
+##     Generation is RANDOM -> each xz pos selected randomly on each y pos
+##     
+##     Use regen() function to completly regenerate map with recreating MeshLib.
+##     
+##     Set regen_lock variable to disallow run of regen() function.
+##     (It is binded to press_to_regen button)
+##     
+##     Use generate() function to generate new map.
+##     
+##     Use save_data() function to retrieve data of current cell placement.
+##     Use load_data(data) function to load data of saved cell placement.
+##     
 
 var tiles_list := []
 var tiles_data := {}

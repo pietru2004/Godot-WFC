@@ -1,10 +1,10 @@
 extends Node
 
 const blocks_list = {
-	"Grass":"res://scenes/Blocks/Grass.tscn",
-	"Rock":"res://scenes/Blocks/Rock.tscn",
-	"Sand":"res://scenes/Blocks/Sand.tscn",
-	"Sea":"res://scenes/Blocks/Sea.tscn",
+	"Grass":"res://demo/2D-Blocks/Grass.tscn",
+	"Rock":"res://demo/2D-Blocks/Rock.tscn",
+	"Sand":"res://demo/2D-Blocks/Sand.tscn",
+	"Sea":"res://demo/2D-Blocks/Sea.tscn",
 }
 
 const block_size = 2

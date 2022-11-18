@@ -53,25 +53,21 @@ render_target_update_mode = 3
 
 [node name="MainModel" type="MeshInstance" parent="ViewHolder/Viewport"]
 mesh = SubResource( 1 )
-material/0 = null
 
 [node name="X" type="MeshInstance" parent="ViewHolder/Viewport"]
 transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 3, 0, 0 )
 material_override = SubResource( 4 )
 mesh = SubResource( 5 )
-material/0 = null
 
 [node name="Y" type="MeshInstance" parent="ViewHolder/Viewport"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0 )
 material_override = SubResource( 6 )
 mesh = SubResource( 5 )
-material/0 = null
 
 [node name="Z" type="MeshInstance" parent="ViewHolder/Viewport"]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 3 )
 material_override = SubResource( 7 )
 mesh = SubResource( 5 )
-material/0 = null
 
 [node name="Model_x_plus" type="MeshInstance" parent="ViewHolder/Viewport"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0 )
@@ -428,7 +424,6 @@ text = "<<"
 anchor_right = 0.062
 anchor_bottom = 0.04
 margin_right = 0.511997
-margin_bottom = -1.90735e-06
 text = "File"
 items = [ "Open", null, 0, false, false, 0, 0, null, "", false, "Save", null, 0, false, false, 1, 0, null, "", false, "Save As", null, 0, false, false, 2, 0, null, "", false ]
 
