@@ -46,6 +46,7 @@ var delay_wait_yields := 4
 export(String,"Point","Plane") var start_mode := "Plane"
 var point_start_point := Vector3.ZERO
 export(bool) var generation_lock = true
+export(bool) var use_threads = true
 export(bool) var click_to_generate := false setget run_generate
 
 
@@ -128,9 +129,26 @@ func load_wfc_data() -> bool:
 		file.close()
 	return ret
 
+var gen_thread : Thread
 func run_generate(val):
 	if !generation_lock:
-		generate()
+		if use_threads:
+			if gen_thread!=null:
+				if gen_thread.is_alive():
+					return
+			print("Starting generation on thread...")
+			gen_thread = Thread.new()
+			gen_thread.start(self,"generate")
+		else:
+			if gen_thread!=null:
+				if gen_thread.is_alive():
+					return
+				else:
+					gen_thread=null
+			generate()
+
+func _exit_tree():
+	gen_thread.wait_to_finish()
 
 var tiles := []
 func generate():
