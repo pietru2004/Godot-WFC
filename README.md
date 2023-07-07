@@ -1,16 +1,22 @@
 # Godot-WFC
- Hello, this is my implementation of <a href="https://github.com/mxgmn/WaveFunctionCollapse">WFC algorithm</a> with gui for making tile rules and 3 generators.
- 
- 
- 
- 
- <b>Generators</b> - to check them out use 3d view of editor.
- 
- # RuledLinearGridMap
-  Uses only x_plus, y_plus and z_plus fields and checks in linear order on each Z field on each X row of current Y height.
+ Hello, this is my implementation of <a href="https://github.com/mxgmn/WaveFunctionCollapse">WFC algorithm</a>.
 
- # RuledRandomVerticalGridMap
-  Picks tiles to check randomly for each Y Height
- 
- # FullyRuledGridMap
-  This generator does not limit max height, but you can choose. Can it go <b>DOWN</b> and can it go <b>UP</b>. Additionaly it checks for cell with lowest possible solutions for that cell. (As in <a href="https://github.com/mxgmn/WaveFunctionCollapse">WFC algorithm</a>)
+ All is fitted in 1 node.
+
+ # Quick Guide
+ 1. Disable Generation Lock.
+ 2. Define meshes in mesh lib data.
+ 3. Press Generate Mesh Lib.
+ 4. Paint rules, hwo tiles can connect.
+ 5. Press Generate Rules.
+ 6. Define Map Generation Settings.
+ 7. Press Generate Map.
+
+exported vars Running, Time and Remaining cells shows is generator working.
+
+# Troubleshooting
+if generation wails try stopping generation by unchecking running(only if conflict repair is active)
+after that check error out 
+value 0 is tile position
+value 1 are all possible tiles from each side that can be placed at that spot
+value 2 shows which arrays are being used for that cell
