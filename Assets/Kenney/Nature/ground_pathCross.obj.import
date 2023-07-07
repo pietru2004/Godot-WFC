@@ -1,20 +1,21 @@
 [remap]
 
 importer="wavefront_obj"
+importer_version=1
 type="Mesh"
-path="res://.import/ground_pathCross.obj-6f359d2d648cdd44ec112e1e40bc704c.mesh"
+uid="uid://cuplvkuqrmfj1"
+path="res://.godot/imported/ground_pathCross.obj-6f359d2d648cdd44ec112e1e40bc704c.mesh"
 
 [deps]
 
-files=[ "res://.import/ground_pathCross.obj-6f359d2d648cdd44ec112e1e40bc704c.mesh" ]
+files=["res://.godot/imported/ground_pathCross.obj-6f359d2d648cdd44ec112e1e40bc704c.mesh"]
 
 source_file="res://Assets/Kenney/Nature/ground_pathCross.obj"
-dest_files=[ "res://.import/ground_pathCross.obj-6f359d2d648cdd44ec112e1e40bc704c.mesh", "res://.import/ground_pathCross.obj-6f359d2d648cdd44ec112e1e40bc704c.mesh" ]
+dest_files=["res://.godot/imported/ground_pathCross.obj-6f359d2d648cdd44ec112e1e40bc704c.mesh", "res://.godot/imported/ground_pathCross.obj-6f359d2d648cdd44ec112e1e40bc704c.mesh"]
 
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
-offset_mesh=Vector3( 0, 0, 0 )
-octahedral_compression=true
-optimize_mesh_flags=4286
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

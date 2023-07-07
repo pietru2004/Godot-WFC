@@ -1,0 +1,58 @@
+[gd_resource type="Resource" script_class="MeshLibDefiner" load_steps=13 format=3 uid="uid://br6td7cbfwuta"]
+
+[ext_resource type="ArrayMesh" uid="uid://33fttgqyfn6r" path="res://Assets/Kenney/Nature/ground_grass.obj" id="1_ngvi6"]
+[ext_resource type="Script" path="res://addons/WFC_Based_Gen/scripts/mesh_lib_item.gd" id="2_f8iiu"]
+[ext_resource type="ArrayMesh" uid="uid://bskmgbqy2sda1" path="res://Assets/Kenney/Nature/ground_riverTile.obj" id="3_umkeq"]
+[ext_resource type="ArrayMesh" uid="uid://cpp30wvccpla6" path="res://Assets/Kenney/Nature/ground_riverEnd.obj" id="4_4wmxh"]
+[ext_resource type="ArrayMesh" uid="uid://cqf1s8l4yd4a7" path="res://Assets/Kenney/Nature/ground_riverBend.obj" id="5_87alv"]
+[ext_resource type="ArrayMesh" uid="uid://d4iusgsl8uvh3" path="res://Assets/Kenney/Nature/ground_riverStraight.obj" id="6_1662l"]
+[ext_resource type="Script" path="res://addons/WFC_Based_Gen/scripts/mesh_lib_definer.gd" id="7_dptuw"]
+
+[sub_resource type="Resource" id="Resource_7o3al"]
+script = ExtResource("2_f8iiu")
+mesh = ExtResource("1_ngvi6")
+auto_generate_collision = true
+ignore_rotation = true
+weight = 3.0
+object_name = "Grass"
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[sub_resource type="Resource" id="Resource_iy74r"]
+script = ExtResource("2_f8iiu")
+mesh = ExtResource("3_umkeq")
+auto_generate_collision = true
+ignore_rotation = true
+weight = 1.0
+object_name = "Pond"
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[sub_resource type="Resource" id="Resource_hjai2"]
+script = ExtResource("2_f8iiu")
+mesh = ExtResource("4_4wmxh")
+auto_generate_collision = true
+ignore_rotation = false
+weight = 1.0
+object_name = "RiverEnd"
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[sub_resource type="Resource" id="Resource_60nif"]
+script = ExtResource("2_f8iiu")
+mesh = ExtResource("5_87alv")
+auto_generate_collision = true
+ignore_rotation = false
+weight = 1.0
+object_name = "RiverBend"
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[sub_resource type="Resource" id="Resource_u7joa"]
+script = ExtResource("2_f8iiu")
+mesh = ExtResource("6_1662l")
+auto_generate_collision = true
+ignore_rotation = false
+weight = 1.0
+object_name = "RiverStraight"
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[resource]
+script = ExtResource("7_dptuw")
+items = [SubResource("Resource_7o3al"), SubResource("Resource_iy74r"), SubResource("Resource_hjai2"), SubResource("Resource_60nif"), SubResource("Resource_u7joa")]

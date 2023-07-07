@@ -6,57 +6,15 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
-
-_global_script_classes=[ {
-"base": "TextureRect",
-"class": "Block",
-"language": "GDScript",
-"path": "res://demo/scripts/Block.gd"
-}, {
-"base": "GridMap",
-"class": "FullyRuledGridMap",
-"language": "GDScript",
-"path": "res://addons/WFC_Based_Gen/nodes/FullyRuledGridMap.gd"
-}, {
-"base": "GridMap",
-"class": "RuledLinearGridMap",
-"language": "GDScript",
-"path": "res://addons/WFC_Based_Gen/nodes/RuledLinearGridMap.gd"
-}, {
-"base": "GridMap",
-"class": "RuledRandomVerticalGridMap",
-"language": "GDScript",
-"path": "res://addons/WFC_Based_Gen/nodes/RuledRandomVerticalGridMap.gd"
-}, {
-"base": "GridMap",
-"class": "WFCDataCreator",
-"language": "GDScript",
-"path": "res://addons/WFC_Based_Gen/nodes/WFCDataCreator.gd"
-}, {
-"base": "GridMap",
-"class": "WFCMapGenerator",
-"language": "GDScript",
-"path": "res://addons/WFC_Based_Gen/nodes/WFCMapGenerator.gd"
-} ]
-_global_script_class_icons={
-"Block": "",
-"FullyRuledGridMap": "",
-"RuledLinearGridMap": "",
-"RuledRandomVerticalGridMap": "",
-"WFCDataCreator": "",
-"WFCMapGenerator": ""
-}
+config_version=5
 
 [application]
 
 config/name="Wave Function Collapse"
+config/tags=PackedStringArray("plugin")
 run/main_scene="res://demo/MainScene.tscn"
-config/icon="res://icon.png"
-
-[editor_plugins]
-
-enabled=PoolStringArray( "res://addons/WFC_Based_Gen/plugin.cfg" )
+config/features=PackedStringArray("4.1")
+config/icon="res://addons/WFC_Based_Gen/icon.png"
 
 [physics]
 
@@ -64,4 +22,4 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
-environment/default_environment="res://default_env.tres"
+environment/defaults/default_environment="res://default_env.tres"

@@ -1,20 +1,21 @@
 [remap]
 
 importer="wavefront_obj"
+importer_version=1
 type="Mesh"
-path="res://.import/ground_riverRocks.obj-61fc4fc5e017d89ec62e22e01fb40313.mesh"
+uid="uid://d0wdqv6pve1os"
+path="res://.godot/imported/ground_riverRocks.obj-61fc4fc5e017d89ec62e22e01fb40313.mesh"
 
 [deps]
 
-files=[ "res://.import/ground_riverRocks.obj-61fc4fc5e017d89ec62e22e01fb40313.mesh" ]
+files=["res://.godot/imported/ground_riverRocks.obj-61fc4fc5e017d89ec62e22e01fb40313.mesh"]
 
 source_file="res://Assets/Kenney/Nature/ground_riverRocks.obj"
-dest_files=[ "res://.import/ground_riverRocks.obj-61fc4fc5e017d89ec62e22e01fb40313.mesh", "res://.import/ground_riverRocks.obj-61fc4fc5e017d89ec62e22e01fb40313.mesh" ]
+dest_files=["res://.godot/imported/ground_riverRocks.obj-61fc4fc5e017d89ec62e22e01fb40313.mesh", "res://.godot/imported/ground_riverRocks.obj-61fc4fc5e017d89ec62e22e01fb40313.mesh"]
 
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
-offset_mesh=Vector3( 0, 0, 0 )
-octahedral_compression=true
-optimize_mesh_flags=4286
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

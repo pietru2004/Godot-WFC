@@ -1,4 +1,4 @@
-tool
+@tool
 extends Control
 
 
@@ -27,7 +27,7 @@ func create_tile():
 		}
 		load_tiles()
 		get_node("TileName").text=""
-		yield(get_tree(), "idle_frame")
+		await get_tree().idle_frame
 		get_node("ItemListCont/ItemList").select(tiles_list.size()-1)
 		_on_ItemList_item_selected(tiles_list.size()-1)
 
