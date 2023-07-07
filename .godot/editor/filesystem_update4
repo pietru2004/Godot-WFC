@@ -1,6 +1,5 @@
 res://default_env.tres
 res://addons/WFC_Based_Gen/demos/demo.tscn
-res://addons/WFC_Based_Gen/scripts/mesh_lib_rule_set.gd
-res://addons/WFC_Based_Gen/nodes/WFCMapGenerator.gd
-res://addons/WFC_Based_Gen/demos/defined_rules_lib.tres
 res://addons/WFC_Based_Gen/demos/defined_mesh_lib.tres
+res://addons/WFC_Based_Gen/demos/defined_rules_lib.tres
+res://addons/WFC_Based_Gen/nodes/WFCMapGenerator.gd

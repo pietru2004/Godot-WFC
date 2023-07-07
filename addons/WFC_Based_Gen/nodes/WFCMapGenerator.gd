@@ -25,7 +25,7 @@ class_name WFCMapGenerator
 
 func run_generate_meshlib(val):
 	generate_meshlib=false
-	if generation_lock:
+	if generation_lock or running:
 		return
 	mesh_library=mesh_lib_data.get_meshlib()
 
@@ -38,7 +38,7 @@ func run_generate_meshlib(val):
 
 func run_generate_rules(val):
 	generate_rules=false
-	if generation_lock:
+	if generation_lock or running:
 		return
 	mesh_lib_rule_set=MeshLibRulesSet.new()
 	var cells := {}
