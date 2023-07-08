@@ -113,14 +113,16 @@ func add_rule_UP(item:MeshLibRule,vec:Vector3):
 ##Map Cleaner##
 ###############
 @export_category("MapCleaning")
+@export var clean_lock: bool = true
 @export var clear_map : bool = false : set = run_clear_map
 
 func run_clear_map(val):
 	clear_map=false
-	if generation_lock or running:
+	if generation_lock or running or clean_lock:
 		return
 	clean_map_segment()
 	clear_baked_meshes()
+	clean_lock=true
 
 ##################
 ##Map Generation##
@@ -197,6 +199,7 @@ func _process(delta):
 func sort_entropy(a, b):
 	return (a[1] < b[1]) and !(a[1]<=0)
 
+
 func generate_cell(vec:Vector3)->bool:
 	if !can_check_cell(vec) and had_start_point:
 		waiting.remove_at(0)
@@ -232,6 +235,7 @@ func generate_cell(vec:Vector3)->bool:
 		#findSimilarCells(data_cells,use_cells,true)
 		if conflict_repair:
 			add_repairs(vec)
+			waiting.remove_at(0)
 			return false
 		running=false
 		return false
@@ -328,10 +332,13 @@ func try_regen_cell(vec:Vector3,mode:=0):
 	if get_cell_item(vec)!=-1:
 		if can_check_cell(vec):
 			if !waiting.has(vec) and mode==0:
+				set_cell_item(vec,-1)
 				waiting.append(vec)
 			if !up_wait.has(vec) and mode==1: #up
+				set_cell_item(vec,-1)
 				up_wait.append(vec)
 			if !down_wait.has(vec) and mode==2: #down
+				set_cell_item(vec,-1)
 				down_wait.append(vec)
 
 

@@ -69,7 +69,7 @@ mesh = ExtResource("6_kgfy6")
 auto_generate_collision = true
 ignore_rotation = true
 starter_tile = true
-weight = 4.0
+weight = 9.0
 object_name = "Ground"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
