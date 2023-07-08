@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="MeshLibDefiner" load_steps=13 format=3 uid="uid://br6td7cbfwuta"]
+[gd_resource type="Resource" script_class="MeshLibDefiner" load_steps=19 format=3 uid="uid://br6td7cbfwuta"]
 
 [ext_resource type="ArrayMesh" uid="uid://b0m6753utw2xd" path="res://Assets/Kenney/RoadTiles/roadTile_001.obj" id="1_1hhla"]
 [ext_resource type="Script" path="res://addons/WFC_Based_Gen/scripts/mesh_lib_item.gd" id="2_f8iiu"]
@@ -7,12 +7,28 @@
 [ext_resource type="ArrayMesh" uid="uid://bx3ofmwfeohn8" path="res://Assets/Kenney/RoadTiles/roadTile_157.obj" id="5_316c8"]
 [ext_resource type="ArrayMesh" uid="uid://bl7cj801ev634" path="res://Assets/Kenney/RoadTiles/roadTile_163.obj" id="6_kgfy6"]
 [ext_resource type="Script" path="res://addons/WFC_Based_Gen/scripts/mesh_lib_definer.gd" id="7_dptuw"]
+[ext_resource type="ArrayMesh" uid="uid://ccyg1vmq8qboo" path="res://Assets/Kenney/RoadTiles/roadTile_019.obj" id="7_khxt3"]
+[ext_resource type="ArrayMesh" uid="uid://psjamaiw00pp" path="res://Assets/Kenney/RoadTiles/roadTile_020.obj" id="8_qxlt8"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_0nees"]
+size = Vector3(0.1, 0.1, 0.1)
+
+[sub_resource type="Resource" id="Resource_quxci"]
+script = ExtResource("2_f8iiu")
+mesh = SubResource("BoxMesh_0nees")
+auto_generate_collision = true
+ignore_rotation = true
+starter_tile = false
+weight = 1.0
+object_name = "EmptyTile"
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
 [sub_resource type="Resource" id="Resource_6tp58"]
 script = ExtResource("2_f8iiu")
 mesh = ExtResource("1_1hhla")
 auto_generate_collision = true
 ignore_rotation = true
+starter_tile = true
 weight = 1.0
 object_name = "Water"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -22,6 +38,7 @@ script = ExtResource("2_f8iiu")
 mesh = ExtResource("3_qkrvp")
 auto_generate_collision = true
 ignore_rotation = false
+starter_tile = true
 weight = 1.0
 object_name = "WatterInner"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -31,6 +48,7 @@ script = ExtResource("2_f8iiu")
 mesh = ExtResource("4_fxhan")
 auto_generate_collision = true
 ignore_rotation = false
+starter_tile = true
 weight = 1.0
 object_name = "WaterStraight"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -40,6 +58,7 @@ script = ExtResource("2_f8iiu")
 mesh = ExtResource("5_316c8")
 auto_generate_collision = true
 ignore_rotation = false
+starter_tile = true
 weight = 1.0
 object_name = "WatterOuter"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -49,10 +68,31 @@ script = ExtResource("2_f8iiu")
 mesh = ExtResource("6_kgfy6")
 auto_generate_collision = true
 ignore_rotation = true
+starter_tile = true
 weight = 4.0
 object_name = "Ground"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
+[sub_resource type="Resource" id="Resource_x7qqr"]
+script = ExtResource("2_f8iiu")
+mesh = ExtResource("7_khxt3")
+auto_generate_collision = true
+ignore_rotation = true
+starter_tile = false
+weight = 1.0
+object_name = "Tree1"
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.5, 0)
+
+[sub_resource type="Resource" id="Resource_sjde3"]
+script = ExtResource("2_f8iiu")
+mesh = ExtResource("8_qxlt8")
+auto_generate_collision = true
+ignore_rotation = true
+starter_tile = false
+weight = 1.0
+object_name = "Tree2"
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.5, 0)
+
 [resource]
 script = ExtResource("7_dptuw")
-items = [SubResource("Resource_6tp58"), SubResource("Resource_dkis8"), SubResource("Resource_3t6nt"), SubResource("Resource_l4ssl"), SubResource("Resource_n0vky")]
+items = [SubResource("Resource_quxci"), SubResource("Resource_6tp58"), SubResource("Resource_dkis8"), SubResource("Resource_3t6nt"), SubResource("Resource_l4ssl"), SubResource("Resource_n0vky"), SubResource("Resource_x7qqr"), SubResource("Resource_sjde3")]

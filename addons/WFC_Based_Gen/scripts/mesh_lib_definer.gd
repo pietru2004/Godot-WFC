@@ -18,7 +18,7 @@ func get_meshlib()->MeshLibrary:
 		meshlib.set_item_mesh(i,item.mesh)
 		meshlib.set_item_mesh_transform(i,item.transform)
 		meshlib.set_item_name(i,item.object_name)
-		if item.auto_generate_collision:
+		if item.auto_generate_collision and item.mesh!=null:
 			meshlib.set_item_shapes(i,[item.mesh.create_trimesh_shape()])
 		else:
 			meshlib.set_item_shapes(i,[item.collision])
@@ -41,3 +41,10 @@ func get_item_name(id:int)->String:
 		return items[id].object_name
 	printerr("Item ID "+str(id)+" not found... empty string ...")
 	return ""
+
+func get_starter_tiles()->Array:
+	var tiles := []
+	for i in items.size():
+		if items[i].starter_tile:
+			tiles.append(i)
+	return tiles

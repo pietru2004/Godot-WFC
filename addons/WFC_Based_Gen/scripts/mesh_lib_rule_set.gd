@@ -48,3 +48,12 @@ func get_item(id,ignore_rot:bool,rotation:int)->MeshLibRule:
 		rule = MeshLibRule.new()
 		rule.id=-1
 	return rule
+
+func pick_random_tile(restrictions:Array)->MeshLibRule:
+	if restrictions.size()==0:
+		return items.pick_random()
+	var tiles := []
+	for rule in items:
+		if restrictions.has(rule.id):
+			tiles.append(rule)
+	return tiles.pick_random()

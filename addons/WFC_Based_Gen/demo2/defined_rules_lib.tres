@@ -1,1383 +1,1897 @@
-[gd_resource type="Resource" script_class="MeshLibRulesSet" load_steps=190 format=3 uid="uid://cyogmdntlsesr"]
+[gd_resource type="Resource" script_class="MeshLibRulesSet" load_steps=262 format=3 uid="uid://cyogmdntlsesr"]
 
-[ext_resource type="Script" path="res://addons/WFC_Based_Gen/scripts/mesh_lib_rule_item.gd" id="1_42fxu"]
-[ext_resource type="Script" path="res://addons/WFC_Based_Gen/scripts/mesh_lib_rule.gd" id="2_mkhuc"]
-[ext_resource type="Script" path="res://addons/WFC_Based_Gen/scripts/mesh_lib_rule_set.gd" id="3_w52rh"]
+[ext_resource type="Script" path="res://addons/WFC_Based_Gen/scripts/mesh_lib_rule_item.gd" id="1_xu8t8"]
+[ext_resource type="Script" path="res://addons/WFC_Based_Gen/scripts/mesh_lib_rule.gd" id="2_2ylii"]
+[ext_resource type="Script" path="res://addons/WFC_Based_Gen/scripts/mesh_lib_rule_set.gd" id="3_yeg74"]
 
-[sub_resource type="Resource" id="Resource_bfblv"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_kh4yl"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_usbod"]
-script = ExtResource("1_42fxu")
-id = 0
+[sub_resource type="Resource" id="Resource_pomxw"]
+script = ExtResource("1_xu8t8")
+id = 1
 object_name = "Water"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_ncqt0"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
 rotation = 16
 weight = 1.0
 
-[sub_resource type="Resource" id="Resource_kyebi"]
-script = ExtResource("1_42fxu")
+[sub_resource type="Resource" id="Resource_xt7ok"]
+script = ExtResource("1_xu8t8")
 id = 2
-object_name = "WaterStraight"
-rotation = 22
+object_name = "WatterInner"
+rotation = 0
 weight = 1.0
 
-[sub_resource type="Resource" id="Resource_1oovl"]
-script = ExtResource("1_42fxu")
+[sub_resource type="Resource" id="Resource_ripoo"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_irdug"]
+script = ExtResource("1_xu8t8")
 id = 1
+object_name = "Water"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_ktoio"]
+script = ExtResource("1_xu8t8")
+id = 2
 object_name = "WatterInner"
 rotation = 10
 weight = 1.0
 
-[sub_resource type="Resource" id="Resource_jk2je"]
-script = ExtResource("1_42fxu")
+[sub_resource type="Resource" id="Resource_sxswd"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_8pnxs"]
+script = ExtResource("1_xu8t8")
 id = 2
+object_name = "WatterInner"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_cwknw"]
+script = ExtResource("1_xu8t8")
+id = 1
+object_name = "Water"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_stypo"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_6eojk"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_rmxsy"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_4bfkp"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_2btc7"]
+script = ExtResource("1_xu8t8")
+id = 1
+object_name = "Water"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_x8ny3"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_onjip"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_vnybr"]
+script = ExtResource("1_xu8t8")
+id = 0
+object_name = "EmptyTile"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_qqjkx"]
+script = ExtResource("2_2ylii")
+id = 1
+object_name = "Water"
+rotation = 10
+front = [SubResource("Resource_irdug"), SubResource("Resource_ktoio"), SubResource("Resource_sxswd"), SubResource("Resource_8pnxs")]
+back = [SubResource("Resource_pomxw"), SubResource("Resource_ncqt0"), SubResource("Resource_xt7ok"), SubResource("Resource_ripoo")]
+left = [SubResource("Resource_cwknw"), SubResource("Resource_stypo"), SubResource("Resource_6eojk"), SubResource("Resource_rmxsy")]
+right = [SubResource("Resource_4bfkp"), SubResource("Resource_2btc7"), SubResource("Resource_x8ny3"), SubResource("Resource_onjip")]
+down = []
+up = [SubResource("Resource_vnybr")]
+
+[sub_resource type="Resource" id="Resource_hkj15"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_p385s"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_noqa3"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_4nfyh"]
+script = ExtResource("1_xu8t8")
+id = 1
+object_name = "Water"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_0r01c"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_teb0t"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_2r5pj"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_eu8bl"]
+script = ExtResource("1_xu8t8")
+id = 1
+object_name = "Water"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_kk2n3"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_p3383"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_tmqq8"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_2uxql"]
+script = ExtResource("1_xu8t8")
+id = 3
 object_name = "WaterStraight"
 rotation = 16
 weight = 1.0
 
-[sub_resource type="Resource" id="Resource_0004k"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
+[sub_resource type="Resource" id="Resource_1nb0h"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
 rotation = 0
 weight = 1.0
 
-[sub_resource type="Resource" id="Resource_cxnh6"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
+[sub_resource type="Resource" id="Resource_w8kll"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
 rotation = 16
 weight = 1.0
 
-[sub_resource type="Resource" id="Resource_6rdqj"]
-script = ExtResource("1_42fxu")
+[sub_resource type="Resource" id="Resource_n7vhs"]
+script = ExtResource("1_xu8t8")
 id = 0
+object_name = "EmptyTile"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_2njyg"]
+script = ExtResource("2_2ylii")
+id = 2
+object_name = "WatterInner"
+rotation = 16
+front = [SubResource("Resource_4nfyh"), SubResource("Resource_0r01c"), SubResource("Resource_teb0t"), SubResource("Resource_2r5pj")]
+back = [SubResource("Resource_hkj15"), SubResource("Resource_p385s"), SubResource("Resource_noqa3")]
+left = [SubResource("Resource_eu8bl"), SubResource("Resource_kk2n3"), SubResource("Resource_p3383"), SubResource("Resource_tmqq8")]
+right = [SubResource("Resource_2uxql"), SubResource("Resource_1nb0h"), SubResource("Resource_w8kll")]
+down = []
+up = [SubResource("Resource_n7vhs")]
+
+[sub_resource type="Resource" id="Resource_cgd0a"]
+script = ExtResource("1_xu8t8")
+id = 1
 object_name = "Water"
 rotation = 16
 weight = 1.0
 
-[sub_resource type="Resource" id="Resource_0djcd"]
-script = ExtResource("1_42fxu")
-id = 1
+[sub_resource type="Resource" id="Resource_rpl12"]
+script = ExtResource("1_xu8t8")
+id = 2
 object_name = "WatterInner"
 rotation = 16
 weight = 1.0
 
-[sub_resource type="Resource" id="Resource_mjpnw"]
-script = ExtResource("2_mkhuc")
-id = 1
+[sub_resource type="Resource" id="Resource_ggljv"]
+script = ExtResource("1_xu8t8")
+id = 2
 object_name = "WatterInner"
 rotation = 0
-front = [SubResource("Resource_usbod"), SubResource("Resource_kyebi"), SubResource("Resource_1oovl")]
-back = [SubResource("Resource_bfblv"), SubResource("Resource_kh4yl")]
-left = [SubResource("Resource_jk2je"), SubResource("Resource_0004k"), SubResource("Resource_cxnh6")]
-right = [SubResource("Resource_6rdqj"), SubResource("Resource_0djcd")]
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_1jdgy"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_vqq0s"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_op31c"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_81xp3"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_6xm8a"]
+script = ExtResource("1_xu8t8")
+id = 1
+object_name = "Water"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_u8k8i"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_rv8ws"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_6fyfq"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_m3pfl"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_1ycsc"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_q0d46"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_66ilq"]
+script = ExtResource("1_xu8t8")
+id = 0
+object_name = "EmptyTile"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_sr5jo"]
+script = ExtResource("2_2ylii")
+id = 2
+object_name = "WatterInner"
+rotation = 10
+front = [SubResource("Resource_vqq0s"), SubResource("Resource_op31c"), SubResource("Resource_81xp3")]
+back = [SubResource("Resource_cgd0a"), SubResource("Resource_rpl12"), SubResource("Resource_ggljv"), SubResource("Resource_1jdgy")]
+left = [SubResource("Resource_6xm8a"), SubResource("Resource_u8k8i"), SubResource("Resource_rv8ws"), SubResource("Resource_6fyfq")]
+right = [SubResource("Resource_m3pfl"), SubResource("Resource_1ycsc"), SubResource("Resource_q0d46")]
 down = []
+up = [SubResource("Resource_66ilq")]
+
+[sub_resource type="Resource" id="Resource_ds6ca"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_j0n68"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_b43kp"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_aqkpl"]
+script = ExtResource("1_xu8t8")
+id = 1
+object_name = "Water"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_kp566"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_fisql"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_u36uf"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_k6tim"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_gl87x"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_i7my4"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_hr81r"]
+script = ExtResource("1_xu8t8")
+id = 1
+object_name = "Water"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_ngkll"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_xtv1x"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_hxgcc"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_h3cci"]
+script = ExtResource("1_xu8t8")
+id = 0
+object_name = "EmptyTile"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_r53fj"]
+script = ExtResource("2_2ylii")
+id = 2
+object_name = "WatterInner"
+rotation = 0
+front = [SubResource("Resource_aqkpl"), SubResource("Resource_kp566"), SubResource("Resource_fisql"), SubResource("Resource_u36uf")]
+back = [SubResource("Resource_ds6ca"), SubResource("Resource_j0n68"), SubResource("Resource_b43kp")]
+left = [SubResource("Resource_k6tim"), SubResource("Resource_gl87x"), SubResource("Resource_i7my4")]
+right = [SubResource("Resource_hr81r"), SubResource("Resource_ngkll"), SubResource("Resource_xtv1x"), SubResource("Resource_hxgcc")]
+down = []
+up = [SubResource("Resource_h3cci")]
+
+[sub_resource type="Resource" id="Resource_j4po8"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_r7cgg"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_ji5if"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_7kkpr"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_aichx"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_n0bt5"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_o7c5n"]
+script = ExtResource("1_xu8t8")
+id = 1
+object_name = "Water"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_r62ci"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_c4i00"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_k74d1"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_7pnbg"]
+script = ExtResource("1_xu8t8")
+id = 5
+object_name = "Ground"
+rotation = 22
+weight = 4.0
+
+[sub_resource type="Resource" id="Resource_4nd1i"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_toc3n"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_vsi16"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_elpkm"]
+script = ExtResource("1_xu8t8")
+id = 0
+object_name = "EmptyTile"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_b432i"]
+script = ExtResource("2_2ylii")
+id = 3
+object_name = "WaterStraight"
+rotation = 10
+front = [SubResource("Resource_7kkpr"), SubResource("Resource_aichx"), SubResource("Resource_n0bt5")]
+back = [SubResource("Resource_j4po8"), SubResource("Resource_r7cgg"), SubResource("Resource_ji5if")]
+left = [SubResource("Resource_o7c5n"), SubResource("Resource_r62ci"), SubResource("Resource_c4i00"), SubResource("Resource_k74d1")]
+right = [SubResource("Resource_7pnbg"), SubResource("Resource_4nd1i"), SubResource("Resource_toc3n"), SubResource("Resource_vsi16")]
+down = []
+up = [SubResource("Resource_elpkm")]
+
+[sub_resource type="Resource" id="Resource_d8s2j"]
+script = ExtResource("1_xu8t8")
+id = 5
+object_name = "Ground"
+rotation = 22
+weight = 4.0
+
+[sub_resource type="Resource" id="Resource_ye628"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_cailb"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_ja4ux"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_r7dlr"]
+script = ExtResource("1_xu8t8")
+id = 1
+object_name = "Water"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_m2ahc"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_vitlg"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_haxvo"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_sx8d8"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_xyvo6"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_y2n4j"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_y12ta"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_e47mf"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_xkk4w"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_xpkvw"]
+script = ExtResource("1_xu8t8")
+id = 0
+object_name = "EmptyTile"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_7smab"]
+script = ExtResource("2_2ylii")
+id = 3
+object_name = "WaterStraight"
+rotation = 16
+front = [SubResource("Resource_r7dlr"), SubResource("Resource_m2ahc"), SubResource("Resource_vitlg"), SubResource("Resource_haxvo")]
+back = [SubResource("Resource_d8s2j"), SubResource("Resource_ye628"), SubResource("Resource_cailb"), SubResource("Resource_ja4ux")]
+left = [SubResource("Resource_sx8d8"), SubResource("Resource_xyvo6"), SubResource("Resource_y2n4j")]
+right = [SubResource("Resource_y12ta"), SubResource("Resource_e47mf"), SubResource("Resource_xkk4w")]
+down = []
+up = [SubResource("Resource_xpkvw")]
+
+[sub_resource type="Resource" id="Resource_41juk"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_27icq"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_ohf0g"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_h75n1"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_lccbf"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_cae47"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_5n7mu"]
+script = ExtResource("1_xu8t8")
+id = 5
+object_name = "Ground"
+rotation = 22
+weight = 4.0
+
+[sub_resource type="Resource" id="Resource_qkoll"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_eqdpl"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_30pfx"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_ofd0o"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_b33wy"]
+script = ExtResource("1_xu8t8")
+id = 1
+object_name = "Water"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_yub5l"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_jd61h"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_0u14j"]
+script = ExtResource("1_xu8t8")
+id = 0
+object_name = "EmptyTile"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_dxfoc"]
+script = ExtResource("2_2ylii")
+id = 3
+object_name = "WaterStraight"
+rotation = 0
+front = [SubResource("Resource_h75n1"), SubResource("Resource_lccbf"), SubResource("Resource_cae47")]
+back = [SubResource("Resource_41juk"), SubResource("Resource_27icq"), SubResource("Resource_ohf0g")]
+left = [SubResource("Resource_5n7mu"), SubResource("Resource_qkoll"), SubResource("Resource_eqdpl"), SubResource("Resource_30pfx")]
+right = [SubResource("Resource_ofd0o"), SubResource("Resource_b33wy"), SubResource("Resource_yub5l"), SubResource("Resource_jd61h")]
+down = []
+up = [SubResource("Resource_0u14j")]
+
+[sub_resource type="Resource" id="Resource_vlr3y"]
+script = ExtResource("1_xu8t8")
+id = 1
+object_name = "Water"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_smwt4"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_v5j3i"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_8elam"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_libfd"]
+script = ExtResource("1_xu8t8")
+id = 5
+object_name = "Ground"
+rotation = 22
+weight = 4.0
+
+[sub_resource type="Resource" id="Resource_f6r6n"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_7sfjq"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_ikx3r"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_hlo8n"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_cey08"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_3ns0k"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_7aue6"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_kt418"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_4cdi3"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_ea5f4"]
+script = ExtResource("1_xu8t8")
+id = 0
+object_name = "EmptyTile"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_k5tv3"]
+script = ExtResource("2_2ylii")
+id = 3
+object_name = "WaterStraight"
+rotation = 22
+front = [SubResource("Resource_libfd"), SubResource("Resource_f6r6n"), SubResource("Resource_7sfjq"), SubResource("Resource_ikx3r")]
+back = [SubResource("Resource_vlr3y"), SubResource("Resource_smwt4"), SubResource("Resource_v5j3i"), SubResource("Resource_8elam")]
+left = [SubResource("Resource_hlo8n"), SubResource("Resource_cey08"), SubResource("Resource_3ns0k")]
+right = [SubResource("Resource_7aue6"), SubResource("Resource_kt418"), SubResource("Resource_4cdi3")]
+down = []
+up = [SubResource("Resource_ea5f4")]
+
+[sub_resource type="Resource" id="Resource_svdlk"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_r8xdg"]
+script = ExtResource("1_xu8t8")
+id = 5
+object_name = "Ground"
+rotation = 0
+weight = 4.0
+
+[sub_resource type="Resource" id="Resource_g3lvv"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_nty1b"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_lpu5v"]
+script = ExtResource("1_xu8t8")
+id = 5
+object_name = "Ground"
+rotation = 0
+weight = 4.0
+
+[sub_resource type="Resource" id="Resource_d2fub"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_twqpm"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_w882s"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_mauqu"]
+script = ExtResource("1_xu8t8")
+id = 5
+object_name = "Ground"
+rotation = 0
+weight = 4.0
+
+[sub_resource type="Resource" id="Resource_x7wiv"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_g6tde"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_v671h"]
+script = ExtResource("1_xu8t8")
+id = 5
+object_name = "Ground"
+rotation = 0
+weight = 4.0
+
+[sub_resource type="Resource" id="Resource_r7gly"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_sbinl"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_cy2m2"]
+script = ExtResource("1_xu8t8")
+id = 0
+object_name = "EmptyTile"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_r1mth"]
+script = ExtResource("1_xu8t8")
+id = 7
+object_name = "Tree2"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_5rnjb"]
+script = ExtResource("2_2ylii")
+id = 5
+object_name = "Ground"
+rotation = 22
+front = [SubResource("Resource_nty1b"), SubResource("Resource_lpu5v"), SubResource("Resource_d2fub")]
+back = [SubResource("Resource_svdlk"), SubResource("Resource_r8xdg"), SubResource("Resource_g3lvv")]
+left = [SubResource("Resource_twqpm"), SubResource("Resource_w882s"), SubResource("Resource_mauqu"), SubResource("Resource_x7wiv")]
+right = [SubResource("Resource_g6tde"), SubResource("Resource_v671h"), SubResource("Resource_r7gly"), SubResource("Resource_sbinl")]
+down = []
+up = [SubResource("Resource_cy2m2"), SubResource("Resource_r1mth")]
+
+[sub_resource type="Resource" id="Resource_0g5et"]
+script = ExtResource("1_xu8t8")
+id = 1
+object_name = "Water"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_w2ect"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_fimr4"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_xkj0b"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_dr1vw"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_7yg2w"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_u2bbt"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_e3v08"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_pirh6"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_2xqkr"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_j80qw"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_yaux1"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_6hpu0"]
+script = ExtResource("1_xu8t8")
+id = 1
+object_name = "Water"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_pott0"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_2x87a"]
+script = ExtResource("1_xu8t8")
+id = 0
+object_name = "EmptyTile"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_kr2hf"]
+script = ExtResource("2_2ylii")
+id = 2
+object_name = "WatterInner"
+rotation = 22
+front = [SubResource("Resource_dr1vw"), SubResource("Resource_7yg2w"), SubResource("Resource_u2bbt")]
+back = [SubResource("Resource_0g5et"), SubResource("Resource_w2ect"), SubResource("Resource_fimr4"), SubResource("Resource_xkj0b")]
+left = [SubResource("Resource_e3v08"), SubResource("Resource_pirh6"), SubResource("Resource_2xqkr")]
+right = [SubResource("Resource_j80qw"), SubResource("Resource_yaux1"), SubResource("Resource_6hpu0"), SubResource("Resource_pott0")]
+down = []
+up = [SubResource("Resource_2x87a")]
+
+[sub_resource type="Resource" id="Resource_ggw47"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_20rio"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_kcqjp"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_slnp6"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_gl624"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_bffwm"]
+script = ExtResource("1_xu8t8")
+id = 5
+object_name = "Ground"
+rotation = 0
+weight = 4.0
+
+[sub_resource type="Resource" id="Resource_n7v1y"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_sag8y"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_pvmb0"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_i5mk2"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_5rwnm"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_arc5h"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_snhnr"]
+script = ExtResource("1_xu8t8")
+id = 5
+object_name = "Ground"
+rotation = 0
+weight = 4.0
+
+[sub_resource type="Resource" id="Resource_vlr6u"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_gtxu8"]
+script = ExtResource("1_xu8t8")
+id = 0
+object_name = "EmptyTile"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_w0kmo"]
+script = ExtResource("2_2ylii")
+id = 4
+object_name = "WatterOuter"
+rotation = 10
+front = [SubResource("Resource_slnp6"), SubResource("Resource_gl624"), SubResource("Resource_bffwm"), SubResource("Resource_n7v1y")]
+back = [SubResource("Resource_ggw47"), SubResource("Resource_20rio"), SubResource("Resource_kcqjp")]
+left = [SubResource("Resource_sag8y"), SubResource("Resource_pvmb0"), SubResource("Resource_i5mk2")]
+right = [SubResource("Resource_5rwnm"), SubResource("Resource_arc5h"), SubResource("Resource_snhnr"), SubResource("Resource_vlr6u")]
+down = []
+up = [SubResource("Resource_gtxu8")]
+
+[sub_resource type="Resource" id="Resource_auek1"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_x4wkj"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_kwhlv"]
+script = ExtResource("1_xu8t8")
+id = 5
+object_name = "Ground"
+rotation = 10
+weight = 4.0
+
+[sub_resource type="Resource" id="Resource_4j4p1"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_525t2"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_ih2tm"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_0pw2i"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_ox3no"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_xqqhw"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_newap"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_15rf7"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_dsvkx"]
+script = ExtResource("1_xu8t8")
+id = 5
+object_name = "Ground"
+rotation = 0
+weight = 4.0
+
+[sub_resource type="Resource" id="Resource_qrgiw"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_ds83h"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_xwoj3"]
+script = ExtResource("1_xu8t8")
+id = 0
+object_name = "EmptyTile"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_h22gn"]
+script = ExtResource("2_2ylii")
+id = 4
+object_name = "WatterOuter"
+rotation = 16
+front = [SubResource("Resource_525t2"), SubResource("Resource_ih2tm"), SubResource("Resource_0pw2i")]
+back = [SubResource("Resource_auek1"), SubResource("Resource_x4wkj"), SubResource("Resource_kwhlv"), SubResource("Resource_4j4p1")]
+left = [SubResource("Resource_ox3no"), SubResource("Resource_xqqhw"), SubResource("Resource_newap")]
+right = [SubResource("Resource_15rf7"), SubResource("Resource_dsvkx"), SubResource("Resource_qrgiw"), SubResource("Resource_ds83h")]
+down = []
+up = [SubResource("Resource_xwoj3")]
+
+[sub_resource type="Resource" id="Resource_riod8"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_e6rmv"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_fqtqx"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_2tiq3"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_eyvel"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_vxd5t"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_j3n8e"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_hb4y6"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_c6vsr"]
+script = ExtResource("1_xu8t8")
+id = 5
+object_name = "Ground"
+rotation = 0
+weight = 4.0
+
+[sub_resource type="Resource" id="Resource_hby5b"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_m23wv"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_30ahd"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_kq08o"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_avpeo"]
+script = ExtResource("1_xu8t8")
+id = 0
+object_name = "EmptyTile"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_yatky"]
+script = ExtResource("2_2ylii")
+id = 4
+object_name = "WatterOuter"
+rotation = 0
+front = [SubResource("Resource_2tiq3"), SubResource("Resource_eyvel"), SubResource("Resource_vxd5t")]
+back = [SubResource("Resource_riod8"), SubResource("Resource_e6rmv"), SubResource("Resource_fqtqx")]
+left = [SubResource("Resource_j3n8e"), SubResource("Resource_hb4y6"), SubResource("Resource_c6vsr"), SubResource("Resource_hby5b")]
+right = [SubResource("Resource_m23wv"), SubResource("Resource_30ahd"), SubResource("Resource_kq08o")]
+down = []
+up = [SubResource("Resource_avpeo")]
+
+[sub_resource type="Resource" id="Resource_jo315"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_j82xa"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_5dnn2"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_gff37"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_fg3sb"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_87utc"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_iibfr"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_hkhnj"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_1f2qg"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_hj2f2"]
+script = ExtResource("1_xu8t8")
+id = 5
+object_name = "Ground"
+rotation = 0
+weight = 4.0
+
+[sub_resource type="Resource" id="Resource_64l5j"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_peitr"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_tb127"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_8w70r"]
+script = ExtResource("1_xu8t8")
+id = 0
+object_name = "EmptyTile"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_j3hm7"]
+script = ExtResource("2_2ylii")
+id = 4
+object_name = "WatterOuter"
+rotation = 22
+front = [SubResource("Resource_gff37"), SubResource("Resource_fg3sb"), SubResource("Resource_87utc")]
+back = [SubResource("Resource_jo315"), SubResource("Resource_j82xa"), SubResource("Resource_5dnn2")]
+left = [SubResource("Resource_iibfr"), SubResource("Resource_hkhnj"), SubResource("Resource_1f2qg"), SubResource("Resource_hj2f2")]
+right = [SubResource("Resource_64l5j"), SubResource("Resource_peitr"), SubResource("Resource_tb127")]
+down = []
+up = [SubResource("Resource_8w70r")]
+
+[sub_resource type="Resource" id="Resource_8vce6"]
+script = ExtResource("1_xu8t8")
+id = 0
+object_name = "EmptyTile"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_yehro"]
+script = ExtResource("1_xu8t8")
+id = 7
+object_name = "Tree2"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_17ddp"]
+script = ExtResource("1_xu8t8")
+id = 5
+object_name = "Ground"
+rotation = 0
+weight = 4.0
+
+[sub_resource type="Resource" id="Resource_vrk7r"]
+script = ExtResource("1_xu8t8")
+id = 7
+object_name = "Tree2"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_dmbmw"]
+script = ExtResource("1_xu8t8")
+id = 0
+object_name = "EmptyTile"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_ahfmh"]
+script = ExtResource("1_xu8t8")
+id = 0
+object_name = "EmptyTile"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_10x6j"]
+script = ExtResource("1_xu8t8")
+id = 7
+object_name = "Tree2"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_rqbv2"]
+script = ExtResource("1_xu8t8")
+id = 7
+object_name = "Tree2"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_wu4fe"]
+script = ExtResource("1_xu8t8")
+id = 0
+object_name = "EmptyTile"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_a1par"]
+script = ExtResource("2_2ylii")
+id = 7
+object_name = "Tree2"
+rotation = 0
+front = [SubResource("Resource_vrk7r"), SubResource("Resource_dmbmw")]
+back = [SubResource("Resource_8vce6"), SubResource("Resource_yehro")]
+left = [SubResource("Resource_ahfmh"), SubResource("Resource_10x6j")]
+right = [SubResource("Resource_rqbv2"), SubResource("Resource_wu4fe")]
+down = [SubResource("Resource_17ddp")]
 up = []
 
-[sub_resource type="Resource" id="Resource_1tloc"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_ij43c"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_attss"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_gtryh"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_au7ee"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_aar5o"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_el1i5"]
-script = ExtResource("1_42fxu")
-id = 4
-object_name = "Ground"
-rotation = 16
-weight = 4.0
-
-[sub_resource type="Resource" id="Resource_td8db"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_qm0fr"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_ajofn"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_gu6d8"]
-script = ExtResource("1_42fxu")
+[sub_resource type="Resource" id="Resource_ym6v7"]
+script = ExtResource("1_xu8t8")
 id = 0
-object_name = "Water"
+object_name = "EmptyTile"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_oejgm"]
+script = ExtResource("1_xu8t8")
+id = 7
+object_name = "Tree2"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_mm7c8"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
 rotation = 16
 weight = 1.0
 
-[sub_resource type="Resource" id="Resource_nfxlv"]
-script = ExtResource("1_42fxu")
-id = 1
+[sub_resource type="Resource" id="Resource_au6g0"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_37cdq"]
+script = ExtResource("1_xu8t8")
+id = 2
 object_name = "WatterInner"
 rotation = 10
 weight = 1.0
 
-[sub_resource type="Resource" id="Resource_w8bcw"]
-script = ExtResource("1_42fxu")
+[sub_resource type="Resource" id="Resource_btiu0"]
+script = ExtResource("1_xu8t8")
 id = 2
+object_name = "WatterInner"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_0l2kn"]
+script = ExtResource("1_xu8t8")
+id = 2
+object_name = "WatterInner"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_1h0hy"]
+script = ExtResource("1_xu8t8")
+id = 3
 object_name = "WaterStraight"
 rotation = 10
 weight = 1.0
 
-[sub_resource type="Resource" id="Resource_f8gp3"]
-script = ExtResource("2_mkhuc")
-id = 2
+[sub_resource type="Resource" id="Resource_oksye"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_kmk2b"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_wsa3u"]
+script = ExtResource("1_xu8t8")
+id = 3
 object_name = "WaterStraight"
 rotation = 0
-front = [SubResource("Resource_gtryh"), SubResource("Resource_au7ee"), SubResource("Resource_aar5o")]
-back = [SubResource("Resource_1tloc"), SubResource("Resource_ij43c"), SubResource("Resource_attss")]
-left = [SubResource("Resource_el1i5"), SubResource("Resource_td8db"), SubResource("Resource_qm0fr"), SubResource("Resource_ajofn")]
-right = [SubResource("Resource_gu6d8"), SubResource("Resource_nfxlv"), SubResource("Resource_w8bcw")]
-down = []
-up = []
+weight = 1.0
 
-[sub_resource type="Resource" id="Resource_5qxw2"]
-script = ExtResource("1_42fxu")
+[sub_resource type="Resource" id="Resource_nsgvt"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_ilpd3"]
+script = ExtResource("1_xu8t8")
+id = 3
+object_name = "WaterStraight"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_ct7o5"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_v0wyt"]
+script = ExtResource("1_xu8t8")
+id = 1
+object_name = "Water"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_48oos"]
+script = ExtResource("1_xu8t8")
+id = 5
+object_name = "Ground"
+rotation = 10
+weight = 4.0
+
+[sub_resource type="Resource" id="Resource_8eb6t"]
+script = ExtResource("1_xu8t8")
 id = 0
-object_name = "Water"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_yufgy"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_8fhsm"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_mdgif"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
+object_name = "EmptyTile"
 rotation = 0
 weight = 1.0
 
-[sub_resource type="Resource" id="Resource_ifvd4"]
-script = ExtResource("1_42fxu")
+[sub_resource type="Resource" id="Resource_sgfrq"]
+script = ExtResource("1_xu8t8")
+id = 7
+object_name = "Tree2"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_aant3"]
+script = ExtResource("1_xu8t8")
 id = 0
-object_name = "Water"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_2vg88"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_pu7nb"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_jvbfv"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_xb2y4"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
+object_name = "EmptyTile"
 rotation = 0
 weight = 1.0
 
-[sub_resource type="Resource" id="Resource_kjgi5"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
+[sub_resource type="Resource" id="Resource_nangg"]
+script = ExtResource("1_xu8t8")
+id = 7
+object_name = "Tree2"
 rotation = 0
 weight = 1.0
 
-[sub_resource type="Resource" id="Resource_axvea"]
-script = ExtResource("1_42fxu")
+[sub_resource type="Resource" id="Resource_dsstw"]
+script = ExtResource("1_xu8t8")
+id = 7
+object_name = "Tree2"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_xh78e"]
+script = ExtResource("1_xu8t8")
 id = 0
-object_name = "Water"
-rotation = 16
+object_name = "EmptyTile"
+rotation = 0
 weight = 1.0
 
-[sub_resource type="Resource" id="Resource_6ttxo"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_ul50r"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_2nbu5"]
-script = ExtResource("1_42fxu")
+[sub_resource type="Resource" id="Resource_h1rbm"]
+script = ExtResource("2_2ylii")
 id = 0
-object_name = "Water"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_agqkj"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_06irv"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_prghk"]
-script = ExtResource("2_mkhuc")
-id = 0
-object_name = "Water"
-rotation = 16
-front = [SubResource("Resource_ifvd4"), SubResource("Resource_2vg88"), SubResource("Resource_pu7nb"), SubResource("Resource_jvbfv")]
-back = [SubResource("Resource_5qxw2"), SubResource("Resource_yufgy"), SubResource("Resource_8fhsm"), SubResource("Resource_mdgif")]
-left = [SubResource("Resource_xb2y4"), SubResource("Resource_kjgi5"), SubResource("Resource_axvea"), SubResource("Resource_6ttxo")]
-right = [SubResource("Resource_ul50r"), SubResource("Resource_2nbu5"), SubResource("Resource_agqkj"), SubResource("Resource_06irv")]
-down = []
-up = []
-
-[sub_resource type="Resource" id="Resource_yl4w8"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_mr8h2"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_5iqiy"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_ulgw6"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_is8yq"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_og25k"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_k2lve"]
-script = ExtResource("1_42fxu")
-id = 0
-object_name = "Water"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_amxhd"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
+object_name = "EmptyTile"
 rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_kkdn8"]
-script = ExtResource("1_42fxu")
-id = 4
-object_name = "Ground"
-rotation = 16
-weight = 4.0
-
-[sub_resource type="Resource" id="Resource_a6y7q"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_tkglu"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_4xbup"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_3nqfv"]
-script = ExtResource("2_mkhuc")
-id = 2
-object_name = "WaterStraight"
-rotation = 10
-front = [SubResource("Resource_ulgw6"), SubResource("Resource_is8yq"), SubResource("Resource_og25k")]
-back = [SubResource("Resource_yl4w8"), SubResource("Resource_mr8h2"), SubResource("Resource_5iqiy")]
-left = [SubResource("Resource_k2lve"), SubResource("Resource_amxhd")]
-right = [SubResource("Resource_kkdn8"), SubResource("Resource_a6y7q"), SubResource("Resource_tkglu"), SubResource("Resource_4xbup")]
-down = []
-up = []
-
-[sub_resource type="Resource" id="Resource_ci0rs"]
-script = ExtResource("1_42fxu")
-id = 4
-object_name = "Ground"
-rotation = 16
-weight = 4.0
-
-[sub_resource type="Resource" id="Resource_qlimc"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_4jghb"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_l4ben"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_ejeeo"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_xrluu"]
-script = ExtResource("1_42fxu")
-id = 4
-object_name = "Ground"
-rotation = 16
-weight = 4.0
-
-[sub_resource type="Resource" id="Resource_fdu4h"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_7t04v"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_6beyt"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_fpobb"]
-script = ExtResource("1_42fxu")
-id = 4
-object_name = "Ground"
-rotation = 16
-weight = 4.0
-
-[sub_resource type="Resource" id="Resource_oh4bf"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_xvtwb"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_n6xls"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_b2ofh"]
-script = ExtResource("1_42fxu")
-id = 4
-object_name = "Ground"
-rotation = 16
-weight = 4.0
-
-[sub_resource type="Resource" id="Resource_xvvkl"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_ql223"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_cpsj4"]
-script = ExtResource("2_mkhuc")
-id = 4
-object_name = "Ground"
-rotation = 16
-front = [SubResource("Resource_ejeeo"), SubResource("Resource_xrluu"), SubResource("Resource_fdu4h"), SubResource("Resource_7t04v")]
-back = [SubResource("Resource_ci0rs"), SubResource("Resource_qlimc"), SubResource("Resource_4jghb"), SubResource("Resource_l4ben")]
-left = [SubResource("Resource_6beyt"), SubResource("Resource_fpobb"), SubResource("Resource_oh4bf"), SubResource("Resource_xvtwb")]
-right = [SubResource("Resource_n6xls"), SubResource("Resource_b2ofh"), SubResource("Resource_xvvkl"), SubResource("Resource_ql223")]
-down = []
-up = []
-
-[sub_resource type="Resource" id="Resource_a37xg"]
-script = ExtResource("1_42fxu")
-id = 4
-object_name = "Ground"
-rotation = 16
-weight = 4.0
-
-[sub_resource type="Resource" id="Resource_jcfd4"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_ba0yh"]
-script = ExtResource("1_42fxu")
-id = 0
-object_name = "Water"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_l8lte"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_orrvy"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_vvyks"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_f30do"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_o7eab"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_yf7yy"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_6c1mp"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_p7hho"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_6wvcc"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_1bwha"]
-script = ExtResource("2_mkhuc")
-id = 2
-object_name = "WaterStraight"
-rotation = 16
-front = [SubResource("Resource_ba0yh"), SubResource("Resource_l8lte"), SubResource("Resource_orrvy"), SubResource("Resource_vvyks")]
-back = [SubResource("Resource_a37xg"), SubResource("Resource_jcfd4")]
-left = [SubResource("Resource_f30do"), SubResource("Resource_o7eab"), SubResource("Resource_yf7yy")]
-right = [SubResource("Resource_6c1mp"), SubResource("Resource_p7hho"), SubResource("Resource_6wvcc")]
-down = []
-up = []
-
-[sub_resource type="Resource" id="Resource_so6il"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_p6x80"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_77w2v"]
-script = ExtResource("1_42fxu")
-id = 0
-object_name = "Water"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_64f52"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_6l02p"]
-script = ExtResource("1_42fxu")
-id = 0
-object_name = "Water"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_w1cj2"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_jjmsr"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_x0dt4"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_pkhvj"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_b1e0c"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_kekqh"]
-script = ExtResource("2_mkhuc")
-id = 1
-object_name = "WatterInner"
-rotation = 16
-front = [SubResource("Resource_77w2v"), SubResource("Resource_64f52")]
-back = [SubResource("Resource_so6il"), SubResource("Resource_p6x80")]
-left = [SubResource("Resource_6l02p"), SubResource("Resource_w1cj2"), SubResource("Resource_jjmsr")]
-right = [SubResource("Resource_x0dt4"), SubResource("Resource_pkhvj"), SubResource("Resource_b1e0c")]
-down = []
-up = []
-
-[sub_resource type="Resource" id="Resource_k1rw4"]
-script = ExtResource("1_42fxu")
-id = 0
-object_name = "Water"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_lyjgw"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_m10kw"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_w3pxy"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_d5804"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_0e7ww"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_p6qty"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_qmboj"]
-script = ExtResource("1_42fxu")
-id = 0
-object_name = "Water"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_n4fl7"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_0vfjj"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_20vai"]
-script = ExtResource("2_mkhuc")
-id = 1
-object_name = "WatterInner"
-rotation = 22
-front = [SubResource("Resource_m10kw"), SubResource("Resource_w3pxy")]
-back = [SubResource("Resource_k1rw4"), SubResource("Resource_lyjgw")]
-left = [SubResource("Resource_d5804"), SubResource("Resource_0e7ww"), SubResource("Resource_p6qty")]
-right = [SubResource("Resource_qmboj"), SubResource("Resource_n4fl7"), SubResource("Resource_0vfjj")]
-down = []
-up = []
-
-[sub_resource type="Resource" id="Resource_6kvod"]
-script = ExtResource("1_42fxu")
-id = 0
-object_name = "Water"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_15wgl"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_dcfwg"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_8p3y6"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_6bjtl"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_gdqm4"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_3bxbf"]
-script = ExtResource("1_42fxu")
-id = 0
-object_name = "Water"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_c60hj"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_484ou"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_ox8hs"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_ppcjf"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_ps0x7"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_236si"]
-script = ExtResource("2_mkhuc")
-id = 1
-object_name = "WatterInner"
-rotation = 10
-front = [SubResource("Resource_6bjtl"), SubResource("Resource_gdqm4")]
-back = [SubResource("Resource_6kvod"), SubResource("Resource_15wgl"), SubResource("Resource_dcfwg"), SubResource("Resource_8p3y6")]
-left = [SubResource("Resource_3bxbf"), SubResource("Resource_c60hj"), SubResource("Resource_484ou")]
-right = [SubResource("Resource_ox8hs"), SubResource("Resource_ppcjf"), SubResource("Resource_ps0x7")]
-down = []
-up = []
-
-[sub_resource type="Resource" id="Resource_37g1c"]
-script = ExtResource("1_42fxu")
-id = 0
-object_name = "Water"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_4ch5w"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_so2oc"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_p2cu1"]
-script = ExtResource("1_42fxu")
-id = 4
-object_name = "Ground"
-rotation = 16
-weight = 4.0
-
-[sub_resource type="Resource" id="Resource_yr441"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_8hsrh"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_4m5e0"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_5nrpy"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_hbqux"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_htec5"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_6q28e"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_5obqx"]
-script = ExtResource("2_mkhuc")
-id = 2
-object_name = "WaterStraight"
-rotation = 22
-front = [SubResource("Resource_p2cu1"), SubResource("Resource_yr441")]
-back = [SubResource("Resource_37g1c"), SubResource("Resource_4ch5w"), SubResource("Resource_so2oc")]
-left = [SubResource("Resource_8hsrh"), SubResource("Resource_4m5e0"), SubResource("Resource_5nrpy")]
-right = [SubResource("Resource_hbqux"), SubResource("Resource_htec5"), SubResource("Resource_6q28e")]
-down = []
-up = []
-
-[sub_resource type="Resource" id="Resource_45soc"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_1qn5d"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_6o175"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_1u4t1"]
-script = ExtResource("1_42fxu")
-id = 4
-object_name = "Ground"
-rotation = 10
-weight = 4.0
-
-[sub_resource type="Resource" id="Resource_30vgq"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_fu488"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_y8xru"]
-script = ExtResource("1_42fxu")
-id = 4
-object_name = "Ground"
-rotation = 10
-weight = 4.0
-
-[sub_resource type="Resource" id="Resource_rwyup"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_he80a"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_rnrb5"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_f5i5m"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_rplkh"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_kxbjc"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_551pe"]
-script = ExtResource("2_mkhuc")
-id = 3
-object_name = "WatterOuter"
-rotation = 22
-front = [SubResource("Resource_1u4t1"), SubResource("Resource_30vgq"), SubResource("Resource_fu488")]
-back = [SubResource("Resource_45soc"), SubResource("Resource_1qn5d"), SubResource("Resource_6o175")]
-left = [SubResource("Resource_y8xru"), SubResource("Resource_rwyup"), SubResource("Resource_he80a"), SubResource("Resource_rnrb5")]
-right = [SubResource("Resource_f5i5m"), SubResource("Resource_rplkh"), SubResource("Resource_kxbjc")]
-down = []
-up = []
-
-[sub_resource type="Resource" id="Resource_2p4jx"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_4t32a"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_s5xb7"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_shnx0"]
-script = ExtResource("1_42fxu")
-id = 4
-object_name = "Ground"
-rotation = 10
-weight = 4.0
-
-[sub_resource type="Resource" id="Resource_qr8xd"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_ppp68"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_71a8x"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_ailkl"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_127uw"]
-script = ExtResource("1_42fxu")
-id = 4
-object_name = "Ground"
-rotation = 10
-weight = 4.0
-
-[sub_resource type="Resource" id="Resource_o41nn"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_25on1"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_mat6m"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_oq1uw"]
-script = ExtResource("2_mkhuc")
-id = 3
-object_name = "WatterOuter"
-rotation = 10
-front = [SubResource("Resource_shnx0"), SubResource("Resource_qr8xd")]
-back = [SubResource("Resource_2p4jx"), SubResource("Resource_4t32a"), SubResource("Resource_s5xb7")]
-left = [SubResource("Resource_ppp68"), SubResource("Resource_71a8x"), SubResource("Resource_ailkl")]
-right = [SubResource("Resource_127uw"), SubResource("Resource_o41nn"), SubResource("Resource_25on1"), SubResource("Resource_mat6m")]
-down = []
-up = []
-
-[sub_resource type="Resource" id="Resource_3hiu0"]
-script = ExtResource("1_42fxu")
-id = 4
-object_name = "Ground"
-rotation = 10
-weight = 4.0
-
-[sub_resource type="Resource" id="Resource_5xt12"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_q3opg"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_d64ow"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_nmhhw"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_dliyx"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_3hfp8"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_fdk1i"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_ihgy3"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_5fo57"]
-script = ExtResource("1_42fxu")
-id = 4
-object_name = "Ground"
-rotation = 10
-weight = 4.0
-
-[sub_resource type="Resource" id="Resource_i8jxe"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_54p3p"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_4u1go"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_fctx2"]
-script = ExtResource("2_mkhuc")
-id = 3
-object_name = "WatterOuter"
-rotation = 16
-front = [SubResource("Resource_d64ow"), SubResource("Resource_nmhhw"), SubResource("Resource_dliyx")]
-back = [SubResource("Resource_3hiu0"), SubResource("Resource_5xt12"), SubResource("Resource_q3opg")]
-left = [SubResource("Resource_3hfp8"), SubResource("Resource_fdk1i"), SubResource("Resource_ihgy3")]
-right = [SubResource("Resource_5fo57"), SubResource("Resource_i8jxe"), SubResource("Resource_54p3p"), SubResource("Resource_4u1go")]
-down = []
-up = []
-
-[sub_resource type="Resource" id="Resource_k5la1"]
-script = ExtResource("1_42fxu")
-id = 4
-object_name = "Ground"
-rotation = 10
-weight = 4.0
-
-[sub_resource type="Resource" id="Resource_st8xl"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_8128l"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_fydj4"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 22
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_favtn"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_5ado8"]
-script = ExtResource("1_42fxu")
-id = 4
-object_name = "Ground"
-rotation = 10
-weight = 4.0
-
-[sub_resource type="Resource" id="Resource_fad7g"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_6yar7"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_1wlbc"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 10
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_kpeno"]
-script = ExtResource("1_42fxu")
-id = 2
-object_name = "WaterStraight"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_n43fv"]
-script = ExtResource("1_42fxu")
-id = 1
-object_name = "WatterInner"
-rotation = 0
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_rrjev"]
-script = ExtResource("1_42fxu")
-id = 3
-object_name = "WatterOuter"
-rotation = 16
-weight = 1.0
-
-[sub_resource type="Resource" id="Resource_8rxd6"]
-script = ExtResource("2_mkhuc")
-id = 3
-object_name = "WatterOuter"
-rotation = 0
-front = [SubResource("Resource_8128l"), SubResource("Resource_fydj4"), SubResource("Resource_favtn")]
-back = [SubResource("Resource_k5la1"), SubResource("Resource_st8xl")]
-left = [SubResource("Resource_5ado8"), SubResource("Resource_fad7g"), SubResource("Resource_6yar7"), SubResource("Resource_1wlbc")]
-right = [SubResource("Resource_kpeno"), SubResource("Resource_n43fv"), SubResource("Resource_rrjev")]
-down = []
+front = [SubResource("Resource_8eb6t"), SubResource("Resource_sgfrq")]
+back = [SubResource("Resource_ym6v7"), SubResource("Resource_oejgm")]
+left = [SubResource("Resource_aant3"), SubResource("Resource_nangg")]
+right = [SubResource("Resource_dsstw"), SubResource("Resource_xh78e")]
+down = [SubResource("Resource_mm7c8"), SubResource("Resource_au6g0"), SubResource("Resource_37cdq"), SubResource("Resource_btiu0"), SubResource("Resource_0l2kn"), SubResource("Resource_1h0hy"), SubResource("Resource_oksye"), SubResource("Resource_kmk2b"), SubResource("Resource_wsa3u"), SubResource("Resource_nsgvt"), SubResource("Resource_ilpd3"), SubResource("Resource_ct7o5"), SubResource("Resource_v0wyt"), SubResource("Resource_48oos")]
 up = []
 
 [resource]
-script = ExtResource("3_w52rh")
-items = [SubResource("Resource_mjpnw"), SubResource("Resource_f8gp3"), SubResource("Resource_prghk"), SubResource("Resource_3nqfv"), SubResource("Resource_cpsj4"), SubResource("Resource_1bwha"), SubResource("Resource_kekqh"), SubResource("Resource_20vai"), SubResource("Resource_236si"), SubResource("Resource_5obqx"), SubResource("Resource_551pe"), SubResource("Resource_oq1uw"), SubResource("Resource_fctx2"), SubResource("Resource_8rxd6")]
+script = ExtResource("3_yeg74")
+items = [SubResource("Resource_qqjkx"), SubResource("Resource_2njyg"), SubResource("Resource_sr5jo"), SubResource("Resource_r53fj"), SubResource("Resource_b432i"), SubResource("Resource_7smab"), SubResource("Resource_dxfoc"), SubResource("Resource_k5tv3"), SubResource("Resource_5rnjb"), SubResource("Resource_kr2hf"), SubResource("Resource_w0kmo"), SubResource("Resource_h22gn"), SubResource("Resource_yatky"), SubResource("Resource_j3hm7"), SubResource("Resource_a1par"), SubResource("Resource_h1rbm")]
 force_list_fix = false
 force_integrity_check = true

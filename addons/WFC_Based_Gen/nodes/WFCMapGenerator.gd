@@ -119,14 +119,15 @@ func run_clear_map(val):
 	clear_map=false
 	if generation_lock or running:
 		return
-	clear()
+	clean_map_segment()
 	clear_baked_meshes()
 
 ##################
 ##Map Generation##
 ##################
 @export_category("MapGeneration")
-@export var map_size: int = 10
+@export var map_start := Vector3.ZERO
+@export var map_end := Vector3(10,10,10)
 @export var allow_up: bool = true
 @export var allow_down: bool = false
 @export var conflict_repair: bool = true
@@ -134,13 +135,15 @@ func run_clear_map(val):
 
 @export var delay_between_tries := 0.05
 
-var start_point := Vector3.ZERO
+var start_point := map_start
 var had_start_point := false
 
 @export var generate_map : bool = false : set = run_generate_map
 
 @export var running := false
 var waiting := []
+var up_wait := []
+var down_wait := []
 
 func run_generate_map(val):
 	generate_map=false
@@ -149,11 +152,19 @@ func run_generate_map(val):
 	running=false
 	await get_tree().process_frame
 	waiting.clear()
-	clear()
+	clean_map_segment()
 	clear_baked_meshes()
 	waiting.append(start_point)
 	running=true
 	had_start_point = false
+
+func clean_map_segment():
+	if generation_lock or mesh_lib_data.items.size()==0:
+		return
+	for _x in range(map_start.x,map_end.x):
+		for _y in range(map_start.y,map_end.y):
+			for _z in range(map_start.z,map_end.z):
+				set_cell_item(Vector3(_x,_y,_z),-1)
 
 @export var time:=0.0
 @export var remaining_cells := 0
@@ -165,6 +176,14 @@ func _process(delta):
 			return
 		remaining_cells=waiting.size()
 		if waiting.size()==0:
+			if up_wait.size()>0:
+				waiting.append_array(up_wait)
+				up_wait.clear()
+				return
+			if down_wait.size()>0:
+				waiting.append_array(up_wait)
+				down_wait.clear()
+				return
 			running=false
 			return
 		var data = calc_celc_entropy()
@@ -188,21 +207,22 @@ func generate_cell(vec:Vector3)->bool:
 	var cell_right = get_rule(vec+Vector3.RIGHT)#.right
 	var cell_down = get_rule(vec+Vector3.DOWN)#.up
 	var cell_up = get_rule(vec+Vector3.UP)#.down
+	var empty :bool= (cell_front.back.size()==0 and cell_back.front.size()==0 and cell_left.right.size()==0 and cell_right.left.size()==0 and cell_down.up.size()==0 and cell_up.down.size()==0)
 	var data_cells := [cell_front.back,cell_back.front,cell_left.right,cell_right.left,cell_down.up,cell_up.down]
 	var use_cells := [cell_front.id!=-1,cell_back.id!=-1,cell_left.id!=-1,cell_right.id!=-1,cell_down.id!=-1,cell_up.id!=-1]
 	var similar_cells:Array=findSimilarCells(data_cells,use_cells)
 	var weights = get_weights(similar_cells)
-	var empty :bool= (cell_front.back.size()==0 and cell_back.front.size()==0 and cell_left.right.size()==0 and cell_right.left.size()==0 and cell_down.up.size()==0 and cell_up.down.size()==0)
 	if !had_start_point:
 		had_start_point=true
 		var starter :bool= (cell_front.id==-1 and cell_back.id==-1 and cell_left.id==-1 and cell_right.id==-1 and cell_down.id==-1 and cell_up.id==-1)
-		if starter:
-			var id = mesh_lib_rule_set.items.pick_random().id
-			set_cell_item(vec,id)
+		if starter and empty:
+			var st :MeshLibRule= mesh_lib_rule_set.pick_random_tile(mesh_lib_data.get_starter_tiles())
+			set_cell_item(vec,st.id,st.rotation)
 			return true
 	if empty:
-		set_cell_item(vec,INF)
-		return true
+		set_cell_item(vec,-1)
+		waiting.remove_at(0)
+		return false
 	if similar_cells.size()==0:
 		error_out=[]
 		error_out.append(vec)
@@ -220,89 +240,99 @@ func generate_cell(vec:Vector3)->bool:
 	return true
 
 func can_check_cell(vec:Vector3)->bool:
-	var cell_front = get_cell_item(vec+Vector3.FORWARD)
-	var cell_back = get_cell_item(vec+Vector3.BACK)
-	var cell_left = get_cell_item(vec+Vector3.LEFT)
-	var cell_right = get_cell_item(vec+Vector3.RIGHT)
-	var cell_down = get_cell_item(vec+Vector3.DOWN)
-	var cell_up = get_cell_item(vec+Vector3.UP)
+	var cell_front = get_cell_item(vec+Vector3.FORWARD)#.back
+	var cell_back = get_cell_item(vec+Vector3.BACK)#.front
+	var cell_left = get_cell_item(vec+Vector3.LEFT)#.left
+	var cell_right = get_cell_item(vec+Vector3.RIGHT)#.right
+	var cell_down = get_cell_item(vec+Vector3.DOWN)#.up
+	var cell_up = get_cell_item(vec+Vector3.UP)#.down
 	return (cell_front!=-1 or cell_back!=-1 or cell_left!=-1 or cell_right!=-1 or cell_down!=-1 or cell_up!=-1)
 
 func add_new_cells_to_list(vec:Vector3):
-	if vec.z-1>=0:
+	if vec.z-1>=map_start.z:
 		try_add_cell(vec+Vector3.FORWARD)
-	if vec.z+1<map_size:
+	if vec.z+1<map_end.z:
 		try_add_cell(vec+Vector3.BACK)
 
-	if vec.x-1>=0:
+	if vec.x-1>=map_start.x:
 		try_add_cell(vec+Vector3.LEFT)
-	if vec.x+1<map_size:
+	if vec.x+1<map_end.x:
 		try_add_cell(vec+Vector3.RIGHT)
 
-	if vec.y-1>=0 and allow_down:
-		try_add_cell(vec+Vector3.DOWN)
-	if vec.y+1<map_size and allow_up:
-		try_add_cell(vec+Vector3.UP)
+	if vec.y-1>=map_start.y and allow_down:
+		try_add_cell(vec+Vector3.DOWN,2)
+	if vec.y+1<map_end.y and allow_up:
+		try_add_cell(vec+Vector3.UP,1)
 		
-func try_add_cell(vec:Vector3):
+func try_add_cell(vec:Vector3,mode:=0):
 	if get_cell_item(vec)==-1:
-		if !waiting.has(vec) and can_check_cell(vec):
-			waiting.append(vec)
+		if can_check_cell(vec):
+			if !waiting.has(vec) and mode==0:
+				waiting.append(vec)
+			if !up_wait.has(vec) and mode==1: #up
+				up_wait.append(vec)
+			if !down_wait.has(vec) and mode==2: #down
+				down_wait.append(vec)
+	
 
 func add_repairs(vec:Vector3):
-	if vec.z-1>=0:
+	if vec.z-1>=map_start.z:
 		try_regen_cell(vec+Vector3.FORWARD)
-		if vec.x-1>=0:
+		if vec.x-1>=map_start.x:
 			try_regen_cell(vec+Vector3.FORWARD+Vector3.LEFT)
-		if vec.x+1<map_size:
+		if vec.x+1<map_end.x:
 			try_regen_cell(vec+Vector3.FORWARD+Vector3.RIGHT)
-	if vec.z+1<map_size:
+	if vec.z+1<map_end.z:
 		try_regen_cell(vec+Vector3.BACK)
-		if vec.x-1>=0:
+		if vec.x-1>=map_start.x:
 			try_regen_cell(vec+Vector3.BACK+Vector3.LEFT)
-		if vec.x+1<map_size:
+		if vec.x+1<map_end.x:
 			try_regen_cell(vec+Vector3.BACK+Vector3.RIGHT)
 		
 		
-	if vec.x-1>=0:
+	if vec.x-1>=map_start.x:
 		try_regen_cell(vec+Vector3.LEFT)
-	if vec.x+1<map_size:
+	if vec.x+1<map_end.x:
 		try_regen_cell(vec+Vector3.RIGHT)
 
-	if vec.y-1>=0 and allow_down:
-		try_regen_cell(vec+Vector3.DOWN)
-		if vec.z-1>=0:
-			try_regen_cell(vec+Vector3.DOWN+Vector3.FORWARD)
-			if vec.x-1>=0:
-				try_regen_cell(vec+Vector3.DOWN+Vector3.FORWARD+Vector3.LEFT)
-			if vec.x+1<map_size:
-				try_regen_cell(vec+Vector3.DOWN+Vector3.FORWARD+Vector3.RIGHT)
-		if vec.z+1<map_size:
-			try_regen_cell(vec+Vector3.DOWN+Vector3.BACK)
-			if vec.x-1>=0:
-				try_regen_cell(vec+Vector3.DOWN+Vector3.BACK+Vector3.LEFT)
-			if vec.x+1<map_size:
-				try_regen_cell(vec+Vector3.DOWN+Vector3.BACK+Vector3.RIGHT)
-	if vec.y+1<map_size and allow_up:
-		try_regen_cell(vec+Vector3.UP)
-		if vec.z-1>=0:
-			try_regen_cell(vec+Vector3.UP+Vector3.FORWARD)
-			if vec.x-1>=0:
-				try_regen_cell(vec+Vector3.UP+Vector3.FORWARD+Vector3.LEFT)
-			if vec.x+1<map_size:
-				try_regen_cell(vec+Vector3.UP+Vector3.FORWARD+Vector3.RIGHT)
-		if vec.z+1<map_size:
-			try_regen_cell(vec+Vector3.UP+Vector3.BACK)
-			if vec.x-1>=0:
-				try_regen_cell(vec+Vector3.UP+Vector3.BACK+Vector3.LEFT)
-			if vec.x+1<map_size:
-				try_regen_cell(vec+Vector3.UP+Vector3.BACK+Vector3.RIGHT)
+#	if vec.y-1>=map_start.y and allow_down:
+#		try_regen_cell(vec+Vector3.DOWN)
+#		if vec.z-1>=0:
+#			try_regen_cell(vec+Vector3.DOWN+Vector3.FORWARD)
+#			if vec.x-1>=map_start.x:
+#				try_regen_cell(vec+Vector3.DOWN+Vector3.FORWARD+Vector3.LEFT)
+#			if vec.x+1<map_end.x:
+#				try_regen_cell(vec+Vector3.DOWN+Vector3.FORWARD+Vector3.RIGHT)
+#		if vec.z+1<map_end.z:
+#			try_regen_cell(vec+Vector3.DOWN+Vector3.BACK)
+#			if vec.x-1>=map_start.x:
+#				try_regen_cell(vec+Vector3.DOWN+Vector3.BACK+Vector3.LEFT)
+#			if vec.x+1<map_end.x:
+#				try_regen_cell(vec+Vector3.DOWN+Vector3.BACK+Vector3.RIGHT)
+#	if vec.y+1<map_end.y and allow_up:
+#		try_regen_cell(vec+Vector3.UP)
+#		if vec.z-1>=0:
+#			try_regen_cell(vec+Vector3.UP+Vector3.FORWARD)
+#			if vec.x-1>=map_start.x:
+#				try_regen_cell(vec+Vector3.UP+Vector3.FORWARD+Vector3.LEFT)
+#			if vec.x+1<map_end.x:
+#				try_regen_cell(vec+Vector3.UP+Vector3.FORWARD+Vector3.RIGHT)
+#		if vec.z+1<map_end.z:
+#			try_regen_cell(vec+Vector3.UP+Vector3.BACK)
+#			if vec.x-1>=map_start.x:
+#				try_regen_cell(vec+Vector3.UP+Vector3.BACK+Vector3.LEFT)
+#			if vec.x+1<map_end.x:
+#				try_regen_cell(vec+Vector3.UP+Vector3.BACK+Vector3.RIGHT)
 		
-func try_regen_cell(vec:Vector3):
+func try_regen_cell(vec:Vector3,mode:=0):
 	if get_cell_item(vec)!=-1:
-		set_cell_item(vec,-1)
-		if !waiting.has(vec) and can_check_cell(vec):
-			waiting.append(vec)
+		if can_check_cell(vec):
+			if !waiting.has(vec) and mode==0:
+				waiting.append(vec)
+			if !up_wait.has(vec) and mode==1: #up
+				up_wait.append(vec)
+			if !down_wait.has(vec) and mode==2: #down
+				down_wait.append(vec)
 
 
 func pickRandomValue(data: Array, dataWeights: Array):
