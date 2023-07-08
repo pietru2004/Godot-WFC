@@ -1,0 +1,2009 @@
+[gd_scene load_steps=325 format=3 uid="uid://ex6xdwop0ujy"]
+
+[ext_resource type="ArrayMesh" uid="uid://b0m6753utw2xd" path="res://Assets/Kenney/RoadTiles/roadTile_001.obj" id="1_6rkn4"]
+[ext_resource type="ArrayMesh" uid="uid://cj06imsj4pukk" path="res://Assets/Kenney/RoadTiles/roadTile_042.obj" id="2_uoi67"]
+[ext_resource type="ArrayMesh" uid="uid://crukf3ws3485s" path="res://Assets/Kenney/RoadTiles/roadTile_146.obj" id="3_n6rhb"]
+[ext_resource type="ArrayMesh" uid="uid://bx3ofmwfeohn8" path="res://Assets/Kenney/RoadTiles/roadTile_157.obj" id="4_0fv51"]
+[ext_resource type="ArrayMesh" uid="uid://bl7cj801ev634" path="res://Assets/Kenney/RoadTiles/roadTile_163.obj" id="5_6ipsp"]
+[ext_resource type="Script" path="res://addons/WFC_Based_Gen/nodes/WFCMapGenerator.gd" id="6_fqu0f"]
+[ext_resource type="Script" path="res://addons/WFC_Based_Gen/scripts/mesh_lib_rule_item.gd" id="7_pxb1c"]
+[ext_resource type="Resource" uid="uid://br6td7cbfwuta" path="res://addons/WFC_Based_Gen/demo1/defined_mesh_lib.tres" id="8_bmuf0"]
+[ext_resource type="Resource" uid="uid://cyogmdntlsesr" path="res://addons/WFC_Based_Gen/demo1/defined_rules_lib.tres" id="9_r7xf0"]
+[ext_resource type="ArrayMesh" uid="uid://bbhv44mkxp7iw" path="res://Assets/Kenney/RoadTiles/roadTile_036.obj" id="10_drx53"]
+[ext_resource type="ArrayMesh" uid="uid://dfr40krd606a8" path="res://Assets/Kenney/RoadTiles/roadTile_037.obj" id="11_ydgyr"]
+[ext_resource type="ArrayMesh" uid="uid://bkqqh8h6x03ch" path="res://Assets/Kenney/RoadTiles/roadTile_140.obj" id="12_r0h0l"]
+[ext_resource type="ArrayMesh" uid="uid://b1phmtshskt4g" path="res://Assets/Kenney/RoadTiles/roadTile_152.obj" id="13_ji8r7"]
+[ext_resource type="ArrayMesh" uid="uid://bpip0asqrmj3j" path="res://Assets/Kenney/RoadTiles/roadTile_002.obj" id="14_nnrhr"]
+[ext_resource type="ArrayMesh" uid="uid://q6m1uwy3xwyt" path="res://Assets/Kenney/RoadTiles/roadTile_003.obj" id="15_so30b"]
+[ext_resource type="ArrayMesh" uid="uid://bjwvq004gp2fm" path="res://Assets/Kenney/RoadTiles/roadTile_004.obj" id="16_o0lnu"]
+[ext_resource type="ArrayMesh" uid="uid://d3meewwdlf3w1" path="res://Assets/Kenney/RoadTiles/roadTile_005.obj" id="17_u4y61"]
+[ext_resource type="ArrayMesh" uid="uid://dcg1vxij8xtel" path="res://Assets/Kenney/RoadTiles/roadTile_006.obj" id="18_reubu"]
+[ext_resource type="ArrayMesh" uid="uid://cd322kbo102k5" path="res://Assets/Kenney/RoadTiles/roadTile_007.obj" id="19_81dyr"]
+[ext_resource type="ArrayMesh" uid="uid://dkyqi4qfsjaap" path="res://Assets/Kenney/RoadTiles/roadTile_008.obj" id="20_doo58"]
+[ext_resource type="ArrayMesh" uid="uid://bfxcrlc737y0r" path="res://Assets/Kenney/RoadTiles/roadTile_009.obj" id="21_boi8w"]
+[ext_resource type="ArrayMesh" uid="uid://bpcd3nqfduph8" path="res://Assets/Kenney/RoadTiles/roadTile_010.obj" id="22_4xr8f"]
+[ext_resource type="ArrayMesh" uid="uid://gafcpqufyu4k" path="res://Assets/Kenney/RoadTiles/roadTile_011.obj" id="23_4lqxv"]
+[ext_resource type="ArrayMesh" uid="uid://b718lbv3au5uu" path="res://Assets/Kenney/RoadTiles/roadTile_012.obj" id="24_w8wcm"]
+[ext_resource type="ArrayMesh" uid="uid://du2iqhc2g0pvp" path="res://Assets/Kenney/RoadTiles/roadTile_013.obj" id="25_b7hwm"]
+[ext_resource type="ArrayMesh" uid="uid://bfkba0ytfrxec" path="res://Assets/Kenney/RoadTiles/roadTile_014.obj" id="26_ms3nd"]
+[ext_resource type="ArrayMesh" uid="uid://y6a4lc5pjdcm" path="res://Assets/Kenney/RoadTiles/roadTile_015.obj" id="27_5yhv6"]
+[ext_resource type="ArrayMesh" uid="uid://c2vbw2phhvndk" path="res://Assets/Kenney/RoadTiles/roadTile_016.obj" id="28_2t7op"]
+[ext_resource type="ArrayMesh" uid="uid://dqyuclejcdqvx" path="res://Assets/Kenney/RoadTiles/roadTile_017.obj" id="29_ldeur"]
+[ext_resource type="ArrayMesh" uid="uid://cir0nll22gljy" path="res://Assets/Kenney/RoadTiles/roadTile_018.obj" id="30_wvhx6"]
+[ext_resource type="ArrayMesh" uid="uid://ccyg1vmq8qboo" path="res://Assets/Kenney/RoadTiles/roadTile_019.obj" id="31_i6gaf"]
+[ext_resource type="ArrayMesh" uid="uid://psjamaiw00pp" path="res://Assets/Kenney/RoadTiles/roadTile_020.obj" id="32_hcp5c"]
+[ext_resource type="ArrayMesh" uid="uid://b3b6d13sk3hll" path="res://Assets/Kenney/RoadTiles/roadTile_021.obj" id="33_1hbyj"]
+[ext_resource type="ArrayMesh" uid="uid://be38bu6exjoiv" path="res://Assets/Kenney/RoadTiles/roadTile_022.obj" id="34_3uc3e"]
+[ext_resource type="ArrayMesh" uid="uid://dc8s548ghv3ep" path="res://Assets/Kenney/RoadTiles/roadTile_023.obj" id="35_dea1i"]
+[ext_resource type="ArrayMesh" uid="uid://c4t7tixoae5h8" path="res://Assets/Kenney/RoadTiles/roadTile_024.obj" id="36_bhrxg"]
+[ext_resource type="ArrayMesh" uid="uid://cgjqn5ndcwca0" path="res://Assets/Kenney/RoadTiles/roadTile_025.obj" id="37_ha3or"]
+[ext_resource type="ArrayMesh" uid="uid://hgws5niogxpb" path="res://Assets/Kenney/RoadTiles/roadTile_026.obj" id="38_6i0qj"]
+[ext_resource type="ArrayMesh" uid="uid://b7ih6m162x6ia" path="res://Assets/Kenney/RoadTiles/roadTile_027.obj" id="39_fqoqs"]
+[ext_resource type="ArrayMesh" uid="uid://usa2ejxafq7p" path="res://Assets/Kenney/RoadTiles/roadTile_028.obj" id="40_77cot"]
+[ext_resource type="ArrayMesh" uid="uid://c7tp3tqtju8i1" path="res://Assets/Kenney/RoadTiles/roadTile_029.obj" id="41_hixtn"]
+[ext_resource type="ArrayMesh" uid="uid://cw64uisg5vxfi" path="res://Assets/Kenney/RoadTiles/roadTile_030.obj" id="42_rkqbs"]
+[ext_resource type="ArrayMesh" uid="uid://cxyavjspsh8y6" path="res://Assets/Kenney/RoadTiles/roadTile_031.obj" id="43_kspim"]
+[ext_resource type="ArrayMesh" uid="uid://cwp0cxsxhl5rb" path="res://Assets/Kenney/RoadTiles/roadTile_032.obj" id="44_3hlte"]
+[ext_resource type="ArrayMesh" uid="uid://y3c5gl7rmbfa" path="res://Assets/Kenney/RoadTiles/roadTile_033.obj" id="45_lxjbd"]
+[ext_resource type="ArrayMesh" uid="uid://yhrf8rox0p44" path="res://Assets/Kenney/RoadTiles/roadTile_034.obj" id="46_ci6vq"]
+[ext_resource type="ArrayMesh" uid="uid://csqtney8w6jtg" path="res://Assets/Kenney/RoadTiles/roadTile_035.obj" id="47_r41pp"]
+[ext_resource type="ArrayMesh" uid="uid://81sodynymnmq" path="res://Assets/Kenney/RoadTiles/roadTile_038.obj" id="48_d7f1k"]
+[ext_resource type="ArrayMesh" uid="uid://348lf2450jox" path="res://Assets/Kenney/RoadTiles/roadTile_039.obj" id="49_6t16t"]
+[ext_resource type="ArrayMesh" uid="uid://6j4rjohorljc" path="res://Assets/Kenney/RoadTiles/roadTile_040.obj" id="50_ot665"]
+[ext_resource type="ArrayMesh" uid="uid://ystedhqu3ckg" path="res://Assets/Kenney/RoadTiles/roadTile_041.obj" id="51_ctaux"]
+[ext_resource type="ArrayMesh" uid="uid://6wctx5ewt1f" path="res://Assets/Kenney/RoadTiles/roadTile_043.obj" id="52_nslfq"]
+[ext_resource type="ArrayMesh" uid="uid://cvsf367sks3d8" path="res://Assets/Kenney/RoadTiles/roadTile_044.obj" id="53_1heer"]
+[ext_resource type="ArrayMesh" uid="uid://b48i0b2okvwr8" path="res://Assets/Kenney/RoadTiles/roadTile_045.obj" id="54_0xadl"]
+[ext_resource type="ArrayMesh" uid="uid://r1e6kv1upl7y" path="res://Assets/Kenney/RoadTiles/roadTile_046.obj" id="55_3aiin"]
+[ext_resource type="ArrayMesh" uid="uid://2u4bvwty28k1" path="res://Assets/Kenney/RoadTiles/roadTile_047.obj" id="56_islt6"]
+[ext_resource type="ArrayMesh" uid="uid://4tduglxddlr4" path="res://Assets/Kenney/RoadTiles/roadTile_048.obj" id="57_i3dp4"]
+[ext_resource type="ArrayMesh" uid="uid://y5m1nfnsqvc5" path="res://Assets/Kenney/RoadTiles/roadTile_049.obj" id="58_7kdha"]
+[ext_resource type="ArrayMesh" uid="uid://cqq51m8fjraa5" path="res://Assets/Kenney/RoadTiles/roadTile_050.obj" id="59_06u1l"]
+[ext_resource type="ArrayMesh" uid="uid://bmmap0tfj2l7a" path="res://Assets/Kenney/RoadTiles/roadTile_051.obj" id="60_6v4b0"]
+[ext_resource type="ArrayMesh" uid="uid://7014ll05xval" path="res://Assets/Kenney/RoadTiles/roadTile_052.obj" id="61_bkjhl"]
+[ext_resource type="ArrayMesh" uid="uid://y6wjphwp4qou" path="res://Assets/Kenney/RoadTiles/roadTile_053.obj" id="62_0edng"]
+[ext_resource type="ArrayMesh" uid="uid://bw2a1trsytrf1" path="res://Assets/Kenney/RoadTiles/roadTile_054.obj" id="63_bfeca"]
+[ext_resource type="ArrayMesh" uid="uid://d1tpsug12ue26" path="res://Assets/Kenney/RoadTiles/roadTile_055.obj" id="64_fad66"]
+[ext_resource type="ArrayMesh" uid="uid://dorta6rhk3jl1" path="res://Assets/Kenney/RoadTiles/roadTile_056.obj" id="65_w681g"]
+[ext_resource type="ArrayMesh" uid="uid://b4otxxhdixaj0" path="res://Assets/Kenney/RoadTiles/roadTile_057.obj" id="66_ji18a"]
+[ext_resource type="ArrayMesh" uid="uid://b6gcjjg267dw7" path="res://Assets/Kenney/RoadTiles/roadTile_058.obj" id="67_7j6vk"]
+[ext_resource type="ArrayMesh" uid="uid://cdassihisi7hf" path="res://Assets/Kenney/RoadTiles/roadTile_059.obj" id="68_kt5el"]
+[ext_resource type="ArrayMesh" uid="uid://cnwqws4cx8h0a" path="res://Assets/Kenney/RoadTiles/roadTile_060.obj" id="69_fhujo"]
+[ext_resource type="ArrayMesh" uid="uid://8dqv03jrva77" path="res://Assets/Kenney/RoadTiles/roadTile_061.obj" id="70_albbc"]
+[ext_resource type="ArrayMesh" uid="uid://cwrl40jekktco" path="res://Assets/Kenney/RoadTiles/roadTile_062.obj" id="71_sucrw"]
+[ext_resource type="ArrayMesh" uid="uid://cyn6mggrbbull" path="res://Assets/Kenney/RoadTiles/roadTile_063.obj" id="72_hq7km"]
+[ext_resource type="ArrayMesh" uid="uid://csopnok661qjo" path="res://Assets/Kenney/RoadTiles/roadTile_064.obj" id="73_86gnk"]
+[ext_resource type="ArrayMesh" uid="uid://dgvleymoe3nyc" path="res://Assets/Kenney/RoadTiles/roadTile_065.obj" id="74_8vpij"]
+[ext_resource type="ArrayMesh" uid="uid://rw55tn4ruppe" path="res://Assets/Kenney/RoadTiles/roadTile_066.obj" id="75_yqrrt"]
+[ext_resource type="ArrayMesh" uid="uid://v7um627pr5oj" path="res://Assets/Kenney/RoadTiles/roadTile_067.obj" id="76_3w4g4"]
+[ext_resource type="ArrayMesh" uid="uid://cb2c33pqebhv2" path="res://Assets/Kenney/RoadTiles/roadTile_068.obj" id="77_g7xw7"]
+[ext_resource type="ArrayMesh" uid="uid://btl0v4snc8dxp" path="res://Assets/Kenney/RoadTiles/roadTile_069.obj" id="78_f8wa4"]
+[ext_resource type="ArrayMesh" uid="uid://q8alri0d2oc6" path="res://Assets/Kenney/RoadTiles/roadTile_070.obj" id="79_nhgce"]
+[ext_resource type="ArrayMesh" uid="uid://74koiynjfiku" path="res://Assets/Kenney/RoadTiles/roadTile_071.obj" id="80_fl1tr"]
+[ext_resource type="ArrayMesh" uid="uid://b40nkg8ypoipm" path="res://Assets/Kenney/RoadTiles/roadTile_072.obj" id="81_w1vg4"]
+[ext_resource type="ArrayMesh" uid="uid://c5pwmmqfwepsb" path="res://Assets/Kenney/RoadTiles/roadTile_073.obj" id="82_76pam"]
+[ext_resource type="ArrayMesh" uid="uid://dbb2emm708jn1" path="res://Assets/Kenney/RoadTiles/roadTile_074.obj" id="83_tilid"]
+[ext_resource type="ArrayMesh" uid="uid://bhurvmhycv3ly" path="res://Assets/Kenney/RoadTiles/roadTile_075.obj" id="84_b1f5l"]
+[ext_resource type="ArrayMesh" uid="uid://dngo0l8tikn5m" path="res://Assets/Kenney/RoadTiles/roadTile_076.obj" id="85_xkjn3"]
+[ext_resource type="ArrayMesh" uid="uid://cnhw3du0ao8dq" path="res://Assets/Kenney/RoadTiles/roadTile_077.obj" id="86_8pmyu"]
+[ext_resource type="ArrayMesh" uid="uid://dfs1pwmda5066" path="res://Assets/Kenney/RoadTiles/roadTile_078.obj" id="87_f7qs0"]
+[ext_resource type="ArrayMesh" uid="uid://bfagw0c7b660t" path="res://Assets/Kenney/RoadTiles/roadTile_079.obj" id="88_2hcs0"]
+[ext_resource type="ArrayMesh" uid="uid://btgfw128biqid" path="res://Assets/Kenney/RoadTiles/roadTile_080.obj" id="89_544an"]
+[ext_resource type="ArrayMesh" uid="uid://cgmk585riiqca" path="res://Assets/Kenney/RoadTiles/roadTile_081.obj" id="90_c62xm"]
+[ext_resource type="ArrayMesh" uid="uid://sgq1e7yh154c" path="res://Assets/Kenney/RoadTiles/roadTile_082.obj" id="91_a345g"]
+[ext_resource type="ArrayMesh" uid="uid://x230iqb1c6tn" path="res://Assets/Kenney/RoadTiles/roadTile_083.obj" id="92_cbe8q"]
+[ext_resource type="ArrayMesh" uid="uid://ctm2f816u2a3y" path="res://Assets/Kenney/RoadTiles/roadTile_084.obj" id="93_0tyuy"]
+[ext_resource type="ArrayMesh" uid="uid://b5dna4w1q5h00" path="res://Assets/Kenney/RoadTiles/roadTile_085.obj" id="94_8blei"]
+[ext_resource type="ArrayMesh" uid="uid://cq7xaewpacdl1" path="res://Assets/Kenney/RoadTiles/roadTile_086.obj" id="95_y4162"]
+[ext_resource type="ArrayMesh" uid="uid://ct4ay43goti7u" path="res://Assets/Kenney/RoadTiles/roadTile_087.obj" id="96_fmmxv"]
+[ext_resource type="ArrayMesh" uid="uid://d3ili78qs2jeh" path="res://Assets/Kenney/RoadTiles/roadTile_088.obj" id="97_4mlnq"]
+[ext_resource type="ArrayMesh" uid="uid://bkkkn33tu3ke7" path="res://Assets/Kenney/RoadTiles/roadTile_089.obj" id="98_xkyi8"]
+[ext_resource type="ArrayMesh" uid="uid://b5es3dtjjygrn" path="res://Assets/Kenney/RoadTiles/roadTile_090.obj" id="99_jdtre"]
+[ext_resource type="ArrayMesh" uid="uid://pisgc4dqdpu" path="res://Assets/Kenney/RoadTiles/roadTile_091.obj" id="100_rvhhu"]
+[ext_resource type="ArrayMesh" uid="uid://d1grgsauohvt6" path="res://Assets/Kenney/RoadTiles/roadTile_092.obj" id="101_f1u4g"]
+[ext_resource type="ArrayMesh" uid="uid://dw34axom5pheq" path="res://Assets/Kenney/RoadTiles/roadTile_093.obj" id="102_fnima"]
+[ext_resource type="ArrayMesh" uid="uid://cyqie1vqggirv" path="res://Assets/Kenney/RoadTiles/roadTile_094.obj" id="103_p8hpl"]
+[ext_resource type="ArrayMesh" uid="uid://c1xh8spu0egx" path="res://Assets/Kenney/RoadTiles/roadTile_095.obj" id="104_gqga5"]
+[ext_resource type="ArrayMesh" uid="uid://ca6nk7aapriep" path="res://Assets/Kenney/RoadTiles/roadTile_096.obj" id="105_0tfgn"]
+[ext_resource type="ArrayMesh" uid="uid://sgt0hpv7abx5" path="res://Assets/Kenney/RoadTiles/roadTile_097.obj" id="106_61lmn"]
+[ext_resource type="ArrayMesh" uid="uid://ca2dq01k2ucpt" path="res://Assets/Kenney/RoadTiles/roadTile_098.obj" id="107_ntiyb"]
+[ext_resource type="ArrayMesh" uid="uid://blev6gqcl1lv5" path="res://Assets/Kenney/RoadTiles/roadTile_099.obj" id="108_gd1n6"]
+[ext_resource type="ArrayMesh" uid="uid://bn652i8v32et0" path="res://Assets/Kenney/RoadTiles/roadTile_100.obj" id="109_82kke"]
+[ext_resource type="ArrayMesh" uid="uid://djpufwc4gw82b" path="res://Assets/Kenney/RoadTiles/roadTile_101.obj" id="110_qlq48"]
+[ext_resource type="ArrayMesh" uid="uid://465dia0b8ue4" path="res://Assets/Kenney/RoadTiles/roadTile_102.obj" id="111_4tv8h"]
+[ext_resource type="ArrayMesh" uid="uid://mwc1f28onnxp" path="res://Assets/Kenney/RoadTiles/roadTile_103.obj" id="112_gkwno"]
+[ext_resource type="ArrayMesh" uid="uid://cq067c2lgo4op" path="res://Assets/Kenney/RoadTiles/roadTile_104.obj" id="113_0ccvu"]
+[ext_resource type="ArrayMesh" uid="uid://xpndiyuy83mg" path="res://Assets/Kenney/RoadTiles/roadTile_105.obj" id="114_x8l18"]
+[ext_resource type="ArrayMesh" uid="uid://bdx27l3d8lllk" path="res://Assets/Kenney/RoadTiles/roadTile_106.obj" id="115_hni84"]
+[ext_resource type="ArrayMesh" uid="uid://pnba6m8l73ms" path="res://Assets/Kenney/RoadTiles/roadTile_107.obj" id="116_p5q0q"]
+[ext_resource type="ArrayMesh" uid="uid://ct2e2sx2713wd" path="res://Assets/Kenney/RoadTiles/roadTile_108.obj" id="117_spkua"]
+[ext_resource type="ArrayMesh" uid="uid://dpougfgmbs7a3" path="res://Assets/Kenney/RoadTiles/roadTile_109.obj" id="118_s6hbp"]
+[ext_resource type="ArrayMesh" uid="uid://b0ja17nynulcq" path="res://Assets/Kenney/RoadTiles/roadTile_110.obj" id="119_pbjwk"]
+[ext_resource type="ArrayMesh" uid="uid://p3mnv4tpsfxj" path="res://Assets/Kenney/RoadTiles/roadTile_111.obj" id="120_a0rxa"]
+[ext_resource type="ArrayMesh" uid="uid://lofkxoss3o76" path="res://Assets/Kenney/RoadTiles/roadTile_112.obj" id="121_03wap"]
+[ext_resource type="ArrayMesh" uid="uid://fpl2retiiydm" path="res://Assets/Kenney/RoadTiles/roadTile_113.obj" id="122_1gcyo"]
+[ext_resource type="ArrayMesh" uid="uid://drmcceqgk4tif" path="res://Assets/Kenney/RoadTiles/roadTile_114.obj" id="123_4oo5j"]
+[ext_resource type="ArrayMesh" uid="uid://mutpmrq23ekk" path="res://Assets/Kenney/RoadTiles/roadTile_115.obj" id="124_0rsnw"]
+[ext_resource type="ArrayMesh" uid="uid://bsc25csms8qu8" path="res://Assets/Kenney/RoadTiles/roadTile_116.obj" id="125_odyci"]
+[ext_resource type="ArrayMesh" uid="uid://cwyoddxgkku6o" path="res://Assets/Kenney/RoadTiles/roadTile_117.obj" id="126_ity2d"]
+[ext_resource type="ArrayMesh" uid="uid://d341tqusccn22" path="res://Assets/Kenney/RoadTiles/roadTile_118.obj" id="127_iyd8m"]
+[ext_resource type="ArrayMesh" uid="uid://5di1my084d2v" path="res://Assets/Kenney/RoadTiles/roadTile_119.obj" id="128_dsmgr"]
+[ext_resource type="ArrayMesh" uid="uid://c2cj0a7b5aujs" path="res://Assets/Kenney/RoadTiles/roadTile_120.obj" id="129_nrhbh"]
+[ext_resource type="ArrayMesh" uid="uid://cyt0xij84bpsu" path="res://Assets/Kenney/RoadTiles/roadTile_121.obj" id="130_cs3sg"]
+[ext_resource type="ArrayMesh" uid="uid://c83lquexymqlh" path="res://Assets/Kenney/RoadTiles/roadTile_122.obj" id="131_drele"]
+[ext_resource type="ArrayMesh" uid="uid://cof2bo1jwo3mg" path="res://Assets/Kenney/RoadTiles/roadTile_123.obj" id="132_ws2g3"]
+[ext_resource type="ArrayMesh" uid="uid://b8y855m52quw" path="res://Assets/Kenney/RoadTiles/roadTile_124.obj" id="133_e0f23"]
+[ext_resource type="ArrayMesh" uid="uid://b23oy5k2savoj" path="res://Assets/Kenney/RoadTiles/roadTile_125.obj" id="134_vfgpy"]
+[ext_resource type="ArrayMesh" uid="uid://dtelam5le31b" path="res://Assets/Kenney/RoadTiles/roadTile_126.obj" id="135_bpfox"]
+[ext_resource type="ArrayMesh" uid="uid://dqrjace582qd4" path="res://Assets/Kenney/RoadTiles/roadTile_127.obj" id="136_p5wmx"]
+[ext_resource type="ArrayMesh" uid="uid://cavgu00sylvot" path="res://Assets/Kenney/RoadTiles/roadTile_128.obj" id="137_2ap8j"]
+[ext_resource type="ArrayMesh" uid="uid://cswuu1kgxu7uw" path="res://Assets/Kenney/RoadTiles/roadTile_129.obj" id="138_46pyq"]
+[ext_resource type="ArrayMesh" uid="uid://dsh56xbdvucs4" path="res://Assets/Kenney/RoadTiles/roadTile_130.obj" id="139_tqeua"]
+[ext_resource type="ArrayMesh" uid="uid://ksseg6vsmm55" path="res://Assets/Kenney/RoadTiles/roadTile_131.obj" id="140_l2ghc"]
+[ext_resource type="ArrayMesh" uid="uid://dlgn435rk67s6" path="res://Assets/Kenney/RoadTiles/roadTile_132.obj" id="141_bm50i"]
+[ext_resource type="ArrayMesh" uid="uid://cuh60l4jjp3vy" path="res://Assets/Kenney/RoadTiles/roadTile_133.obj" id="142_5o20y"]
+[ext_resource type="ArrayMesh" uid="uid://i3mrhawxy6k4" path="res://Assets/Kenney/RoadTiles/roadTile_134.obj" id="143_ufunt"]
+[ext_resource type="ArrayMesh" uid="uid://dl4vdikpo6wkg" path="res://Assets/Kenney/RoadTiles/roadTile_135.obj" id="144_mwl0r"]
+[ext_resource type="ArrayMesh" uid="uid://46gonp2hbf4n" path="res://Assets/Kenney/RoadTiles/roadTile_136.obj" id="145_w7g8x"]
+[ext_resource type="ArrayMesh" uid="uid://d7orocejcej1" path="res://Assets/Kenney/RoadTiles/roadTile_137.obj" id="146_a20l6"]
+[ext_resource type="ArrayMesh" uid="uid://08r458opgnxl" path="res://Assets/Kenney/RoadTiles/roadTile_138.obj" id="147_letha"]
+[ext_resource type="ArrayMesh" uid="uid://br5klurfsqrgc" path="res://Assets/Kenney/RoadTiles/roadTile_139.obj" id="148_n6co3"]
+[ext_resource type="ArrayMesh" uid="uid://dc6w00hhcutms" path="res://Assets/Kenney/RoadTiles/roadTile_141.obj" id="149_8tug6"]
+[ext_resource type="ArrayMesh" uid="uid://dgp2hg0krdpn" path="res://Assets/Kenney/RoadTiles/roadTile_142.obj" id="150_fve4y"]
+[ext_resource type="ArrayMesh" uid="uid://c3uc2bwoiskf8" path="res://Assets/Kenney/RoadTiles/roadTile_143.obj" id="151_733n6"]
+[ext_resource type="ArrayMesh" uid="uid://cahlr15x2b6y6" path="res://Assets/Kenney/RoadTiles/roadTile_144.obj" id="152_jah8w"]
+[ext_resource type="ArrayMesh" uid="uid://6ohi5edb8h0k" path="res://Assets/Kenney/RoadTiles/roadTile_145.obj" id="153_jqgdj"]
+[ext_resource type="ArrayMesh" uid="uid://d10djr713m25s" path="res://Assets/Kenney/RoadTiles/roadTile_147.obj" id="154_bkhdd"]
+[ext_resource type="ArrayMesh" uid="uid://djdqemmu7rfw7" path="res://Assets/Kenney/RoadTiles/roadTile_148.obj" id="155_48n51"]
+[ext_resource type="ArrayMesh" uid="uid://csxoo2xjue4hl" path="res://Assets/Kenney/RoadTiles/roadTile_149.obj" id="156_wxk7b"]
+[ext_resource type="ArrayMesh" uid="uid://dwxuae7fu7mad" path="res://Assets/Kenney/RoadTiles/roadTile_150.obj" id="157_cvx42"]
+[ext_resource type="ArrayMesh" uid="uid://c3pguqfhndw6q" path="res://Assets/Kenney/RoadTiles/roadTile_151.obj" id="158_qqy7g"]
+[ext_resource type="ArrayMesh" uid="uid://l38vl7s7wi44" path="res://Assets/Kenney/RoadTiles/roadTile_153.obj" id="159_ur45e"]
+[ext_resource type="ArrayMesh" uid="uid://c2p32xfnpve3a" path="res://Assets/Kenney/RoadTiles/roadTile_154.obj" id="160_4jts5"]
+[ext_resource type="ArrayMesh" uid="uid://ogng4b3vmulx" path="res://Assets/Kenney/RoadTiles/roadTile_155.obj" id="161_qyejc"]
+[ext_resource type="ArrayMesh" uid="uid://d315hnspp53q0" path="res://Assets/Kenney/RoadTiles/roadTile_156.obj" id="162_xouy6"]
+[ext_resource type="ArrayMesh" uid="uid://4nfvps3mx271" path="res://Assets/Kenney/RoadTiles/roadTile_158.obj" id="163_frets"]
+[ext_resource type="ArrayMesh" uid="uid://bvg4rbpy3xgqq" path="res://Assets/Kenney/RoadTiles/roadTile_159.obj" id="164_ti5gf"]
+[ext_resource type="ArrayMesh" uid="uid://brrec3xsscq5q" path="res://Assets/Kenney/RoadTiles/roadTile_160.obj" id="165_kgr36"]
+[ext_resource type="ArrayMesh" uid="uid://kn8ojw5pljud" path="res://Assets/Kenney/RoadTiles/roadTile_161.obj" id="166_mk8wu"]
+[ext_resource type="ArrayMesh" uid="uid://cmh3jdxpe0m6a" path="res://Assets/Kenney/RoadTiles/roadTile_162.obj" id="167_gxj0g"]
+[ext_resource type="ArrayMesh" uid="uid://cgj2c0664ipki" path="res://Assets/Kenney/RoadTiles/roadTile_164.obj" id="168_uomyw"]
+[ext_resource type="ArrayMesh" uid="uid://lmk3c3n2hh8g" path="res://Assets/Kenney/RoadTiles/roadTile_165.obj" id="169_pknfo"]
+[ext_resource type="ArrayMesh" uid="uid://d1foulmxhichf" path="res://Assets/Kenney/RoadTiles/roadTile_166.obj" id="170_qbl2w"]
+[ext_resource type="ArrayMesh" uid="uid://0m7ftp3ciigc" path="res://Assets/Kenney/RoadTiles/roadTile_167.obj" id="171_dqcgp"]
+[ext_resource type="ArrayMesh" uid="uid://bppu5t5qqsfmj" path="res://Assets/Kenney/RoadTiles/roadTile_168.obj" id="172_wj6o4"]
+[ext_resource type="ArrayMesh" uid="uid://bnxi6voyfnwxc" path="res://Assets/Kenney/RoadTiles/roadTile_169.obj" id="173_xy6g7"]
+[ext_resource type="ArrayMesh" uid="uid://d3v5pt7ghpm8" path="res://Assets/Kenney/RoadTiles/roadTile_170.obj" id="174_06nd1"]
+[ext_resource type="ArrayMesh" uid="uid://bhemanun3rrxa" path="res://Assets/Kenney/RoadTiles/roadTile_171.obj" id="175_fk6cx"]
+[ext_resource type="ArrayMesh" uid="uid://b8mswwokdu7hn" path="res://Assets/Kenney/RoadTiles/roadTile_172.obj" id="176_fjny5"]
+[ext_resource type="ArrayMesh" uid="uid://dbpbqh5nrlmsy" path="res://Assets/Kenney/RoadTiles/roadTile_173.obj" id="177_qjbbo"]
+[ext_resource type="ArrayMesh" uid="uid://bukddfb6tfds2" path="res://Assets/Kenney/RoadTiles/roadTile_174.obj" id="178_iw3hf"]
+[ext_resource type="ArrayMesh" uid="uid://d0eyxwdultswg" path="res://Assets/Kenney/RoadTiles/roadTile_175.obj" id="179_ajjan"]
+[ext_resource type="ArrayMesh" uid="uid://cqhulsbeej2by" path="res://Assets/Kenney/RoadTiles/roadTile_176.obj" id="180_l2ge0"]
+[ext_resource type="ArrayMesh" uid="uid://bvok6wrr6r4lo" path="res://Assets/Kenney/RoadTiles/roadTile_177.obj" id="181_mitn2"]
+[ext_resource type="ArrayMesh" uid="uid://cw4ljtdu3fjkv" path="res://Assets/Kenney/RoadTiles/roadTile_178.obj" id="182_dsj4l"]
+[ext_resource type="ArrayMesh" uid="uid://bmnl0ff7bcqsh" path="res://Assets/Kenney/RoadTiles/roadTile_179.obj" id="183_jmrwa"]
+[ext_resource type="ArrayMesh" uid="uid://1gs34kakyifa" path="res://Assets/Kenney/RoadTiles/roadTile_180.obj" id="184_jsvjf"]
+[ext_resource type="ArrayMesh" uid="uid://blfb1im7xqnnv" path="res://Assets/Kenney/RoadTiles/roadTile_181.obj" id="185_2f52l"]
+[ext_resource type="ArrayMesh" uid="uid://dchliw1aenijb" path="res://Assets/Kenney/RoadTiles/roadTile_182.obj" id="186_dqvl1"]
+[ext_resource type="ArrayMesh" uid="uid://boy5p2rr6k58l" path="res://Assets/Kenney/RoadTiles/roadTile_183.obj" id="187_ayyt8"]
+[ext_resource type="ArrayMesh" uid="uid://tdprfd4ww5fh" path="res://Assets/Kenney/RoadTiles/roadTile_184.obj" id="188_odmko"]
+[ext_resource type="ArrayMesh" uid="uid://djw1fmhsb0lvg" path="res://Assets/Kenney/RoadTiles/roadTile_185.obj" id="189_71hun"]
+[ext_resource type="ArrayMesh" uid="uid://cvjh7yekgf7e8" path="res://Assets/Kenney/RoadTiles/roadTile_186.obj" id="190_a2a5k"]
+[ext_resource type="ArrayMesh" uid="uid://gm0ntbadjuaq" path="res://Assets/Kenney/RoadTiles/roadTile_187.obj" id="191_oddfn"]
+[ext_resource type="ArrayMesh" uid="uid://brpscjapkmrti" path="res://Assets/Kenney/RoadTiles/roadTile_188.obj" id="192_lh361"]
+[ext_resource type="ArrayMesh" uid="uid://dyroujyrrin5j" path="res://Assets/Kenney/RoadTiles/roadTile_189.obj" id="193_6g7p2"]
+[ext_resource type="ArrayMesh" uid="uid://be5yxa3wsv1t3" path="res://Assets/Kenney/RoadTiles/roadTile_190.obj" id="194_cy5e8"]
+[ext_resource type="ArrayMesh" uid="uid://dkqywb07klwgk" path="res://Assets/Kenney/RoadTiles/roadTile_191.obj" id="195_rg4k5"]
+[ext_resource type="ArrayMesh" uid="uid://c4bfd51srack" path="res://Assets/Kenney/RoadTiles/roadTile_192.obj" id="196_s3cob"]
+[ext_resource type="ArrayMesh" uid="uid://cw86g3f7d4xqu" path="res://Assets/Kenney/RoadTiles/roadTile_193.obj" id="197_7hq7f"]
+[ext_resource type="ArrayMesh" uid="uid://db62pifug8p8" path="res://Assets/Kenney/RoadTiles/roadTile_194.obj" id="198_ywup5"]
+[ext_resource type="ArrayMesh" uid="uid://csckyiapdtxdn" path="res://Assets/Kenney/RoadTiles/roadTile_195.obj" id="199_owbql"]
+[ext_resource type="ArrayMesh" uid="uid://bsap323yaoj8h" path="res://Assets/Kenney/RoadTiles/roadTile_196.obj" id="200_13fhy"]
+[ext_resource type="ArrayMesh" uid="uid://bahhnqs1buh6w" path="res://Assets/Kenney/RoadTiles/roadTile_197.obj" id="201_ye7yc"]
+[ext_resource type="ArrayMesh" uid="uid://4qfm00wxo8ha" path="res://Assets/Kenney/RoadTiles/roadTile_198.obj" id="202_pvt1h"]
+[ext_resource type="ArrayMesh" uid="uid://dxpe44qats2ec" path="res://Assets/Kenney/RoadTiles/roadTile_199.obj" id="203_kahgt"]
+[ext_resource type="ArrayMesh" uid="uid://bbh2jom0h5en2" path="res://Assets/Kenney/RoadTiles/roadTile_200.obj" id="204_0wjww"]
+[ext_resource type="ArrayMesh" uid="uid://c6yjhcm5sb318" path="res://Assets/Kenney/RoadTiles/roadTile_201.obj" id="205_ud4o0"]
+[ext_resource type="ArrayMesh" uid="uid://cfe4bks71xhl3" path="res://Assets/Kenney/RoadTiles/roadTile_202.obj" id="206_4rybp"]
+[ext_resource type="ArrayMesh" uid="uid://ccty8mvpnxrbh" path="res://Assets/Kenney/RoadTiles/roadTile_203.obj" id="207_wwmwk"]
+[ext_resource type="ArrayMesh" uid="uid://b8uhs1x4ux7qk" path="res://Assets/Kenney/RoadTiles/roadTile_204.obj" id="208_f2651"]
+[ext_resource type="ArrayMesh" uid="uid://dqsyyky685vg7" path="res://Assets/Kenney/RoadTiles/roadTile_205.obj" id="209_h6wu1"]
+[ext_resource type="ArrayMesh" uid="uid://bykkcalsjcv1" path="res://Assets/Kenney/RoadTiles/roadTile_206.obj" id="210_bobf8"]
+[ext_resource type="ArrayMesh" uid="uid://doucebgd447vo" path="res://Assets/Kenney/RoadTiles/roadTile_207.obj" id="211_yrhbk"]
+[ext_resource type="ArrayMesh" uid="uid://cjladqiu7d55e" path="res://Assets/Kenney/RoadTiles/roadTile_208.obj" id="212_xwkb8"]
+[ext_resource type="ArrayMesh" uid="uid://dpiat4onrlhn" path="res://Assets/Kenney/RoadTiles/roadTile_209.obj" id="213_yueh1"]
+[ext_resource type="ArrayMesh" uid="uid://cdycpcmobkpo1" path="res://Assets/Kenney/RoadTiles/roadTile_210.obj" id="214_rjqww"]
+[ext_resource type="ArrayMesh" uid="uid://csll3btiex2ns" path="res://Assets/Kenney/RoadTiles/roadTile_211.obj" id="215_i7lts"]
+[ext_resource type="ArrayMesh" uid="uid://uvxmr31pd553" path="res://Assets/Kenney/RoadTiles/roadTile_212.obj" id="216_6y6mk"]
+[ext_resource type="ArrayMesh" uid="uid://dubdtttmnwfpx" path="res://Assets/Kenney/RoadTiles/roadTile_213.obj" id="217_usduy"]
+[ext_resource type="ArrayMesh" uid="uid://dq817h0mwl03s" path="res://Assets/Kenney/RoadTiles/roadTile_214.obj" id="218_qg1fw"]
+[ext_resource type="ArrayMesh" uid="uid://ctvpvmcmwuxvi" path="res://Assets/Kenney/RoadTiles/roadTile_215.obj" id="219_vq2j7"]
+[ext_resource type="ArrayMesh" uid="uid://bwu21k6a0u1e1" path="res://Assets/Kenney/RoadTiles/roadTile_216.obj" id="220_w2loa"]
+[ext_resource type="ArrayMesh" uid="uid://bihvmv10g18m2" path="res://Assets/Kenney/RoadTiles/roadTile_217.obj" id="221_k3qd3"]
+[ext_resource type="ArrayMesh" uid="uid://5ngum0qsbba3" path="res://Assets/Kenney/RoadTiles/roadTile_218.obj" id="222_q6yls"]
+[ext_resource type="ArrayMesh" uid="uid://0v4gs1svonc1" path="res://Assets/Kenney/RoadTiles/roadTile_219.obj" id="223_lvevi"]
+[ext_resource type="ArrayMesh" uid="uid://c3d3dpolk0cim" path="res://Assets/Kenney/RoadTiles/roadTile_220.obj" id="224_dclu4"]
+[ext_resource type="ArrayMesh" uid="uid://oxowkrd6gpk" path="res://Assets/Kenney/RoadTiles/roadTile_221.obj" id="225_bpyud"]
+[ext_resource type="ArrayMesh" uid="uid://kdindwbix7r0" path="res://Assets/Kenney/RoadTiles/roadTile_222.obj" id="226_kg5kh"]
+[ext_resource type="ArrayMesh" uid="uid://d28hbo73a010y" path="res://Assets/Kenney/RoadTiles/roadTile_223.obj" id="227_v7esc"]
+[ext_resource type="ArrayMesh" uid="uid://bohftka8sjyjk" path="res://Assets/Kenney/RoadTiles/roadTile_224.obj" id="228_osru3"]
+[ext_resource type="ArrayMesh" uid="uid://b2kvhnwytc6xt" path="res://Assets/Kenney/RoadTiles/roadTile_225.obj" id="229_dlp4o"]
+[ext_resource type="ArrayMesh" uid="uid://0f7t2js0bi1p" path="res://Assets/Kenney/RoadTiles/roadTile_226.obj" id="230_x1wqu"]
+[ext_resource type="ArrayMesh" uid="uid://dphy3uml42odm" path="res://Assets/Kenney/RoadTiles/roadTile_227.obj" id="231_6rx6c"]
+[ext_resource type="ArrayMesh" uid="uid://dy622d1gt5ybx" path="res://Assets/Kenney/RoadTiles/roadTile_228.obj" id="232_dvq5p"]
+[ext_resource type="ArrayMesh" uid="uid://j1rmge67inll" path="res://Assets/Kenney/RoadTiles/roadTile_229.obj" id="233_0kjb4"]
+[ext_resource type="ArrayMesh" uid="uid://2s1b8byc6akr" path="res://Assets/Kenney/RoadTiles/roadTile_230.obj" id="234_h42ty"]
+[ext_resource type="ArrayMesh" uid="uid://dqpn7r77pjr6o" path="res://Assets/Kenney/RoadTiles/roadTile_231.obj" id="235_3f71c"]
+[ext_resource type="ArrayMesh" uid="uid://bymd4bbm0fhot" path="res://Assets/Kenney/RoadTiles/roadTile_232.obj" id="236_ygotu"]
+[ext_resource type="ArrayMesh" uid="uid://bekr8ofvoc3jb" path="res://Assets/Kenney/RoadTiles/roadTile_233.obj" id="237_lep3f"]
+[ext_resource type="ArrayMesh" uid="uid://dd854sakia6v5" path="res://Assets/Kenney/RoadTiles/roadTile_234.obj" id="238_f6nou"]
+[ext_resource type="ArrayMesh" uid="uid://dhlb7j0bop6dr" path="res://Assets/Kenney/RoadTiles/roadTile_235.obj" id="239_tftq6"]
+[ext_resource type="ArrayMesh" uid="uid://4ea4sd2bngo7" path="res://Assets/Kenney/RoadTiles/roadTile_236.obj" id="240_np2ee"]
+[ext_resource type="ArrayMesh" uid="uid://dxv5yafref34h" path="res://Assets/Kenney/RoadTiles/roadTile_237.obj" id="241_l0euu"]
+[ext_resource type="ArrayMesh" uid="uid://dbmgw0esgivhk" path="res://Assets/Kenney/RoadTiles/roadTile_238.obj" id="242_vf2tc"]
+[ext_resource type="ArrayMesh" uid="uid://4bbxt5g47cyo" path="res://Assets/Kenney/RoadTiles/roadTile_239.obj" id="243_1fayl"]
+[ext_resource type="ArrayMesh" uid="uid://35sf0likjox5" path="res://Assets/Kenney/RoadTiles/roadTile_240.obj" id="244_tcxuj"]
+[ext_resource type="ArrayMesh" uid="uid://8utvpg5kdkac" path="res://Assets/Kenney/RoadTiles/roadTile_241.obj" id="245_vxa1y"]
+[ext_resource type="ArrayMesh" uid="uid://rhtlcxy1tfnh" path="res://Assets/Kenney/RoadTiles/roadTile_242.obj" id="246_vjj5c"]
+[ext_resource type="ArrayMesh" uid="uid://ku6j5xxjufe4" path="res://Assets/Kenney/RoadTiles/roadTile_243.obj" id="247_u2s3i"]
+[ext_resource type="ArrayMesh" uid="uid://r48dsubtbhmq" path="res://Assets/Kenney/RoadTiles/roadTile_244.obj" id="248_ih0ld"]
+[ext_resource type="ArrayMesh" uid="uid://bgobxbcx4uj4b" path="res://Assets/Kenney/RoadTiles/roadTile_245.obj" id="249_m8pde"]
+[ext_resource type="ArrayMesh" uid="uid://bvc8uqy872y5q" path="res://Assets/Kenney/RoadTiles/roadTile_246.obj" id="250_6jskh"]
+[ext_resource type="ArrayMesh" uid="uid://dk2qxkm8885n1" path="res://Assets/Kenney/RoadTiles/roadTile_247.obj" id="251_6nimg"]
+[ext_resource type="ArrayMesh" uid="uid://dpcsv3jt2p7m0" path="res://Assets/Kenney/RoadTiles/roadTile_248.obj" id="252_bfttf"]
+[ext_resource type="ArrayMesh" uid="uid://uecdp0tjqcwt" path="res://Assets/Kenney/RoadTiles/roadTile_249.obj" id="253_uul0n"]
+[ext_resource type="ArrayMesh" uid="uid://c8xy1rtxy0a3i" path="res://Assets/Kenney/RoadTiles/roadTile_250.obj" id="254_vsfrd"]
+[ext_resource type="ArrayMesh" uid="uid://du8qaekgemc0j" path="res://Assets/Kenney/RoadTiles/roadTile_251.obj" id="255_iqs7h"]
+[ext_resource type="ArrayMesh" uid="uid://d3mygnlofj46q" path="res://Assets/Kenney/RoadTiles/roadTile_252.obj" id="256_sj8tj"]
+[ext_resource type="ArrayMesh" uid="uid://btblnxixuibl1" path="res://Assets/Kenney/RoadTiles/roadTile_253.obj" id="257_gvxgn"]
+[ext_resource type="ArrayMesh" uid="uid://b7yitq25xtrct" path="res://Assets/Kenney/RoadTiles/roadTile_254.obj" id="258_iqqia"]
+[ext_resource type="ArrayMesh" uid="uid://cif45rm8ji46b" path="res://Assets/Kenney/RoadTiles/roadTile_255.obj" id="259_mc3aj"]
+[ext_resource type="ArrayMesh" uid="uid://bgqgq4ggm1l36" path="res://Assets/Kenney/RoadTiles/roadTile_256.obj" id="260_68alt"]
+[ext_resource type="ArrayMesh" uid="uid://bc2am0nj7m2us" path="res://Assets/Kenney/RoadTiles/roadTile_257.obj" id="261_1mysx"]
+[ext_resource type="ArrayMesh" uid="uid://bis76eh2ye5g4" path="res://Assets/Kenney/RoadTiles/roadTile_258.obj" id="262_e33hp"]
+[ext_resource type="ArrayMesh" uid="uid://dfc1yyehgbnqp" path="res://Assets/Kenney/RoadTiles/roadTile_259.obj" id="263_elnwy"]
+[ext_resource type="ArrayMesh" uid="uid://wayovkyv5l58" path="res://Assets/Kenney/RoadTiles/roadTile_260.obj" id="264_yiylr"]
+[ext_resource type="ArrayMesh" uid="uid://dh83vprir0gj8" path="res://Assets/Kenney/RoadTiles/roadTile_261.obj" id="265_ho316"]
+[ext_resource type="ArrayMesh" uid="uid://0lwc0pag6ilf" path="res://Assets/Kenney/RoadTiles/roadTile_262.obj" id="266_iuga3"]
+[ext_resource type="ArrayMesh" uid="uid://drwrih6joifnh" path="res://Assets/Kenney/RoadTiles/roadTile_263.obj" id="267_w4sxs"]
+[ext_resource type="ArrayMesh" uid="uid://el2xub27vr6b" path="res://Assets/Kenney/RoadTiles/roadTile_264.obj" id="268_25fps"]
+[ext_resource type="ArrayMesh" uid="uid://lo2qilwsxo2f" path="res://Assets/Kenney/RoadTiles/roadTile_265.obj" id="269_72ggm"]
+[ext_resource type="ArrayMesh" uid="uid://dtpw75xilpwmv" path="res://Assets/Kenney/RoadTiles/roadTile_266.obj" id="270_gvo1s"]
+[ext_resource type="ArrayMesh" uid="uid://33os0x75a48d" path="res://Assets/Kenney/RoadTiles/roadTile_267.obj" id="271_h4a44"]
+[ext_resource type="ArrayMesh" uid="uid://drw1ekgr7uauq" path="res://Assets/Kenney/RoadTiles/roadTile_268.obj" id="272_je260"]
+[ext_resource type="ArrayMesh" uid="uid://b1vbgae28dywd" path="res://Assets/Kenney/RoadTiles/roadTile_269.obj" id="273_ikc2g"]
+[ext_resource type="ArrayMesh" uid="uid://chm7ordgv1fju" path="res://Assets/Kenney/RoadTiles/roadTile_270.obj" id="274_2sdff"]
+[ext_resource type="ArrayMesh" uid="uid://dqqft6575mwc2" path="res://Assets/Kenney/RoadTiles/roadTile_271.obj" id="275_d8sj3"]
+[ext_resource type="ArrayMesh" uid="uid://d4mx6rwhc3xrd" path="res://Assets/Kenney/RoadTiles/roadTile_272.obj" id="276_6w2st"]
+[ext_resource type="ArrayMesh" uid="uid://dsaihmq7s7rpg" path="res://Assets/Kenney/RoadTiles/roadTile_273.obj" id="277_krjee"]
+[ext_resource type="ArrayMesh" uid="uid://c3oqky2ur4uq6" path="res://Assets/Kenney/RoadTiles/roadTile_274.obj" id="278_8fbe4"]
+[ext_resource type="ArrayMesh" uid="uid://b156ek72ykccg" path="res://Assets/Kenney/RoadTiles/roadTile_275.obj" id="279_b2bbo"]
+[ext_resource type="ArrayMesh" uid="uid://ci2x7yrkllip6" path="res://Assets/Kenney/RoadTiles/roadTile_276.obj" id="280_q8we8"]
+[ext_resource type="ArrayMesh" uid="uid://dl5d6qp7ctbqc" path="res://Assets/Kenney/RoadTiles/roadTile_277.obj" id="281_kc2ty"]
+[ext_resource type="ArrayMesh" uid="uid://ci0agqggbha2c" path="res://Assets/Kenney/RoadTiles/roadTile_278.obj" id="282_x0hji"]
+[ext_resource type="ArrayMesh" uid="uid://c68se3fdc0irx" path="res://Assets/Kenney/RoadTiles/roadTile_279.obj" id="283_gqk24"]
+[ext_resource type="ArrayMesh" uid="uid://cly3cibd7u1lb" path="res://Assets/Kenney/RoadTiles/roadTile_280.obj" id="284_582ew"]
+[ext_resource type="ArrayMesh" uid="uid://cgjvjbxhkj2jt" path="res://Assets/Kenney/RoadTiles/roadTile_281.obj" id="285_5k1oc"]
+[ext_resource type="ArrayMesh" uid="uid://kkl0n7u0tx8l" path="res://Assets/Kenney/RoadTiles/roadTile_282.obj" id="286_h2mfg"]
+[ext_resource type="ArrayMesh" uid="uid://bbgswolk5m17o" path="res://Assets/Kenney/RoadTiles/roadTile_283.obj" id="287_nj6b4"]
+[ext_resource type="ArrayMesh" uid="uid://ciiuhhquip3cg" path="res://Assets/Kenney/RoadTiles/roadTile_284.obj" id="288_y2c34"]
+[ext_resource type="ArrayMesh" uid="uid://dky7i0n4xcmwd" path="res://Assets/Kenney/RoadTiles/roadTile_285.obj" id="289_jlrim"]
+[ext_resource type="ArrayMesh" uid="uid://bvqdh6ids2voj" path="res://Assets/Kenney/RoadTiles/roadTile_286.obj" id="290_q5x7d"]
+[ext_resource type="ArrayMesh" uid="uid://cjoea2qmp7v7j" path="res://Assets/Kenney/RoadTiles/roadTile_287.obj" id="291_73ga1"]
+[ext_resource type="ArrayMesh" uid="uid://did65wh8sunq" path="res://Assets/Kenney/RoadTiles/roadTile_288.obj" id="292_8rdd8"]
+[ext_resource type="ArrayMesh" uid="uid://css5lsafp0s6h" path="res://Assets/Kenney/RoadTiles/roadTile_289.obj" id="293_y4lg7"]
+[ext_resource type="ArrayMesh" uid="uid://onndxlwfxfgg" path="res://Assets/Kenney/RoadTiles/roadTile_290.obj" id="294_pomo2"]
+[ext_resource type="ArrayMesh" uid="uid://bdob3lthy51jo" path="res://Assets/Kenney/RoadTiles/roadTile_291.obj" id="295_d073r"]
+[ext_resource type="ArrayMesh" uid="uid://dpfpqmgfpcfp2" path="res://Assets/Kenney/RoadTiles/roadTile_292.obj" id="296_fvlg7"]
+[ext_resource type="ArrayMesh" uid="uid://drpaejqbp2b8y" path="res://Assets/Kenney/RoadTiles/roadTile_293.obj" id="297_ouilq"]
+[ext_resource type="ArrayMesh" uid="uid://eypjsa5v0pjs" path="res://Assets/Kenney/RoadTiles/roadTile_294.obj" id="298_6v0qd"]
+[ext_resource type="ArrayMesh" uid="uid://cdhhs4kkgjwp3" path="res://Assets/Kenney/RoadTiles/roadTile_295.obj" id="299_cqnt8"]
+[ext_resource type="ArrayMesh" uid="uid://biau6y6b18brh" path="res://Assets/Kenney/RoadTiles/roadTile_296.obj" id="300_l6mnb"]
+[ext_resource type="ArrayMesh" uid="uid://ccpjpuj4g6u2y" path="res://Assets/Kenney/RoadTiles/roadTile_297.obj" id="301_p35yc"]
+[ext_resource type="ArrayMesh" uid="uid://ctohank2dfdr7" path="res://Assets/Kenney/RoadTiles/roadTile_298.obj" id="302_gy2ag"]
+[ext_resource type="ArrayMesh" uid="uid://cegfmwgmyrv4p" path="res://Assets/Kenney/RoadTiles/roadTile_299.obj" id="303_kw03p"]
+[ext_resource type="ArrayMesh" uid="uid://nlyngn3uxaa0" path="res://Assets/Kenney/RoadTiles/roadTile_300.obj" id="304_0yvk1"]
+[ext_resource type="ArrayMesh" uid="uid://ljm85ue74x21" path="res://Assets/Kenney/RoadTiles/roadTile_301.obj" id="305_8co00"]
+[ext_resource type="ArrayMesh" uid="uid://c6g5x35xol453" path="res://Assets/Kenney/RoadTiles/roadTile_302.obj" id="306_yv4op"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_1na50"]
+data = PackedVector3Array(1.5, 0.455, 1.5, 1.5, 0.455, -1.5, 1.5, 0, 1.5, 1.5, 0, 1.5, 1.5, 0.455, -1.5, 1.5, 0, -1.5, -1.5, 0.455, 1.5, 1.5, 0.455, 1.5, -1.5, 0, 1.5, -1.5, 0, 1.5, 1.5, 0.455, 1.5, 1.5, 0, 1.5, 1.5, 0, -1.5, -1.5, 0, -1.5, 1.5, 0, 1.5, 1.5, 0, 1.5, -1.5, 0, -1.5, -1.5, 0, 1.5, -1.5, 0.455, 1.5, -1.5, 0.455, -1.5, 1.5, 0.455, 1.5, 1.5, 0.455, 1.5, -1.5, 0.455, -1.5, 1.5, 0.455, -1.5, -1.5, 0.455, -1.5, -1.5, 0.455, 1.5, -1.5, 0, -1.5, -1.5, 0, -1.5, -1.5, 0.455, 1.5, -1.5, 0, 1.5, 1.5, 0.455, -1.5, -1.5, 0.455, -1.5, 1.5, 0, -1.5, 1.5, 0, -1.5, -1.5, 0.455, -1.5, -1.5, 0, -1.5)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_wgvkt"]
+data = PackedVector3Array(-0.0125, 0.455, 0.3586, -0.1742, 0.455, 0.1742, 1.5, 0.455, -1.5, -1.5, 0, -1.5, -1.5, 0.455, -1.5, -1.5, 0, -0.375, -1.5, 0, -0.375, -1.5, 0.455, -1.5, -1.5, 0.455, -0.375, -1.5, 0.455, -1.5, 1.5, 0.455, -1.5, -0.5625, 0.455, -0.1238, -1.5, 0.455, -0.375, -1.5, 0.455, -1.5, -1.2553, 0.455, -0.359, -1.2553, 0.455, -0.359, -1.5, 0.455, -1.5, -1.0147, 0.455, -0.3111, 1.5, 0.455, 1.5, 0.375, 0.455, 1.5, 0.359, 0.455, 1.2553, 1.5, 0.455, -1.5, 1.5, 0.455, 1.5, 0.1238, 0.455, 0.5625, 1.5, 0.455, 1.5, 0.359, 0.455, 1.2553, 0.3111, 0.455, 1.0147, 1.5, 0.455, 1.5, 0.3111, 0.455, 1.0147, 0.2323, 0.455, 0.7825, -1.0147, 0.455, -0.3111, -1.5, 0.455, -1.5, -0.7825, 0.455, -0.2323, -0.7825, 0.455, -0.2323, -1.5, 0.455, -1.5, -0.5625, 0.455, -0.1238, 1.5, 0.455, 1.5, 0.2323, 0.455, 0.7825, 0.1238, 0.455, 0.5625, -0.5625, 0.455, -0.1238, 1.5, 0.455, -1.5, -0.3586, 0.455, 0.0125, 0.1238, 0.455, 0.5625, -0.0125, 0.455, 0.3586, 1.5, 0.455, -1.5, -0.3586, 0.455, 0.0125, 1.5, 0.455, -1.5, -0.1742, 0.455, 0.1742, -1.5, 0, -1.5, 1.5, 0, -1.5, -1.5, 0.455, -1.5, -1.5, 0.455, -1.5, 1.5, 0, -1.5, 1.5, 0.455, -1.5, 1.5, 0.455, 1.5, 1.5, 0.455, -1.5, 1.5, 0, 1.5, 1.5, 0, 1.5, 1.5, 0.455, -1.5, 1.5, 0, -1.5, 1.5, 0.455, 1.5, 1.5, 0, 1.5, 0.375, 0.455, 1.5, 0.375, 0.455, 1.5, 1.5, 0, 1.5, 0.375, 0, 1.5, -1.5, 0, -0.375, 0.375, 0, 1.5, 1.5, 0, -1.5, -0.75, 0.55, 1.5, -0.75, 0.455, 1.5, -1.5, 0.55, 1.5, -1.4021, 0.55, 0.7564, -1.3059, 0.55, 0.7756, -1.5, 0.55, 1.5, -1.5, 0, 1.5, -0.75, 0, 1.5, -1.5, 0, 0.75, -1.5, 0, -0.375, -1.5, 0, 0.75, -0.75, 0, 1.5, -1.5, 0, -1.5, -1.5, 0, -0.375, 1.5, 0, -1.5, -1.5, 0, -0.375, -0.75, 0, 1.5, 0.375, 0, 1.5, 1.5, 0, 1.5, 1.5, 0, -1.5, 0.375, 0, 1.5, -1.5, 0.455, 0.75, -1.5, 0.55, 1.5, -1.5, 0, 0.75, -1.5, 0, 0.75, -1.5, 0.55, 1.5, -1.5, 0, 1.5, -1.3059, 0.455, 0.7756, -1.3059, 0.55, 0.7756, -1.4021, 0.455, 0.7564, -1.4021, 0.455, 0.7564, -1.3059, 0.55, 0.7756, -1.4021, 0.55, 0.7564, -1.5, 0.455, 0.75, -1.5, 0.55, 0.75, -1.5, 0.55, 1.5, -1.5, 0.55, 1.5, -1.5, 0.55, 0.75, -1.4021, 0.55, 0.7564, -0.75, 0.55, 1.5, -1.5, 0.55, 1.5, -0.7564, 0.55, 1.4021, -1.5, 0.55, 1.5, -0.7756, 0.55, 1.3059, -0.7564, 0.55, 1.4021, -0.8071, 0.55, 1.213, -0.7756, 0.55, 1.3059, -1.5, 0.55, 1.5, -0.8505, 0.55, 1.125, -0.8071, 0.55, 1.213, -1.5, 0.55, 1.5, -0.905, 0.55, 1.0434, -0.8505, 0.55, 1.125, -1.5, 0.55, 1.5, -0.9697, 0.55, 0.9697, -0.905, 0.55, 1.0434, -1.5, 0.55, 1.5, -1.0434, 0.55, 0.905, -0.9697, 0.55, 0.9697, -1.5, 0.55, 1.5, -1.125, 0.55, 0.8505, -1.0434, 0.55, 0.905, -1.5, 0.55, 1.5, -1.213, 0.55, 0.8071, -1.125, 0.55, 0.8505, -1.5, 0.55, 1.5, -1.3059, 0.55, 0.7756, -1.213, 0.55, 0.8071, -1.5, 0.55, 1.5, -0.75, 0, 1.5, -1.5, 0, 1.5, -0.75, 0.455, 1.5, -0.75, 0.455, 1.5, -1.5, 0, 1.5, -1.5, 0.55, 1.5, -0.7564, 0.455, 1.4021, -0.7564, 0.55, 1.4021, -0.7756, 0.455, 1.3059, -0.7756, 0.455, 1.3059, -0.7564, 0.55, 1.4021, -0.7756, 0.55, 1.3059, -0.7756, 0.455, 1.3059, -0.7756, 0.55, 1.3059, -0.8071, 0.455, 1.213, -0.8071, 0.455, 1.213, -0.7756, 0.55, 1.3059, -0.8071, 0.55, 1.213, -0.8071, 0.455, 1.213, -0.8071, 0.55, 1.213, -0.8505, 0.455, 1.125, -0.8505, 0.455, 1.125, -0.8071, 0.55, 1.213, -0.8505, 0.55, 1.125, -0.8505, 0.455, 1.125, -0.8505, 0.55, 1.125, -0.905, 0.455, 1.0434, -0.905, 0.455, 1.0434, -0.8505, 0.55, 1.125, -0.905, 0.55, 1.0434, -0.905, 0.455, 1.0434, -0.905, 0.55, 1.0434, -0.9697, 0.455, 0.9697, -0.9697, 0.455, 0.9697, -0.905, 0.55, 1.0434, -0.9697, 0.55, 0.9697, -0.9697, 0.455, 0.9697, -0.9697, 0.55, 0.9697, -1.0434, 0.455, 0.905, -1.0434, 0.455, 0.905, -0.9697, 0.55, 0.9697, -1.0434, 0.55, 0.905, -1.0434, 0.455, 0.905, -1.0434, 0.55, 0.905, -1.125, 0.455, 0.8505, -1.125, 0.455, 0.8505, -1.0434, 0.55, 0.905, -1.125, 0.55, 0.8505, -1.125, 0.455, 0.8505, -1.125, 0.55, 0.8505, -1.213, 0.455, 0.8071, -1.213, 0.455, 0.8071, -1.125, 0.55, 0.8505, -1.213, 0.55, 0.8071, -1.213, 0.455, 0.8071, -1.213, 0.55, 0.8071, -1.3059, 0.455, 0.7756, -1.3059, 0.455, 0.7756, -1.213, 0.55, 0.8071, -1.3059, 0.55, 0.7756, -1.4021, 0.455, 0.7564, -1.4021, 0.55, 0.7564, -1.5, 0.455, 0.75, -1.5, 0.455, 0.75, -1.4021, 0.55, 0.7564, -1.5, 0.55, 0.75, -0.75, 0.455, 1.5, -0.75, 0.55, 1.5, -0.7564, 0.455, 1.4021, -0.7564, 0.455, 1.4021, -0.75, 0.55, 1.5, -0.7564, 0.55, 1.4021, -1.5, 0.455, 0.75, -1.5, 0.455, -0.375, -1.4021, 0.455, 0.7564, -1.4021, 0.455, 0.7564, -1.5, 0.455, -0.375, -1.2553, 0.455, -0.359, 0.2323, 0.455, 0.7825, 0.3111, 0.455, 1.0147, -0.8071, 0.455, 1.213, -0.8071, 0.455, 1.213, 0.3111, 0.455, 1.0147, -0.7756, 0.455, 1.3059, -1.213, 0.455, 0.8071, -1.3059, 0.455, 0.7756, -0.7825, 0.455, -0.2323, -0.7825, 0.455, -0.2323, -1.3059, 0.455, 0.7756, -1.0147, 0.455, -0.3111, -1.125, 0.455, 0.8505, -1.213, 0.455, 0.8071, -0.5625, 0.455, -0.1238, -0.5625, 0.455, -0.1238, -1.213, 0.455, 0.8071, -0.7825, 0.455, -0.2323, -1.125, 0.455, 0.8505, -0.5625, 0.455, -0.1238, -1.0434, 0.455, 0.905, -1.0434, 0.455, 0.905, -0.5625, 0.455, -0.1238, -0.3586, 0.455, 0.0125, -1.0434, 0.455, 0.905, -0.3586, 0.455, 0.0125, -0.9697, 0.455, 0.9697, -0.9697, 0.455, 0.9697, -0.3586, 0.455, 0.0125, -0.1742, 0.455, 0.1742, -1.4021, 0.455, 0.7564, -1.2553, 0.455, -0.359, -1.3059, 0.455, 0.7756, -1.3059, 0.455, 0.7756, -1.2553, 0.455, -0.359, -1.0147, 0.455, -0.3111, -0.9697, 0.455, 0.9697, -0.1742, 0.455, 0.1742, -0.905, 0.455, 1.0434, -0.905, 0.455, 1.0434, -0.1742, 0.455, 0.1742, -0.0125, 0.455, 0.3586, 0.359, 0.455, 1.2553, 0.375, 0.455, 1.5, -0.7564, 0.455, 1.4021, -0.7564, 0.455, 1.4021, 0.375, 0.455, 1.5, -0.75, 0.455, 1.5, -0.7564, 0.455, 1.4021, -0.7756, 0.455, 1.3059, 0.359, 0.455, 1.2553, 0.359, 0.455, 1.2553, -0.7756, 0.455, 1.3059, 0.3111, 0.455, 1.0147, -0.905, 0.455, 1.0434, -0.0125, 0.455, 0.3586, -0.8505, 0.455, 1.125, -0.8505, 0.455, 1.125, -0.0125, 0.455, 0.3586, 0.1238, 0.455, 0.5625, -0.8505, 0.455, 1.125, 0.1238, 0.455, 0.5625, -0.8071, 0.455, 1.213, -0.8071, 0.455, 1.213, 0.1238, 0.455, 0.5625, 0.2323, 0.455, 0.7825, -1.5, 0.455, 0.75, -1.5, 0, 0.75, -1.5, 0.455, -0.375, -1.5, 0.455, -0.375, -1.5, 0, 0.75, -1.5, 0, -0.375, -0.75, 0, 1.5, -0.75, 0.455, 1.5, 0.375, 0, 1.5, 0.375, 0, 1.5, -0.75, 0.455, 1.5, 0.375, 0.455, 1.5)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_wha6i"]
+data = PackedVector3Array(-0.75, 0.55, 1.5, -0.75, 0.455, 1.5, -1.5, 0.55, 1.5, -0.75, 0.55, -1.5, -0.75, 0.455, -1.5, -0.75, 0.55, 1.5, -0.75, 0.55, 1.5, -0.75, 0.455, -1.5, -0.75, 0.455, 1.5, -0.75, 0.455, -1.5, -1.5, 0.55, -1.5, -0.75, 0, -1.5, -0.75, 0, -1.5, -1.5, 0.55, -1.5, -1.5, 0, -1.5, -1.5, 0, 1.5, -0.75, 0, 1.5, -1.5, 0, -1.5, -1.5, 0, -1.5, -0.75, 0, 1.5, -0.75, 0, -1.5, -1.5, 0, -1.5, -1.5, 0.55, -1.5, -1.5, 0, 1.5, -1.5, 0, 1.5, -1.5, 0.55, -1.5, -1.5, 0.55, 1.5, -1.5, 0.55, 1.5, -1.5, 0.55, -1.5, -0.75, 0.55, 1.5, -0.75, 0.55, 1.5, -1.5, 0.55, -1.5, -0.75, 0.55, -1.5, -0.75, 0, 1.5, -1.5, 0, 1.5, -0.75, 0.455, 1.5, -0.75, 0.455, 1.5, -1.5, 0, 1.5, -1.5, 0.55, 1.5, 0.375, 0, -1.5, -0.75, 0, -1.5, 0.375, 0, 1.5, 0.375, 0, 1.5, -0.75, 0, -1.5, -0.75, 0, 1.5, 0.375, 0, 1.5, 1.5, 0, 1.5, 0.375, 0, -1.5, 0.375, 0, -1.5, 1.5, 0, 1.5, 1.5, 0, -1.5, -0.75, 0.455, -1.5, -0.75, 0.55, -1.5, -1.5, 0.55, -1.5, 1.5, 0.455, -1.5, 1.5, 0, -1.5, 1.5, 0.455, 1.5, 1.5, 0.455, 1.5, 1.5, 0, -1.5, 1.5, 0, 1.5, 1.5, 0.455, 1.5, 1.5, 0, 1.5, 0.375, 0.455, 1.5, 0.375, 0.455, 1.5, 1.5, 0, 1.5, 0.375, 0, 1.5, 1.5, 0, -1.5, 1.5, 0.455, -1.5, 0.375, 0, -1.5, 0.375, 0, -1.5, 1.5, 0.455, -1.5, 0.375, 0.455, -1.5, 1.5, 0.455, -1.5, 1.5, 0.455, 1.5, 0.375, 0.455, -1.5, 0.375, 0.455, -1.5, 1.5, 0.455, 1.5, 0.375, 0.455, 1.5, -0.75, 0, 1.5, -0.75, 0.455, 1.5, 0.375, 0, 1.5, 0.375, 0, 1.5, -0.75, 0.455, 1.5, 0.375, 0.455, 1.5, -0.75, 0.455, -1.5, -0.75, 0, -1.5, 0.375, 0.455, -1.5, 0.375, 0.455, -1.5, -0.75, 0, -1.5, 0.375, 0, -1.5, -0.75, 0.455, 1.5, -0.75, 0.455, -1.5, 0.375, 0.455, 1.5, 0.375, 0.455, 1.5, -0.75, 0.455, -1.5, 0.375, 0.455, -1.5)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_bfyyf"]
+data = PackedVector3Array(-0.091, 0.55, 0.091, -1.5, 0.55, 1.5, -0.2851, 0.55, -0.1303, 1.5, 0, -1.5, 0.375, 0, -1.5, 1.5, 0, -0.375, 1.5, 0.55, 0.75, 1.5, 0.455, 0.75, 1.5, 0.55, 1.5, -0.75, 0.55, -1.5, -0.7308, 0.55, -1.2063, -1.5, 0.55, -1.5, 1.5, 0.55, 1.5, -1.5, 0.55, 1.5, 0.639, 0.55, 0.5787, 1.5, 0.55, 0.75, 1.5, 0.55, 1.5, 1.2063, 0.55, 0.7308, 1.2063, 0.55, 0.7308, 1.5, 0.55, 1.5, 0.9177, 0.55, 0.6733, -1.5, 0.55, -1.5, -0.7308, 0.55, -1.2063, -0.6733, 0.55, -0.9177, -1.5, 0.55, 1.5, -1.5, 0.55, -1.5, -0.5787, 0.55, -0.639, -1.5, 0.55, -1.5, -0.6733, 0.55, -0.9177, -0.5787, 0.55, -0.639, 0.9177, 0.55, 0.6733, 1.5, 0.55, 1.5, 0.639, 0.55, 0.5787, -0.5787, 0.55, -0.639, -0.4486, 0.55, -0.375, -1.5, 0.55, 1.5, 0.639, 0.55, 0.5787, -1.5, 0.55, 1.5, 0.375, 0.55, 0.4486, 0.375, 0.55, 0.4486, -1.5, 0.55, 1.5, 0.1303, 0.55, 0.2851, -0.4486, 0.55, -0.375, -0.2851, 0.55, -0.1303, -1.5, 0.55, 1.5, 0.1303, 0.55, 0.2851, -1.5, 0.55, 1.5, -0.091, 0.55, 0.091, -1.5, 0, 1.5, 1.5, 0, 0.75, -0.75, 0, -1.5, -0.75, 0, -1.5, 1.5, 0, 0.75, 1.5, 0, -0.375, 1.5, 0, 1.5, 1.5, 0, 0.75, -1.5, 0, 1.5, -1.5, 0, -1.5, -1.5, 0, 1.5, -0.75, 0, -1.5, 0.375, 0, -1.5, -0.75, 0, -1.5, 1.5, 0, -0.375, -0.75, 0.455, -1.5, -1.5, 0.55, -1.5, -0.75, 0, -1.5, -0.75, 0, -1.5, -1.5, 0.55, -1.5, -1.5, 0, -1.5, 1.5, 0.455, 0.75, 1.5, 0.55, 0.75, 1.2063, 0.455, 0.7308, 1.2063, 0.455, 0.7308, 1.5, 0.55, 0.75, 1.2063, 0.55, 0.7308, 1.2063, 0.455, 0.7308, 1.2063, 0.55, 0.7308, 0.9177, 0.455, 0.6733, 0.9177, 0.455, 0.6733, 1.2063, 0.55, 0.7308, 0.9177, 0.55, 0.6733, 0.9177, 0.455, 0.6733, 0.9177, 0.55, 0.6733, 0.639, 0.455, 0.5787, 0.639, 0.455, 0.5787, 0.9177, 0.55, 0.6733, 0.639, 0.55, 0.5787, 0.639, 0.455, 0.5787, 0.639, 0.55, 0.5787, 0.375, 0.455, 0.4486, 0.375, 0.455, 0.4486, 0.639, 0.55, 0.5787, 0.375, 0.55, 0.4486, 0.375, 0.455, 0.4486, 0.375, 0.55, 0.4486, 0.1303, 0.455, 0.2851, 0.1303, 0.455, 0.2851, 0.375, 0.55, 0.4486, 0.1303, 0.55, 0.2851, 0.1303, 0.455, 0.2851, 0.1303, 0.55, 0.2851, -0.091, 0.455, 0.091, -0.091, 0.455, 0.091, 0.1303, 0.55, 0.2851, -0.091, 0.55, 0.091, -0.091, 0.455, 0.091, -0.091, 0.55, 0.091, -0.2851, 0.455, -0.1303, -0.2851, 0.455, -0.1303, -0.091, 0.55, 0.091, -0.2851, 0.55, -0.1303, -0.2851, 0.455, -0.1303, -0.2851, 0.55, -0.1303, -0.4486, 0.455, -0.375, -0.4486, 0.455, -0.375, -0.2851, 0.55, -0.1303, -0.4486, 0.55, -0.375, -0.4486, 0.455, -0.375, -0.4486, 0.55, -0.375, -0.5787, 0.455, -0.639, -0.5787, 0.455, -0.639, -0.4486, 0.55, -0.375, -0.5787, 0.55, -0.639, -0.5787, 0.455, -0.639, -0.5787, 0.55, -0.639, -0.6733, 0.455, -0.9177, -0.6733, 0.455, -0.9177, -0.5787, 0.55, -0.639, -0.6733, 0.55, -0.9177, -0.6733, 0.455, -0.9177, -0.6733, 0.55, -0.9177, -0.7308, 0.455, -1.2063, -0.7308, 0.455, -1.2063, -0.6733, 0.55, -0.9177, -0.7308, 0.55, -1.2063, -1.5, 0.55, 1.5, 1.5, 0.55, 1.5, -1.5, 0, 1.5, -1.5, 0, 1.5, 1.5, 0.55, 1.5, 1.5, 0, 1.5, -0.75, 0.455, -1.5, -0.75, 0.55, -1.5, -1.5, 0.55, -1.5, -1.5, 0.55, 1.5, -1.5, 0, 1.5, -1.5, 0.55, -1.5, -1.5, 0.55, -1.5, -1.5, 0, 1.5, -1.5, 0, -1.5, 1.5, 0, 0.75, 1.5, 0, 1.5, 1.5, 0.455, 0.75, 1.5, 0.455, 0.75, 1.5, 0, 1.5, 1.5, 0.55, 1.5, -0.7308, 0.455, -1.2063, -0.7308, 0.55, -1.2063, -0.75, 0.455, -1.5, -0.75, 0.455, -1.5, -0.7308, 0.55, -1.2063, -0.75, 0.55, -1.5, -0.7308, 0.455, -1.2063, -0.75, 0.455, -1.5, 0.3846, 0.455, -1.3532, 0.3846, 0.455, -1.3532, -0.75, 0.455, -1.5, 0.375, 0.455, -1.5, 1.0695, 0.455, -0.4606, 0.639, 0.455, 0.5787, 0.9375, 0.455, -0.5257, 0.9375, 0.455, -0.5257, 0.639, 0.455, 0.5787, 0.375, 0.455, 0.4486, 0.3846, 0.455, -1.3532, 0.4133, 0.455, -1.2088, -0.7308, 0.455, -1.2063, -0.7308, 0.455, -1.2063, 0.4133, 0.455, -1.2088, -0.6733, 0.455, -0.9177, -0.2851, 0.455, -0.1303, -0.4486, 0.455, -0.375, 0.6075, 0.455, -0.8151, 0.6075, 0.455, -0.8151, -0.4486, 0.455, -0.375, 0.5257, 0.455, -0.9375, 1.2088, 0.455, -0.4133, 1.3532, 0.455, -0.3846, 0.9177, 0.455, 0.6733, 0.9177, 0.455, 0.6733, 1.3532, 0.455, -0.3846, 1.2063, 0.455, 0.7308, 0.7045, 0.455, -0.7045, -0.091, 0.455, 0.091, 0.6075, 0.455, -0.8151, 0.6075, 0.455, -0.8151, -0.091, 0.455, 0.091, -0.2851, 0.455, -0.1303, 1.5, 0.455, -0.375, 1.5, 0.455, 0.75, 1.3532, 0.455, -0.3846, 1.3532, 0.455, -0.3846, 1.5, 0.455, 0.75, 1.2063, 0.455, 0.7308, 1.0695, 0.455, -0.4606, 1.2088, 0.455, -0.4133, 0.639, 0.455, 0.5787, 0.639, 0.455, 0.5787, 1.2088, 0.455, -0.4133, 0.9177, 0.455, 0.6733, 0.1303, 0.455, 0.2851, -0.091, 0.455, 0.091, 0.8151, 0.455, -0.6075, 0.8151, 0.455, -0.6075, -0.091, 0.455, 0.091, 0.7045, 0.455, -0.7045, 0.5257, 0.455, -0.9375, -0.4486, 0.455, -0.375, 0.4606, 0.455, -1.0695, 0.4606, 0.455, -1.0695, -0.4486, 0.455, -0.375, -0.5787, 0.455, -0.639, 0.4133, 0.455, -1.2088, 0.4606, 0.455, -1.0695, -0.6733, 0.455, -0.9177, -0.6733, 0.455, -0.9177, 0.4606, 0.455, -1.0695, -0.5787, 0.455, -0.639, 1.5, 0, 0.75, 1.5, 0.455, 0.75, 1.5, 0, -0.375, 1.5, 0, -0.375, 1.5, 0.455, 0.75, 1.5, 0.455, -0.375, 0.8151, 0.455, -0.6075, 0.9375, 0.455, -0.5257, 0.1303, 0.455, 0.2851, 0.1303, 0.455, 0.2851, 0.9375, 0.455, -0.5257, 0.375, 0.455, 0.4486, -0.75, 0.455, -1.5, -0.75, 0, -1.5, 0.375, 0.455, -1.5, 0.375, 0.455, -1.5, -0.75, 0, -1.5, 0.375, 0, -1.5, 1.3532, 0.455, -0.3846, 1.2088, 0.455, -0.4133, 1.5, 0.455, -1.5, 1.5, 0, -1.5, 1.5, 0.455, -1.5, 0.375, 0, -1.5, 0.375, 0, -1.5, 1.5, 0.455, -1.5, 0.375, 0.455, -1.5, 1.5, 0.455, -1.5, 1.5, 0, -1.5, 1.5, 0.455, -0.375, 1.5, 0.455, -0.375, 1.5, 0, -1.5, 1.5, 0, -0.375, 1.5, 0.455, -1.5, 1.5, 0.455, -0.375, 1.3532, 0.455, -0.3846, 0.375, 0.455, -1.5, 1.5, 0.455, -1.5, 0.3846, 0.455, -1.3532, 1.5, 0.455, -1.5, 0.4133, 0.455, -1.2088, 0.3846, 0.455, -1.3532, 0.4606, 0.455, -1.0695, 0.4133, 0.455, -1.2088, 1.5, 0.455, -1.5, 0.5257, 0.455, -0.9375, 0.4606, 0.455, -1.0695, 1.5, 0.455, -1.5, 0.6075, 0.455, -0.8151, 0.5257, 0.455, -0.9375, 1.5, 0.455, -1.5, 0.7045, 0.455, -0.7045, 0.6075, 0.455, -0.8151, 1.5, 0.455, -1.5, 0.8151, 0.455, -0.6075, 0.7045, 0.455, -0.7045, 1.5, 0.455, -1.5, 0.9375, 0.455, -0.5257, 0.8151, 0.455, -0.6075, 1.5, 0.455, -1.5, 1.0695, 0.455, -0.4606, 0.9375, 0.455, -0.5257, 1.5, 0.455, -1.5, 1.2088, 0.455, -0.4133, 1.0695, 0.455, -0.4606, 1.5, 0.455, -1.5)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_411ka"]
+data = PackedVector3Array(1.5, 0, 1.5, 1.5, 0, -1.5, -1.5, 0, 1.5, -1.5, 0, 1.5, 1.5, 0, -1.5, -1.5, 0, -1.5, -1.5, 0.55, 1.5, 1.5, 0.55, 1.5, -1.5, 0, 1.5, -1.5, 0, 1.5, 1.5, 0.55, 1.5, 1.5, 0, 1.5, -1.5, 0, -1.5, -1.5, 0.55, -1.5, -1.5, 0, 1.5, -1.5, 0, 1.5, -1.5, 0.55, -1.5, -1.5, 0.55, 1.5, -1.5, 0.55, -1.5, 1.5, 0.55, -1.5, -1.5, 0.55, 1.5, -1.5, 0.55, 1.5, 1.5, 0.55, -1.5, 1.5, 0.55, 1.5, 1.5, 0.55, -1.5, -1.5, 0.55, -1.5, 1.5, 0, -1.5, 1.5, 0, -1.5, -1.5, 0.55, -1.5, -1.5, 0, -1.5, 1.5, 0, 1.5, 1.5, 0.55, 1.5, 1.5, 0, -1.5, 1.5, 0, -1.5, 1.5, 0.55, 1.5, 1.5, 0.55, -1.5)
+
+[sub_resource type="MeshLibrary" id="MeshLibrary_ndi82"]
+item/0/name = "Water"
+item/0/mesh = ExtResource("1_6rkn4")
+item/0/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/0/shapes = [SubResource("ConcavePolygonShape3D_1na50"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)]
+item/0/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/0/navigation_layers = 1
+item/1/name = "WatterInner"
+item/1/mesh = ExtResource("2_uoi67")
+item/1/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/1/shapes = [SubResource("ConcavePolygonShape3D_wgvkt"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)]
+item/1/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/1/navigation_layers = 1
+item/2/name = "WaterStraight"
+item/2/mesh = ExtResource("3_n6rhb")
+item/2/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/2/shapes = [SubResource("ConcavePolygonShape3D_wha6i"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)]
+item/2/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/2/navigation_layers = 1
+item/3/name = "WatterOuter"
+item/3/mesh = ExtResource("4_0fv51")
+item/3/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/3/shapes = [SubResource("ConcavePolygonShape3D_bfyyf"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)]
+item/3/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/3/navigation_layers = 1
+item/4/name = "Ground"
+item/4/mesh = ExtResource("5_6ipsp")
+item/4/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/4/shapes = [SubResource("ConcavePolygonShape3D_411ka"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)]
+item/4/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/4/navigation_layers = 1
+
+[sub_resource type="Resource" id="Resource_k1rw4"]
+script = ExtResource("7_pxb1c")
+id = 0
+object_name = "Water"
+rotation = 22
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_8bfw5"]
+script = ExtResource("7_pxb1c")
+id = 2
+object_name = "WaterStraight"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_ul50r"]
+script = ExtResource("7_pxb1c")
+id = 2
+object_name = "WaterStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_2nbu5"]
+script = ExtResource("7_pxb1c")
+id = 0
+object_name = "Water"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_agqkj"]
+script = ExtResource("7_pxb1c")
+id = 1
+object_name = "WatterInner"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_06irv"]
+script = ExtResource("7_pxb1c")
+id = 1
+object_name = "WatterInner"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_6beyt"]
+script = ExtResource("7_pxb1c")
+id = 2
+object_name = "WaterStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_fpobb"]
+script = ExtResource("7_pxb1c")
+id = 4
+object_name = "Ground"
+rotation = 16
+weight = 4.0
+
+[sub_resource type="Resource" id="Resource_oh4bf"]
+script = ExtResource("7_pxb1c")
+id = 3
+object_name = "WatterOuter"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_xvtwb"]
+script = ExtResource("7_pxb1c")
+id = 3
+object_name = "WatterOuter"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="GDScript" id="GDScript_604cr"]
+script/source = "@tool
+extends Node3D
+
+@export var clear_child := false : set = run_clear_child
+# Called when the node enters the scene tree for the first time.
+func _enter_tree():
+	var _i = 0
+	var _j = 0
+	var _grid = 5
+	for child in get_children():
+		_i+=1
+		child.position=Vector3(_grid*_j,0,_grid*_i)
+		if _i>3:
+			_i=0
+			_j+=1
+
+func run_clear_child(val):
+	clear_child=false
+	for child in get_children():
+		child.queue_free()
+"
+
+[sub_resource type="GDScript" id="GDScript_rxh5i"]
+script/source = "@tool
+extends Node3D
+
+@export var clear_child := false : set = run_clear_child
+# Called when the node enters the scene tree for the first time.
+func _enter_tree():
+	var _i = 0
+	var _j = 0
+	var _grid = 5
+	for child in get_children():
+		_i+=1
+		child.position=Vector3(_grid*_j,0,_grid*_i)
+		if _i>10:
+			_i=0
+			_j+=1
+
+func run_clear_child(val):
+	clear_child=false
+	for child in get_children():
+		child.queue_free()
+"
+
+[node name="Node3D" type="Node3D"]
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = SubResource("MeshLibrary_ndi82")
+cell_size = Vector3(3, 3, 3)
+data = {
+"cells": PackedInt32Array(0, 0, 1, 0, 1, 2, 1, 0, 1048576, 0, 2, 3, 1, 1, 1048576, 2, 0, 1048577, 0, 3, 655364, 1, 2, 1048578, 2, 1, 655362, 0, 4, 1048580, 1, 3, 1048580, 2, 2, 1048579, 0, 5, 1048580, 1, 4, 1441795, 2, 3, 1441795, 0, 6, 655363, 1, 5, 2, 2, 4, 1441793, 0, 7, 655361, 1, 6, 2, 2, 5, 1441792, 0, 8, 1048576, 1, 7, 1441793, 2, 6, 1048576, 3, 5, 1048577, 1, 8, 1441792, 2, 7, 1048577, 3, 6, 655362, 4, 5, 1048579, 2, 8, 655362, 3, 7, 1048579, 4, 6, 1441795, 10, 0, 1441795, 4, 7, 3, 10, 1, 2, 0, 13, 1048576, 10, 2, 1441793, 1, 13, 1441792, 3, 1, 1048580, 4, 4, 655363, 0, 14, 1, 0, 15, 3, 9, 11, 1441793, 3, 2, 1048580, 1, 14, 1048577, 10, 12, 1048576, 2, 16, 655363, 1, 16, 1441795, 4, 3, 655364, 3, 0, 1048578, 3, 3, 655363, 9, 12, 1441792, 22, 6, 1048576, 10, 13, 1048577, 3, 4, 655361, 0, 16, 655363, 9, 13, 1, 1, 17, 2, 1, 15, 1048579, 2, 15, 655364, 0, 17, 1048579, 2, 14, 1048579, 9, 18, 1048580, 0, 18, 1441795, 23, 6, 1048577, 11, 1, 655361, 14, 1, 1048576, 21, 13, 655364, 0, 19, 3, 22, 5, 1441793, 1, 18, 1441793, 23, 5, 1441792, 11, 0, 655363, 13, 1, 2, 22, 11, 3, 24, 5, 1048576, 12, 1, 655363, 15, 0, 1441794, 13, 2, 3, 22, 10, 1441795, 23, 10, 1441794, 14, 0, 1441794, 25, 5, 655361, 13, 0, 1441795, 5, 4, 1048580, 11, 2, 1048577, 0, 20, 655364, 24, 10, 1441793, 12, 2, 1048579, 7, 4, 1048576, 1, 19, 1048578, 8, 4, 655362, 8, 5, 655362, 12, 0, 655364, 22, 12, 655364, 5, 7, 1, 5, 6, 1441794, 8, 6, 1048579, 0, 21, 1441795, 7, 6, 1048577, 21, 5, 655361, 0, 22, 3, 9, 6, 1048580, 7, 5, 1048576, 25, 10, 1048576, 5, 5, 1048580, 5, 3, 1048580, 6, 6, 1441793, 2, 9, 1048579, 6, 7, 1441792, 6, 4, 2, 20, 4, 1441795, 24, 6, 1, 26, 10, 1048576, 23, 9, 1048580, 23, 7, 655362, 7, 9, 655364, 6, 5, 2, 0, 9, 1, 24, 7, 2, 12, 4, 655363, 27, 10, 655362, 7, 7, 655362, 21, 6, 1048576, 21, 12, 1048579, 6, 25, 1441795, 26, 11, 1048576, 24, 4, 1441794, 28, 10, 2, 1, 24, 1048580, 0, 23, 655363, 2, 18, 1048577, 6, 9, 655364, 24, 9, 2, 1, 25, 655363, 2, 24, 1048580, 6, 8, 1048578, 25, 6, 1048577, 26, 12, 1048578, 24, 8, 2, 12, 3, 655364, 12, 5, 1048579, 0, 25, 1441795, 29, 10, 1048576, 7, 17, 3, 23, 8, 1048579, 4, 25, 1048576, 7, 8, 1048579, 0, 26, 1441793, 27, 12, 1048579, 1, 26, 655361, 28, 11, 2, 1, 9, 1048577, 7, 29, 655364, 1, 27, 1048577, 9, 3, 2, 26, 13, 1048580, 10, 3, 1441792, 2, 27, 1, 27, 11, 655362, 0, 24, 1048579, 29, 11, 1048576, 9, 5, 3, 11, 5, 1048577, 2, 17, 655361, 9, 4, 2, 9, 0, 655363, 2, 26, 1441794, 10, 4, 1048576, 29, 0, 655362, 11, 4, 655361, 0, 10, 3, 21, 11, 655363, 2, 28, 3, 15, 26, 1441794, 21, 4, 655363, 1, 12, 1441794, 2, 25, 1048580, 27, 13, 655364, 10, 5, 1, 25, 12, 3, 9, 1, 1048579, 3, 25, 2, 10, 18, 1048580, 27, 20, 1048576, 0, 27, 1441792, 24, 11, 1048578, 11, 3, 655362, 23, 4, 1441794, 7, 16, 1441795, 10, 6, 2, 28, 12, 2, 5, 25, 655362, 28, 13, 3, 9, 2, 1441795, 15, 27, 1048576, 0, 11, 655364, 24, 0, 1048577, 1, 11, 1048580, 6, 29, 655362, 29, 13, 1048578, 29, 6, 3, 28, 20, 655362, 2, 29, 655364, 1, 28, 655362, 3, 28, 1048578, 23, 11, 1048578, 1, 29, 655362, 1, 10, 1048579, 25, 11, 1, 25, 0, 1048579, 15, 28, 1048576, 0, 12, 1441794, 22, 13, 1048580, 27, 19, 655361, 5, 27, 1048576, 3, 27, 1048576, 24, 12, 1048580, 3, 29, 1048580, 4, 28, 1048578, 5, 28, 1, 23, 12, 1048580, 29, 9, 1048576, 5, 29, 2, 4, 29, 1048580, 5, 26, 655361, 22, 4, 1441795, 28, 7, 1441795, 29, 7, 655363, 25, 9, 655361, 0, 29, 1048576, 4, 27, 1048576, 3, 8, 1441795, 26, 7, 655364, 15, 29, 1, 27, 7, 1048580, 28, 21, 655361, 24, 1, 1048579, 27, 9, 655363, 28, 8, 2, 22, 26, 655364, 28, 9, 2, 15, 8, 1048580, 29, 22, 1, 6, 16, 1048579, 24, 2, 655364, 29, 20, 1048580, 0, 28, 1048576, 27, 18, 655363, 28, 19, 655363, 26, 9, 1441794, 26, 6, 1048578, 26, 17, 655364, 26, 14, 1441794, 25, 7, 655362, 26, 15, 1048576, 26, 8, 1048580, 27, 6, 1048578, 29, 21, 1441794, 15, 7, 1048578, 19, 4, 655364, 20, 24, 3, 23, 28, 2, 11, 6, 655362, 25, 8, 655362, 29, 19, 3, 11, 13, 1048579, 5, 8, 3, 28, 6, 1048579, 23, 0, 1, 23, 29, 2, 22, 9, 1048579, 21, 25, 655364, 21, 10, 655364, 4, 8, 655363, 18, 4, 655364, 22, 28, 655363, 28, 18, 3, 11, 18, 2, 20, 29, 1048576, 27, 8, 1048580, 26, 16, 1048578, 24, 3, 1048580, 23, 13, 1048580, 8, 18, 1048580, 22, 29, 655362, 4, 26, 1048576, 3, 9, 2, 22, 8, 1048577, 29, 8, 655361, 24, 13, 1048580, 7, 18, 655364, 14, 26, 1441795, 22, 7, 1048576, 23, 1, 3, 23, 2, 655364, 8, 14, 1048580, 29, 18, 1, 21, 29, 1048576, 3, 18, 1048579, 6, 18, 1048580, 5, 9, 655364, 6, 17, 655364, 21, 28, 655361, 3, 26, 1441793, 26, 5, 1441793, 21, 8, 1, 5, 16, 3, 21, 27, 655363, 21, 23, 1441794, 3, 16, 655364, 3, 15, 655364, 23, 3, 1048580, 13, 9, 655364, 21, 24, 1048578, 4, 9, 655362, 5, 18, 1048580, 21, 7, 1048576, 12, 6, 655364, 25, 13, 655364, 21, 26, 1048580, 21, 9, 3, 20, 28, 1048576, 5, 17, 655364, 24, 28, 1048576, 4, 16, 1048580, 29, 12, 1048576, 12, 7, 655363, 14, 8, 1048580, 4, 18, 1048580, 13, 6, 2, 14, 7, 1048578, 16, 7, 1048578, 14, 29, 3, 15, 1, 1048576, 2, 13, 655362, 14, 27, 2, 22, 27, 1048580, 3, 10, 2, 24, 29, 1048576, 25, 29, 1048577, 3, 17, 655363, 24, 14, 1441794, 4, 17, 1048580, 25, 14, 1441794, 14, 28, 2, 3, 11, 2, 2, 12, 655363, 2, 11, 655364, 8, 29, 655364, 16, 27, 655361, 13, 27, 655363, 16, 29, 1048576, 22, 23, 655363, 13, 8, 1048580, 19, 24, 655363, 11, 17, 1441795, 16, 28, 1048576, 16, 8, 1048580, 25, 4, 655363, 20, 27, 655361, 22, 24, 1048579, 20, 25, 655364, 4, 10, 655362, 13, 7, 3, 13, 29, 1048579, 13, 28, 655362, 12, 28, 1048576, 12, 27, 655361, 17, 24, 2, 8, 3, 655362, 19, 25, 1048579, 22, 25, 655364, 11, 7, 655361, 8, 2, 655362, 17, 26, 1048580, 7, 15, 655364, 18, 25, 1048578, 17, 4, 655364, 18, 24, 655361, 7, 2, 1048576, 16, 26, 655363, 9, 10, 2, 2, 10, 655364, 12, 29, 1048577, 20, 26, 655363, 19, 26, 1441795, 6, 3, 2, 29, 23, 2, 28, 23, 655362, 25, 15, 1048576, 7, 1, 1441793, 10, 17, 1048579, 7, 19, 1441794, 19, 29, 1048576, 13, 26, 1048580, 8, 19, 655363, 18, 26, 1048580, 8, 15, 1048580, 7, 3, 1048576, 4, 2, 3, 15, 2, 1048577, 8, 17, 1048579, 19, 3, 1048580, 9, 19, 1441795, 17, 3, 1048580, 19, 27, 2, 17, 28, 1048576, 6, 1, 1441795, 7, 20, 1048576, 8, 0, 655361, 19, 28, 1441793, 17, 25, 3, 11, 8, 1048577, 18, 29, 1, 8, 20, 655361, 17, 29, 1048577, 8, 1, 1048577, 17, 27, 1441794, 18, 3, 1048580, 9, 17, 3, 7, 0, 2, 14, 2, 1, 8, 16, 655363, 28, 22, 1048577, 12, 8, 1048579, 6, 0, 655364, 19, 2, 1048580, 17, 2, 1048578, 8, 7, 655364, 9, 20, 1441793, 9, 16, 2, 18, 28, 655361, 10, 7, 2, 16, 1, 1048576, 8, 9, 3, 9, 9, 1, 10, 10, 1048576, 10, 14, 655362, 18, 27, 655363, 17, 1, 655361, 10, 8, 1441793, 4, 0, 1048579, 16, 2, 1048578, 8, 8, 1441795, 29, 29, 1, 18, 2, 1048579, 5, 0, 655364, 22, 22, 655364, 27, 14, 1441794, 12, 9, 655364, 10, 16, 655362, 29, 1, 1048579, 9, 14, 2, 29, 2, 655364, 6, 2, 2, 17, 23, 1441795, 5, 1, 655363, 10, 15, 655362, 16, 3, 1048580, 16, 0, 1441794, 5, 2, 1048579, 12, 10, 655363, 11, 9, 655362, 17, 0, 655363, 19, 1, 3, 9, 15, 2, 9, 8, 1441794, 10, 9, 1441792, 11, 10, 655361, 10, 11, 1048576, 18, 1, 655363, 7, 25, 1441793, 4, 11, 655362, 11, 29, 1048576, 19, 0, 1, 22, 3, 1048579, 18, 23, 655363, 21, 3, 3, 11, 28, 1048576, 20, 23, 1441795, 19, 23, 655364, 4, 1, 1441795, 11, 12, 1048577, 12, 12, 1048579, 26, 18, 1441794, 3, 13, 3, 26, 19, 1048576, 18, 22, 655364, 25, 3, 3, 25, 2, 1441795, 25, 1, 655364, 20, 22, 655364, 23, 22, 655364, 3, 12, 2, 11, 27, 1441793, 18, 0, 3, 20, 1, 1048579, 22, 2, 655362, 22, 0, 3, 20, 0, 1048577, 11, 15, 1048580, 12, 13, 655364, 11, 16, 1048580, 5, 10, 1048580, 21, 0, 1048579, 11, 14, 655364, 22, 1, 655363, 5, 11, 1441795, 21, 22, 1048580, 17, 21, 3, 20, 3, 655364, 12, 11, 655362, 6, 26, 1441793, 7, 26, 1441792, 6, 27, 1441792, 12, 14, 1048580, 20, 2, 655364, 9, 29, 3, 10, 29, 1, 17, 22, 655364, 28, 1, 3, 26, 1, 1048580, 8, 21, 1048577, 28, 0, 2, 26, 0, 1048580, 27, 0, 1048580, 10, 20, 655361, 10, 21, 1, 21, 2, 2, 9, 7, 1048580, 10, 19, 655363, 12, 15, 1048580, 11, 11, 1048576, 7, 14, 1048580, 9, 24, 655362, 9, 23, 655363, 11, 19, 2, 4, 12, 655361, 16, 5, 655363, 9, 22, 655364, 22, 21, 3, 14, 6, 655361, 16, 6, 655361, 9, 21, 1048578, 16, 4, 1048580, 13, 5, 1441795, 15, 3, 655362, 14, 5, 655363, 14, 3, 2, 13, 4, 655364, 25, 16, 1048577, 27, 5, 1048576, 5, 12, 1441793, 25, 17, 655362, 7, 21, 1048576, 13, 3, 655364, 21, 1, 1441795, 3, 14, 655364, 29, 17, 1441794, 27, 17, 655364, 28, 17, 1441795, 20, 10, 1048579, 27, 1, 1048580, 27, 22, 1048576, 10, 28, 1048576, 23, 14, 1441795, 6, 28, 1048577, 21, 14, 1048580, 23, 15, 1441793, 25, 18, 655361, 4, 14, 1048580, 27, 21, 1048576, 24, 17, 1048576, 5, 15, 1441795, 24, 15, 1048576, 6, 14, 1048580, 5, 13, 1048578, 6, 15, 655363, 4, 15, 1048580, 28, 5, 655362, 14, 4, 3, 29, 5, 2, 15, 20, 1048580, 15, 19, 3, 16, 18, 1048576, 4, 13, 1048578, 29, 3, 1441794, 22, 14, 1048580, 29, 4, 1, 15, 5, 1441795, 16, 19, 1048578, 15, 6, 1441793, 15, 4, 1048579, 10, 22, 2, 5, 14, 1048580, 27, 15, 1048576, 19, 22, 1048580, 12, 19, 1048576, 29, 24, 3, 14, 20, 655362, 29, 25, 655364, 11, 21, 1048576, 11, 22, 1048576, 12, 20, 1048576, 13, 20, 1048576, 28, 3, 655361, 3, 24, 2, 24, 16, 1048576, 28, 4, 1048577, 28, 15, 655361, 28, 2, 655363, 26, 2, 655363, 23, 17, 1, 11, 20, 1441793, 27, 2, 1441795, 9, 28, 2, 7, 28, 1048578, 28, 14, 655363, 8, 28, 1048579, 20, 5, 2, 27, 4, 1441793, 8, 27, 655362, 19, 5, 1048580, 9, 27, 1441795, 9, 25, 1048579, 29, 16, 1048579, 27, 16, 1048578, 29, 14, 1048580, 10, 27, 1441794, 26, 21, 1, 13, 21, 1048577, 7, 13, 1048579, 6, 13, 1048578, 12, 26, 655362, 23, 26, 1441795, 11, 26, 2, 24, 27, 1441792, 26, 20, 1048576, 24, 18, 1048576, 5, 24, 655363, 7, 27, 1048576, 4, 24, 655361, 25, 22, 655364, 24, 22, 655364, 8, 25, 1048577, 26, 22, 2, 27, 3, 2, 16, 20, 1048580, 22, 16, 1048576, 29, 15, 655363, 13, 15, 1441795, 15, 18, 1, 8, 24, 1048576, 8, 22, 1048579, 7, 22, 1048578, 14, 17, 1, 6, 24, 655364, 12, 17, 655363, 7, 24, 2, 12, 16, 1048580, 12, 18, 655361, 26, 4, 1441795, 13, 17, 3, 13, 18, 655363, 14, 18, 3, 7, 23, 1441795, 9, 26, 655364, 28, 16, 1048578, 17, 5, 1048580, 8, 26, 655362, 12, 22, 1048576, 26, 3, 1048579, 8, 13, 3, 18, 5, 1048580, 12, 21, 1048576, 20, 9, 655362, 14, 19, 655363, 6, 22, 1048578, 22, 15, 1441794, 10, 26, 1048580, 23, 27, 2, 23, 16, 1441792, 6, 23, 1048580, 20, 8, 1048577, 13, 19, 655361, 20, 7, 1048576, 8, 11, 1441794, 6, 11, 1441793, 23, 18, 2, 22, 20, 1441795, 6, 12, 1441792, 7, 11, 655361, 23, 20, 655363, 8, 10, 655364, 25, 21, 3, 8, 23, 1441794, 7, 10, 655363, 8, 12, 1, 25, 19, 1, 23, 21, 1048579, 10, 24, 2, 10, 23, 2, 11, 24, 1048576, 11, 23, 1048576, 20, 6, 1441793, 24, 21, 1048580, 13, 16, 2, 13, 11, 1441795, 13, 10, 1048580, 6, 10, 1441795, 11, 25, 1, 24, 19, 1048578, 23, 19, 3, 12, 25, 1048577, 25, 20, 2, 12, 23, 1048576, 24, 26, 1441794, 12, 24, 1048576, 26, 23, 2, 24, 20, 1048580, 24, 25, 1048580, 22, 17, 1048578, 7, 12, 1048577, 24, 23, 1441795, 25, 23, 655363, 23, 24, 655364, 24, 24, 3, 22, 18, 1048580, 10, 25, 3, 22, 19, 1048580, 25, 25, 1048580, 27, 23, 1048576, 23, 25, 1048580, 27, 24, 1048578, 16, 25, 655364, 28, 24, 1048579, 27, 25, 1048580, 26, 25, 1048580, 28, 25, 655364, 23, 23, 1048580, 29, 26, 1441795, 29, 28, 1048576, 28, 26, 1048580, 28, 27, 1441795, 29, 27, 1441793, 26, 24, 3, 13, 25, 1048579, 17, 20, 1441795, 26, 29, 1048578, 28, 28, 1441793, 19, 7, 1048576, 18, 7, 2, 17, 7, 1048579, 25, 24, 1048579, 19, 6, 1441794, 17, 8, 1441795, 28, 29, 1048578, 2, 23, 1048580, 27, 27, 655363, 14, 25, 655364, 18, 6, 1441795, 27, 29, 1048578, 17, 6, 655363, 25, 26, 1441794, 19, 8, 1048576, 26, 28, 1048576, 15, 25, 1048580, 1, 23, 1048580, 5, 19, 655363, 6, 19, 1441795, 6, 21, 1048576, 4, 19, 1441794, 27, 28, 655361, 4, 20, 1048576, 26, 27, 655361, 25, 27, 1048576, 27, 26, 1048580, 4, 23, 655363, 5, 21, 1, 26, 26, 655363, 25, 28, 1048576, 13, 23, 655361, 4, 21, 1048578, 3, 21, 1048578, 2, 21, 3, 1, 21, 655363, 2, 19, 1048579, 1, 22, 1048579, 3, 19, 1441795, 2, 22, 655364, 5, 20, 655361, 3, 20, 1441793, 6, 20, 1441793, 1, 20, 1048580, 17, 19, 1048579, 18, 8, 1441793, 3, 23, 1441795, 2, 20, 1441795, 17, 18, 1048577, 19, 9, 1048576, 3, 22, 1048580, 4, 22, 1048580, 13, 22, 655362, 21, 20, 1048579, 21, 21, 655364, 5, 22, 3, 18, 18, 1048579, 13, 24, 1048577, 15, 21, 1048580, 16, 21, 1048580, 19, 18, 655364, 21, 19, 655362, 21, 18, 655363, 20, 20, 3, 19, 20, 655363, 18, 20, 1441794, 20, 21, 655364, 18, 21, 1048578, 19, 21, 1048579, 18, 19, 655364, 19, 19, 1048580, 20, 12, 3, 19, 12, 655364, 19, 10, 1048578, 14, 10, 1048580, 21, 16, 2, 21, 17, 3, 20, 18, 1441795, 21, 15, 1441795, 5, 23, 655364, 20, 19, 2, 14, 21, 1048579, 16, 23, 655363, 15, 23, 655361, 16, 24, 1048579, 14, 23, 1441793, 14, 24, 1048578, 14, 22, 1441795, 17, 9, 1441793, 16, 9, 1441795, 18, 9, 1441792, 15, 24, 1048578, 16, 22, 1048580, 15, 22, 655363, 14, 9, 1048580, 15, 9, 1048580, 20, 11, 1441795, 19, 11, 1048580, 18, 10, 1048577, 16, 10, 1441793, 15, 10, 1441795, 17, 10, 1441792, 17, 11, 1048577, 18, 11, 1048579, 18, 12, 655364, 15, 11, 1441793, 14, 11, 1441794, 16, 11, 1441792, 16, 12, 1048576, 17, 12, 655362, 14, 13, 3, 13, 13, 1048580, 20, 17, 1048579, 20, 16, 655363, 15, 17, 1048576, 16, 17, 1048576, 14, 12, 1, 13, 12, 3, 15, 12, 1441792, 13, 14, 1048580, 14, 14, 655364, 15, 16, 1441794, 14, 16, 655361, 14, 15, 655363, 19, 13, 1441794, 18, 13, 1441795, 20, 13, 655363, 20, 15, 655364, 20, 14, 1048579, 16, 16, 1441793, 19, 17, 1048578, 17, 17, 1048576, 18, 17, 1048577, 15, 14, 3, 15, 15, 655364, 17, 13, 655362, 15, 13, 1, 16, 13, 1048576, 19, 14, 1048578, 16, 15, 1441795, 18, 16, 655361, 16, 14, 1048578, 18, 14, 3, 17, 14, 1048579, 17, 16, 1048576, 19, 16, 1441794, 19, 15, 1048580, 17, 15, 1441794, 18, 15, 655363)
+}
+script = ExtResource("6_fqu0f")
+generation_lock = false
+error_out = [Vector3(18, 0, 15), [[SubResource("Resource_k1rw4"), SubResource("Resource_8bfw5")], [], [SubResource("Resource_ul50r"), SubResource("Resource_2nbu5"), SubResource("Resource_agqkj"), SubResource("Resource_06irv")], [SubResource("Resource_6beyt"), SubResource("Resource_fpobb"), SubResource("Resource_oh4bf"), SubResource("Resource_xvtwb")], [], []], [true, false, true, true, false, false]]
+mesh_lib_data = ExtResource("8_bmuf0")
+add_mode = true
+mesh_lib_rule_set = ExtResource("9_r7xf0")
+map_size = 30
+allow_up = false
+allow_empty_cells = false
+delay_between_tries = 0.001
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="Node3D2" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, -104)
+script = SubResource("GDScript_604cr")
+
+[node name="RoadTile001" type="MeshInstance3D" parent="Node3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
+mesh = ExtResource("1_6rkn4")
+skeleton = NodePath("../..")
+
+[node name="RoadTile042" type="MeshInstance3D" parent="Node3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+mesh = ExtResource("2_uoi67")
+skeleton = NodePath("../..")
+
+[node name="RoadTile146" type="MeshInstance3D" parent="Node3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15)
+mesh = ExtResource("3_n6rhb")
+skeleton = NodePath("../..")
+
+[node name="RoadTile157" type="MeshInstance3D" parent="Node3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
+mesh = ExtResource("4_0fv51")
+skeleton = NodePath("../..")
+
+[node name="RoadTile036" type="MeshInstance3D" parent="Node3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 5)
+mesh = ExtResource("10_drx53")
+skeleton = NodePath("../..")
+
+[node name="RoadTile037" type="MeshInstance3D" parent="Node3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 10)
+mesh = ExtResource("11_ydgyr")
+skeleton = NodePath("../..")
+
+[node name="RoadTile140" type="MeshInstance3D" parent="Node3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 15)
+mesh = ExtResource("12_r0h0l")
+skeleton = NodePath("../..")
+
+[node name="RoadTile152" type="MeshInstance3D" parent="Node3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 20)
+mesh = ExtResource("13_ji8r7")
+skeleton = NodePath("../..")
+
+[node name="RoadTile163" type="MeshInstance3D" parent="Node3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 5)
+mesh = ExtResource("5_6ipsp")
+skeleton = NodePath("../..")
+
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -32)
+script = SubResource("GDScript_rxh5i")
+
+[node name="RoadTile002" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 5)
+mesh = ExtResource("14_nnrhr")
+skeleton = NodePath("../..")
+
+[node name="RoadTile003" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 10)
+mesh = ExtResource("15_so30b")
+skeleton = NodePath("../..")
+
+[node name="RoadTile004" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 15)
+mesh = ExtResource("16_o0lnu")
+skeleton = NodePath("../..")
+
+[node name="RoadTile005" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 20)
+mesh = ExtResource("17_u4y61")
+skeleton = NodePath("../..")
+
+[node name="RoadTile006" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 25)
+mesh = ExtResource("18_reubu")
+skeleton = NodePath("../..")
+
+[node name="RoadTile007" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 30)
+mesh = ExtResource("19_81dyr")
+skeleton = NodePath("../..")
+
+[node name="RoadTile008" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 35)
+mesh = ExtResource("20_doo58")
+skeleton = NodePath("../..")
+
+[node name="RoadTile009" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 40)
+mesh = ExtResource("21_boi8w")
+skeleton = NodePath("../..")
+
+[node name="RoadTile010" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 45)
+mesh = ExtResource("22_4xr8f")
+skeleton = NodePath("../..")
+
+[node name="RoadTile011" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 50)
+mesh = ExtResource("23_4lqxv")
+skeleton = NodePath("../..")
+
+[node name="RoadTile012" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 55)
+mesh = ExtResource("24_w8wcm")
+skeleton = NodePath("../..")
+
+[node name="RoadTile013" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5, 0, 5)
+mesh = ExtResource("25_b7hwm")
+skeleton = NodePath("../..")
+
+[node name="RoadTile014" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5, 0, 10)
+mesh = ExtResource("26_ms3nd")
+skeleton = NodePath("../..")
+
+[node name="RoadTile015" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5, 0, 15)
+mesh = ExtResource("27_5yhv6")
+skeleton = NodePath("../..")
+
+[node name="RoadTile016" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5, 0, 20)
+mesh = ExtResource("28_2t7op")
+skeleton = NodePath("../..")
+
+[node name="RoadTile017" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5, 0, 25)
+mesh = ExtResource("29_ldeur")
+skeleton = NodePath("../..")
+
+[node name="RoadTile018" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5, 0, 30)
+mesh = ExtResource("30_wvhx6")
+skeleton = NodePath("../..")
+
+[node name="RoadTile019" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5, 0, 35)
+mesh = ExtResource("31_i6gaf")
+skeleton = NodePath("../..")
+
+[node name="RoadTile020" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5, 0, 40)
+mesh = ExtResource("32_hcp5c")
+skeleton = NodePath("../..")
+
+[node name="RoadTile021" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5, 0, 45)
+mesh = ExtResource("33_1hbyj")
+skeleton = NodePath("../..")
+
+[node name="RoadTile022" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5, 0, 50)
+mesh = ExtResource("34_3uc3e")
+skeleton = NodePath("../..")
+
+[node name="RoadTile023" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5, 0, 55)
+mesh = ExtResource("35_dea1i")
+skeleton = NodePath("../..")
+
+[node name="RoadTile024" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 5)
+mesh = ExtResource("36_bhrxg")
+skeleton = NodePath("../..")
+
+[node name="RoadTile025" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 10)
+mesh = ExtResource("37_ha3or")
+skeleton = NodePath("../..")
+
+[node name="RoadTile026" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 15)
+mesh = ExtResource("38_6i0qj")
+skeleton = NodePath("../..")
+
+[node name="RoadTile027" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 20)
+mesh = ExtResource("39_fqoqs")
+skeleton = NodePath("../..")
+
+[node name="RoadTile028" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 25)
+mesh = ExtResource("40_77cot")
+skeleton = NodePath("../..")
+
+[node name="RoadTile029" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 30)
+mesh = ExtResource("41_hixtn")
+skeleton = NodePath("../..")
+
+[node name="RoadTile030" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 35)
+mesh = ExtResource("42_rkqbs")
+skeleton = NodePath("../..")
+
+[node name="RoadTile031" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 40)
+mesh = ExtResource("43_kspim")
+skeleton = NodePath("../..")
+
+[node name="RoadTile032" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 45)
+mesh = ExtResource("44_3hlte")
+skeleton = NodePath("../..")
+
+[node name="RoadTile033" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 50)
+mesh = ExtResource("45_lxjbd")
+skeleton = NodePath("../..")
+
+[node name="RoadTile034" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 55)
+mesh = ExtResource("46_ci6vq")
+skeleton = NodePath("../..")
+
+[node name="RoadTile035" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 15, 0, 5)
+mesh = ExtResource("47_r41pp")
+skeleton = NodePath("../..")
+
+[node name="RoadTile038" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 15, 0, 10)
+mesh = ExtResource("48_d7f1k")
+skeleton = NodePath("../..")
+
+[node name="RoadTile039" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 15, 0, 15)
+mesh = ExtResource("49_6t16t")
+skeleton = NodePath("../..")
+
+[node name="RoadTile040" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 15, 0, 20)
+mesh = ExtResource("50_ot665")
+skeleton = NodePath("../..")
+
+[node name="RoadTile041" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 15, 0, 25)
+mesh = ExtResource("51_ctaux")
+skeleton = NodePath("../..")
+
+[node name="RoadTile043" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 15, 0, 30)
+mesh = ExtResource("52_nslfq")
+skeleton = NodePath("../..")
+
+[node name="RoadTile044" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 15, 0, 35)
+mesh = ExtResource("53_1heer")
+skeleton = NodePath("../..")
+
+[node name="RoadTile045" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 15, 0, 40)
+mesh = ExtResource("54_0xadl")
+skeleton = NodePath("../..")
+
+[node name="RoadTile046" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 15, 0, 45)
+mesh = ExtResource("55_3aiin")
+skeleton = NodePath("../..")
+
+[node name="RoadTile047" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 15, 0, 50)
+mesh = ExtResource("56_islt6")
+skeleton = NodePath("../..")
+
+[node name="RoadTile048" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 15, 0, 55)
+mesh = ExtResource("57_i3dp4")
+skeleton = NodePath("../..")
+
+[node name="RoadTile049" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 20, 0, 5)
+mesh = ExtResource("58_7kdha")
+skeleton = NodePath("../..")
+
+[node name="RoadTile050" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 20, 0, 10)
+mesh = ExtResource("59_06u1l")
+skeleton = NodePath("../..")
+
+[node name="RoadTile051" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 20, 0, 15)
+mesh = ExtResource("60_6v4b0")
+skeleton = NodePath("../..")
+
+[node name="RoadTile052" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 20, 0, 20)
+mesh = ExtResource("61_bkjhl")
+skeleton = NodePath("../..")
+
+[node name="RoadTile053" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 20, 0, 25)
+mesh = ExtResource("62_0edng")
+skeleton = NodePath("../..")
+
+[node name="RoadTile054" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 20, 0, 30)
+mesh = ExtResource("63_bfeca")
+skeleton = NodePath("../..")
+
+[node name="RoadTile055" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 20, 0, 35)
+mesh = ExtResource("64_fad66")
+skeleton = NodePath("../..")
+
+[node name="RoadTile056" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 20, 0, 40)
+mesh = ExtResource("65_w681g")
+skeleton = NodePath("../..")
+
+[node name="RoadTile057" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 20, 0, 45)
+mesh = ExtResource("66_ji18a")
+skeleton = NodePath("../..")
+
+[node name="RoadTile058" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 20, 0, 50)
+mesh = ExtResource("67_7j6vk")
+skeleton = NodePath("../..")
+
+[node name="RoadTile059" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 20, 0, 55)
+mesh = ExtResource("68_kt5el")
+skeleton = NodePath("../..")
+
+[node name="RoadTile060" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 25, 0, 5)
+mesh = ExtResource("69_fhujo")
+skeleton = NodePath("../..")
+
+[node name="RoadTile061" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 25, 0, 10)
+mesh = ExtResource("70_albbc")
+skeleton = NodePath("../..")
+
+[node name="RoadTile062" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 25, 0, 15)
+mesh = ExtResource("71_sucrw")
+skeleton = NodePath("../..")
+
+[node name="RoadTile063" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 25, 0, 20)
+mesh = ExtResource("72_hq7km")
+skeleton = NodePath("../..")
+
+[node name="RoadTile064" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 25, 0, 25)
+mesh = ExtResource("73_86gnk")
+skeleton = NodePath("../..")
+
+[node name="RoadTile065" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 25, 0, 30)
+mesh = ExtResource("74_8vpij")
+skeleton = NodePath("../..")
+
+[node name="RoadTile066" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 25, 0, 35)
+mesh = ExtResource("75_yqrrt")
+skeleton = NodePath("../..")
+
+[node name="RoadTile067" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 25, 0, 40)
+mesh = ExtResource("76_3w4g4")
+skeleton = NodePath("../..")
+
+[node name="RoadTile068" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 25, 0, 45)
+mesh = ExtResource("77_g7xw7")
+skeleton = NodePath("../..")
+
+[node name="RoadTile069" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 25, 0, 50)
+mesh = ExtResource("78_f8wa4")
+skeleton = NodePath("../..")
+
+[node name="RoadTile070" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 25, 0, 55)
+mesh = ExtResource("79_nhgce")
+skeleton = NodePath("../..")
+
+[node name="RoadTile071" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 30, 0, 5)
+mesh = ExtResource("80_fl1tr")
+skeleton = NodePath("../..")
+
+[node name="RoadTile072" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 30, 0, 10)
+mesh = ExtResource("81_w1vg4")
+skeleton = NodePath("../..")
+
+[node name="RoadTile073" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 30, 0, 15)
+mesh = ExtResource("82_76pam")
+skeleton = NodePath("../..")
+
+[node name="RoadTile074" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 30, 0, 20)
+mesh = ExtResource("83_tilid")
+skeleton = NodePath("../..")
+
+[node name="RoadTile075" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 30, 0, 25)
+mesh = ExtResource("84_b1f5l")
+skeleton = NodePath("../..")
+
+[node name="RoadTile076" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 30, 0, 30)
+mesh = ExtResource("85_xkjn3")
+skeleton = NodePath("../..")
+
+[node name="RoadTile077" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 30, 0, 35)
+mesh = ExtResource("86_8pmyu")
+skeleton = NodePath("../..")
+
+[node name="RoadTile078" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 30, 0, 40)
+mesh = ExtResource("87_f7qs0")
+skeleton = NodePath("../..")
+
+[node name="RoadTile079" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 30, 0, 45)
+mesh = ExtResource("88_2hcs0")
+skeleton = NodePath("../..")
+
+[node name="RoadTile080" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 30, 0, 50)
+mesh = ExtResource("89_544an")
+skeleton = NodePath("../..")
+
+[node name="RoadTile081" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 30, 0, 55)
+mesh = ExtResource("90_c62xm")
+skeleton = NodePath("../..")
+
+[node name="RoadTile082" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 35, 0, 5)
+mesh = ExtResource("91_a345g")
+skeleton = NodePath("../..")
+
+[node name="RoadTile083" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 35, 0, 10)
+mesh = ExtResource("92_cbe8q")
+skeleton = NodePath("../..")
+
+[node name="RoadTile084" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 35, 0, 15)
+mesh = ExtResource("93_0tyuy")
+skeleton = NodePath("../..")
+
+[node name="RoadTile085" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 35, 0, 20)
+mesh = ExtResource("94_8blei")
+skeleton = NodePath("../..")
+
+[node name="RoadTile086" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 35, 0, 25)
+mesh = ExtResource("95_y4162")
+skeleton = NodePath("../..")
+
+[node name="RoadTile087" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 35, 0, 30)
+mesh = ExtResource("96_fmmxv")
+skeleton = NodePath("../..")
+
+[node name="RoadTile088" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 35, 0, 35)
+mesh = ExtResource("97_4mlnq")
+skeleton = NodePath("../..")
+
+[node name="RoadTile089" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 35, 0, 40)
+mesh = ExtResource("98_xkyi8")
+skeleton = NodePath("../..")
+
+[node name="RoadTile090" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 35, 0, 45)
+mesh = ExtResource("99_jdtre")
+skeleton = NodePath("../..")
+
+[node name="RoadTile091" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 35, 0, 50)
+mesh = ExtResource("100_rvhhu")
+skeleton = NodePath("../..")
+
+[node name="RoadTile092" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 35, 0, 55)
+mesh = ExtResource("101_f1u4g")
+skeleton = NodePath("../..")
+
+[node name="RoadTile093" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 40, 0, 5)
+mesh = ExtResource("102_fnima")
+skeleton = NodePath("../..")
+
+[node name="RoadTile094" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 40, 0, 10)
+mesh = ExtResource("103_p8hpl")
+skeleton = NodePath("../..")
+
+[node name="RoadTile095" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 40, 0, 15)
+mesh = ExtResource("104_gqga5")
+skeleton = NodePath("../..")
+
+[node name="RoadTile096" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 40, 0, 20)
+mesh = ExtResource("105_0tfgn")
+skeleton = NodePath("../..")
+
+[node name="RoadTile097" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 40, 0, 25)
+mesh = ExtResource("106_61lmn")
+skeleton = NodePath("../..")
+
+[node name="RoadTile098" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 40, 0, 30)
+mesh = ExtResource("107_ntiyb")
+skeleton = NodePath("../..")
+
+[node name="RoadTile099" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 40, 0, 35)
+mesh = ExtResource("108_gd1n6")
+skeleton = NodePath("../..")
+
+[node name="RoadTile100" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 40, 0, 40)
+mesh = ExtResource("109_82kke")
+skeleton = NodePath("../..")
+
+[node name="RoadTile101" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 40, 0, 45)
+mesh = ExtResource("110_qlq48")
+skeleton = NodePath("../..")
+
+[node name="RoadTile102" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 40, 0, 50)
+mesh = ExtResource("111_4tv8h")
+skeleton = NodePath("../..")
+
+[node name="RoadTile103" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 40, 0, 55)
+mesh = ExtResource("112_gkwno")
+skeleton = NodePath("../..")
+
+[node name="RoadTile104" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 45, 0, 5)
+mesh = ExtResource("113_0ccvu")
+skeleton = NodePath("../..")
+
+[node name="RoadTile105" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 45, 0, 10)
+mesh = ExtResource("114_x8l18")
+skeleton = NodePath("../..")
+
+[node name="RoadTile106" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 45, 0, 15)
+mesh = ExtResource("115_hni84")
+skeleton = NodePath("../..")
+
+[node name="RoadTile107" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 45, 0, 20)
+mesh = ExtResource("116_p5q0q")
+skeleton = NodePath("../..")
+
+[node name="RoadTile108" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 45, 0, 25)
+mesh = ExtResource("117_spkua")
+skeleton = NodePath("../..")
+
+[node name="RoadTile109" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 45, 0, 30)
+mesh = ExtResource("118_s6hbp")
+skeleton = NodePath("../..")
+
+[node name="RoadTile110" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 45, 0, 35)
+mesh = ExtResource("119_pbjwk")
+skeleton = NodePath("../..")
+
+[node name="RoadTile111" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 45, 0, 40)
+mesh = ExtResource("120_a0rxa")
+skeleton = NodePath("../..")
+
+[node name="RoadTile112" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 45, 0, 45)
+mesh = ExtResource("121_03wap")
+skeleton = NodePath("../..")
+
+[node name="RoadTile113" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 45, 0, 50)
+mesh = ExtResource("122_1gcyo")
+skeleton = NodePath("../..")
+
+[node name="RoadTile114" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 45, 0, 55)
+mesh = ExtResource("123_4oo5j")
+skeleton = NodePath("../..")
+
+[node name="RoadTile115" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 50, 0, 5)
+mesh = ExtResource("124_0rsnw")
+skeleton = NodePath("../..")
+
+[node name="RoadTile116" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 50, 0, 10)
+mesh = ExtResource("125_odyci")
+skeleton = NodePath("../..")
+
+[node name="RoadTile117" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 50, 0, 15)
+mesh = ExtResource("126_ity2d")
+skeleton = NodePath("../..")
+
+[node name="RoadTile118" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 50, 0, 20)
+mesh = ExtResource("127_iyd8m")
+skeleton = NodePath("../..")
+
+[node name="RoadTile119" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 50, 0, 25)
+mesh = ExtResource("128_dsmgr")
+skeleton = NodePath("../..")
+
+[node name="RoadTile120" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 50, 0, 30)
+mesh = ExtResource("129_nrhbh")
+skeleton = NodePath("../..")
+
+[node name="RoadTile121" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 50, 0, 35)
+mesh = ExtResource("130_cs3sg")
+skeleton = NodePath("../..")
+
+[node name="RoadTile122" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 50, 0, 40)
+mesh = ExtResource("131_drele")
+skeleton = NodePath("../..")
+
+[node name="RoadTile123" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 50, 0, 45)
+mesh = ExtResource("132_ws2g3")
+skeleton = NodePath("../..")
+
+[node name="RoadTile124" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 50, 0, 50)
+mesh = ExtResource("133_e0f23")
+skeleton = NodePath("../..")
+
+[node name="RoadTile125" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 50, 0, 55)
+mesh = ExtResource("134_vfgpy")
+skeleton = NodePath("../..")
+
+[node name="RoadTile126" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 55, 0, 5)
+mesh = ExtResource("135_bpfox")
+skeleton = NodePath("../..")
+
+[node name="RoadTile127" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 55, 0, 10)
+mesh = ExtResource("136_p5wmx")
+skeleton = NodePath("../..")
+
+[node name="RoadTile128" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 55, 0, 15)
+mesh = ExtResource("137_2ap8j")
+skeleton = NodePath("../..")
+
+[node name="RoadTile129" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 55, 0, 20)
+mesh = ExtResource("138_46pyq")
+skeleton = NodePath("../..")
+
+[node name="RoadTile130" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 55, 0, 25)
+mesh = ExtResource("139_tqeua")
+skeleton = NodePath("../..")
+
+[node name="RoadTile131" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 55, 0, 30)
+mesh = ExtResource("140_l2ghc")
+skeleton = NodePath("../..")
+
+[node name="RoadTile132" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 55, 0, 35)
+mesh = ExtResource("141_bm50i")
+skeleton = NodePath("../..")
+
+[node name="RoadTile133" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 55, 0, 40)
+mesh = ExtResource("142_5o20y")
+skeleton = NodePath("../..")
+
+[node name="RoadTile134" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 55, 0, 45)
+mesh = ExtResource("143_ufunt")
+skeleton = NodePath("../..")
+
+[node name="RoadTile135" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 55, 0, 50)
+mesh = ExtResource("144_mwl0r")
+skeleton = NodePath("../..")
+
+[node name="RoadTile136" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 55, 0, 55)
+mesh = ExtResource("145_w7g8x")
+skeleton = NodePath("../..")
+
+[node name="RoadTile137" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 60, 0, 5)
+mesh = ExtResource("146_a20l6")
+skeleton = NodePath("../..")
+
+[node name="RoadTile138" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 60, 0, 10)
+mesh = ExtResource("147_letha")
+skeleton = NodePath("../..")
+
+[node name="RoadTile139" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 60, 0, 15)
+mesh = ExtResource("148_n6co3")
+skeleton = NodePath("../..")
+
+[node name="RoadTile141" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 60, 0, 20)
+mesh = ExtResource("149_8tug6")
+skeleton = NodePath("../..")
+
+[node name="RoadTile142" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 60, 0, 25)
+mesh = ExtResource("150_fve4y")
+skeleton = NodePath("../..")
+
+[node name="RoadTile143" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 60, 0, 30)
+mesh = ExtResource("151_733n6")
+skeleton = NodePath("../..")
+
+[node name="RoadTile144" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 60, 0, 35)
+mesh = ExtResource("152_jah8w")
+skeleton = NodePath("../..")
+
+[node name="RoadTile145" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 60, 0, 40)
+mesh = ExtResource("153_jqgdj")
+skeleton = NodePath("../..")
+
+[node name="RoadTile147" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 60, 0, 45)
+mesh = ExtResource("154_bkhdd")
+skeleton = NodePath("../..")
+
+[node name="RoadTile148" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 60, 0, 50)
+mesh = ExtResource("155_48n51")
+skeleton = NodePath("../..")
+
+[node name="RoadTile149" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 60, 0, 55)
+mesh = ExtResource("156_wxk7b")
+skeleton = NodePath("../..")
+
+[node name="RoadTile150" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 65, 0, 5)
+mesh = ExtResource("157_cvx42")
+skeleton = NodePath("../..")
+
+[node name="RoadTile151" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 65, 0, 10)
+mesh = ExtResource("158_qqy7g")
+skeleton = NodePath("../..")
+
+[node name="RoadTile153" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 65, 0, 15)
+mesh = ExtResource("159_ur45e")
+skeleton = NodePath("../..")
+
+[node name="RoadTile154" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 65, 0, 20)
+mesh = ExtResource("160_4jts5")
+skeleton = NodePath("../..")
+
+[node name="RoadTile155" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 65, 0, 25)
+mesh = ExtResource("161_qyejc")
+skeleton = NodePath("../..")
+
+[node name="RoadTile156" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 65, 0, 30)
+mesh = ExtResource("162_xouy6")
+skeleton = NodePath("../..")
+
+[node name="RoadTile158" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 65, 0, 35)
+mesh = ExtResource("163_frets")
+skeleton = NodePath("../..")
+
+[node name="RoadTile159" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 65, 0, 40)
+mesh = ExtResource("164_ti5gf")
+skeleton = NodePath("../..")
+
+[node name="RoadTile160" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 65, 0, 45)
+mesh = ExtResource("165_kgr36")
+skeleton = NodePath("../..")
+
+[node name="RoadTile161" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 65, 0, 50)
+mesh = ExtResource("166_mk8wu")
+skeleton = NodePath("../..")
+
+[node name="RoadTile162" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 65, 0, 55)
+mesh = ExtResource("167_gxj0g")
+skeleton = NodePath("../..")
+
+[node name="RoadTile164" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 70, 0, 5)
+mesh = ExtResource("168_uomyw")
+skeleton = NodePath("../..")
+
+[node name="RoadTile165" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 70, 0, 10)
+mesh = ExtResource("169_pknfo")
+skeleton = NodePath("../..")
+
+[node name="RoadTile166" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 70, 0, 15)
+mesh = ExtResource("170_qbl2w")
+skeleton = NodePath("../..")
+
+[node name="RoadTile167" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 70, 0, 20)
+mesh = ExtResource("171_dqcgp")
+skeleton = NodePath("../..")
+
+[node name="RoadTile168" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 70, 0, 25)
+mesh = ExtResource("172_wj6o4")
+skeleton = NodePath("../..")
+
+[node name="RoadTile169" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 70, 0, 30)
+mesh = ExtResource("173_xy6g7")
+skeleton = NodePath("../..")
+
+[node name="RoadTile170" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 70, 0, 35)
+mesh = ExtResource("174_06nd1")
+skeleton = NodePath("../..")
+
+[node name="RoadTile171" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 70, 0, 40)
+mesh = ExtResource("175_fk6cx")
+skeleton = NodePath("../..")
+
+[node name="RoadTile172" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 70, 0, 45)
+mesh = ExtResource("176_fjny5")
+skeleton = NodePath("../..")
+
+[node name="RoadTile173" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 70, 0, 50)
+mesh = ExtResource("177_qjbbo")
+skeleton = NodePath("../..")
+
+[node name="RoadTile174" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 70, 0, 55)
+mesh = ExtResource("178_iw3hf")
+skeleton = NodePath("../..")
+
+[node name="RoadTile175" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 75, 0, 5)
+mesh = ExtResource("179_ajjan")
+skeleton = NodePath("../..")
+
+[node name="RoadTile176" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 75, 0, 10)
+mesh = ExtResource("180_l2ge0")
+skeleton = NodePath("../..")
+
+[node name="RoadTile177" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 75, 0, 15)
+mesh = ExtResource("181_mitn2")
+skeleton = NodePath("../..")
+
+[node name="RoadTile178" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 75, 0, 20)
+mesh = ExtResource("182_dsj4l")
+skeleton = NodePath("../..")
+
+[node name="RoadTile179" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 75, 0, 25)
+mesh = ExtResource("183_jmrwa")
+skeleton = NodePath("../..")
+
+[node name="RoadTile180" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 75, 0, 30)
+mesh = ExtResource("184_jsvjf")
+skeleton = NodePath("../..")
+
+[node name="RoadTile181" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 75, 0, 35)
+mesh = ExtResource("185_2f52l")
+skeleton = NodePath("../..")
+
+[node name="RoadTile182" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 75, 0, 40)
+mesh = ExtResource("186_dqvl1")
+skeleton = NodePath("../..")
+
+[node name="RoadTile183" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 75, 0, 45)
+mesh = ExtResource("187_ayyt8")
+skeleton = NodePath("../..")
+
+[node name="RoadTile184" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 75, 0, 50)
+mesh = ExtResource("188_odmko")
+skeleton = NodePath("../..")
+
+[node name="RoadTile185" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 75, 0, 55)
+mesh = ExtResource("189_71hun")
+skeleton = NodePath("../..")
+
+[node name="RoadTile186" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 80, 0, 5)
+mesh = ExtResource("190_a2a5k")
+skeleton = NodePath("../..")
+
+[node name="RoadTile187" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 80, 0, 10)
+mesh = ExtResource("191_oddfn")
+skeleton = NodePath("../..")
+
+[node name="RoadTile188" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 80, 0, 15)
+mesh = ExtResource("192_lh361")
+skeleton = NodePath("../..")
+
+[node name="RoadTile189" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 80, 0, 20)
+mesh = ExtResource("193_6g7p2")
+skeleton = NodePath("../..")
+
+[node name="RoadTile190" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 80, 0, 25)
+mesh = ExtResource("194_cy5e8")
+skeleton = NodePath("../..")
+
+[node name="RoadTile191" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 80, 0, 30)
+mesh = ExtResource("195_rg4k5")
+skeleton = NodePath("../..")
+
+[node name="RoadTile192" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 80, 0, 35)
+mesh = ExtResource("196_s3cob")
+skeleton = NodePath("../..")
+
+[node name="RoadTile193" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 80, 0, 40)
+mesh = ExtResource("197_7hq7f")
+skeleton = NodePath("../..")
+
+[node name="RoadTile194" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 80, 0, 45)
+mesh = ExtResource("198_ywup5")
+skeleton = NodePath("../..")
+
+[node name="RoadTile195" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 80, 0, 50)
+mesh = ExtResource("199_owbql")
+skeleton = NodePath("../..")
+
+[node name="RoadTile196" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 80, 0, 55)
+mesh = ExtResource("200_13fhy")
+skeleton = NodePath("../..")
+
+[node name="RoadTile197" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 85, 0, 5)
+mesh = ExtResource("201_ye7yc")
+skeleton = NodePath("../..")
+
+[node name="RoadTile198" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 85, 0, 10)
+mesh = ExtResource("202_pvt1h")
+skeleton = NodePath("../..")
+
+[node name="RoadTile199" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 85, 0, 15)
+mesh = ExtResource("203_kahgt")
+skeleton = NodePath("../..")
+
+[node name="RoadTile200" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 85, 0, 20)
+mesh = ExtResource("204_0wjww")
+skeleton = NodePath("../..")
+
+[node name="RoadTile201" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 85, 0, 25)
+mesh = ExtResource("205_ud4o0")
+skeleton = NodePath("../..")
+
+[node name="RoadTile202" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 85, 0, 30)
+mesh = ExtResource("206_4rybp")
+skeleton = NodePath("../..")
+
+[node name="RoadTile203" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 85, 0, 35)
+mesh = ExtResource("207_wwmwk")
+skeleton = NodePath("../..")
+
+[node name="RoadTile204" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 85, 0, 40)
+mesh = ExtResource("208_f2651")
+skeleton = NodePath("../..")
+
+[node name="RoadTile205" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 85, 0, 45)
+mesh = ExtResource("209_h6wu1")
+skeleton = NodePath("../..")
+
+[node name="RoadTile206" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 85, 0, 50)
+mesh = ExtResource("210_bobf8")
+skeleton = NodePath("../..")
+
+[node name="RoadTile207" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 85, 0, 55)
+mesh = ExtResource("211_yrhbk")
+skeleton = NodePath("../..")
+
+[node name="RoadTile208" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 90, 0, 5)
+mesh = ExtResource("212_xwkb8")
+skeleton = NodePath("../..")
+
+[node name="RoadTile209" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 90, 0, 10)
+mesh = ExtResource("213_yueh1")
+skeleton = NodePath("../..")
+
+[node name="RoadTile210" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 90, 0, 15)
+mesh = ExtResource("214_rjqww")
+skeleton = NodePath("../..")
+
+[node name="RoadTile211" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 90, 0, 20)
+mesh = ExtResource("215_i7lts")
+skeleton = NodePath("../..")
+
+[node name="RoadTile212" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 90, 0, 25)
+mesh = ExtResource("216_6y6mk")
+skeleton = NodePath("../..")
+
+[node name="RoadTile213" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 90, 0, 30)
+mesh = ExtResource("217_usduy")
+skeleton = NodePath("../..")
+
+[node name="RoadTile214" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 90, 0, 35)
+mesh = ExtResource("218_qg1fw")
+skeleton = NodePath("../..")
+
+[node name="RoadTile215" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 90, 0, 40)
+mesh = ExtResource("219_vq2j7")
+skeleton = NodePath("../..")
+
+[node name="RoadTile216" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 90, 0, 45)
+mesh = ExtResource("220_w2loa")
+skeleton = NodePath("../..")
+
+[node name="RoadTile217" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 90, 0, 50)
+mesh = ExtResource("221_k3qd3")
+skeleton = NodePath("../..")
+
+[node name="RoadTile218" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 90, 0, 55)
+mesh = ExtResource("222_q6yls")
+skeleton = NodePath("../..")
+
+[node name="RoadTile219" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 95, 0, 5)
+mesh = ExtResource("223_lvevi")
+skeleton = NodePath("../..")
+
+[node name="RoadTile220" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 95, 0, 10)
+mesh = ExtResource("224_dclu4")
+skeleton = NodePath("../..")
+
+[node name="RoadTile221" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 95, 0, 15)
+mesh = ExtResource("225_bpyud")
+skeleton = NodePath("../..")
+
+[node name="RoadTile222" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 95, 0, 20)
+mesh = ExtResource("226_kg5kh")
+skeleton = NodePath("../..")
+
+[node name="RoadTile223" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 95, 0, 25)
+mesh = ExtResource("227_v7esc")
+skeleton = NodePath("../..")
+
+[node name="RoadTile224" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 95, 0, 30)
+mesh = ExtResource("228_osru3")
+skeleton = NodePath("../..")
+
+[node name="RoadTile225" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 95, 0, 35)
+mesh = ExtResource("229_dlp4o")
+skeleton = NodePath("../..")
+
+[node name="RoadTile226" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 95, 0, 40)
+mesh = ExtResource("230_x1wqu")
+skeleton = NodePath("../..")
+
+[node name="RoadTile227" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 95, 0, 45)
+mesh = ExtResource("231_6rx6c")
+skeleton = NodePath("../..")
+
+[node name="RoadTile228" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 95, 0, 50)
+mesh = ExtResource("232_dvq5p")
+skeleton = NodePath("../..")
+
+[node name="RoadTile229" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 95, 0, 55)
+mesh = ExtResource("233_0kjb4")
+skeleton = NodePath("../..")
+
+[node name="RoadTile230" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 100, 0, 5)
+mesh = ExtResource("234_h42ty")
+skeleton = NodePath("../..")
+
+[node name="RoadTile231" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 100, 0, 10)
+mesh = ExtResource("235_3f71c")
+skeleton = NodePath("../..")
+
+[node name="RoadTile232" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 100, 0, 15)
+mesh = ExtResource("236_ygotu")
+skeleton = NodePath("../..")
+
+[node name="RoadTile233" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 100, 0, 20)
+mesh = ExtResource("237_lep3f")
+skeleton = NodePath("../..")
+
+[node name="RoadTile234" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 100, 0, 25)
+mesh = ExtResource("238_f6nou")
+skeleton = NodePath("../..")
+
+[node name="RoadTile235" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 100, 0, 30)
+mesh = ExtResource("239_tftq6")
+skeleton = NodePath("../..")
+
+[node name="RoadTile236" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 100, 0, 35)
+mesh = ExtResource("240_np2ee")
+skeleton = NodePath("../..")
+
+[node name="RoadTile237" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 100, 0, 40)
+mesh = ExtResource("241_l0euu")
+skeleton = NodePath("../..")
+
+[node name="RoadTile238" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 100, 0, 45)
+mesh = ExtResource("242_vf2tc")
+skeleton = NodePath("../..")
+
+[node name="RoadTile239" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 100, 0, 50)
+mesh = ExtResource("243_1fayl")
+skeleton = NodePath("../..")
+
+[node name="RoadTile240" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 100, 0, 55)
+mesh = ExtResource("244_tcxuj")
+skeleton = NodePath("../..")
+
+[node name="RoadTile241" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 105, 0, 5)
+mesh = ExtResource("245_vxa1y")
+skeleton = NodePath("../..")
+
+[node name="RoadTile242" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 105, 0, 10)
+mesh = ExtResource("246_vjj5c")
+skeleton = NodePath("../..")
+
+[node name="RoadTile243" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 105, 0, 15)
+mesh = ExtResource("247_u2s3i")
+skeleton = NodePath("../..")
+
+[node name="RoadTile244" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 105, 0, 20)
+mesh = ExtResource("248_ih0ld")
+skeleton = NodePath("../..")
+
+[node name="RoadTile245" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 105, 0, 25)
+mesh = ExtResource("249_m8pde")
+skeleton = NodePath("../..")
+
+[node name="RoadTile246" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 105, 0, 30)
+mesh = ExtResource("250_6jskh")
+skeleton = NodePath("../..")
+
+[node name="RoadTile247" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 105, 0, 35)
+mesh = ExtResource("251_6nimg")
+skeleton = NodePath("../..")
+
+[node name="RoadTile248" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 105, 0, 40)
+mesh = ExtResource("252_bfttf")
+skeleton = NodePath("../..")
+
+[node name="RoadTile249" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 105, 0, 45)
+mesh = ExtResource("253_uul0n")
+skeleton = NodePath("../..")
+
+[node name="RoadTile250" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 105, 0, 50)
+mesh = ExtResource("254_vsfrd")
+skeleton = NodePath("../..")
+
+[node name="RoadTile251" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 105, 0, 55)
+mesh = ExtResource("255_iqs7h")
+skeleton = NodePath("../..")
+
+[node name="RoadTile252" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 110, 0, 5)
+mesh = ExtResource("256_sj8tj")
+skeleton = NodePath("../..")
+
+[node name="RoadTile253" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 110, 0, 10)
+mesh = ExtResource("257_gvxgn")
+skeleton = NodePath("../..")
+
+[node name="RoadTile254" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 110, 0, 15)
+mesh = ExtResource("258_iqqia")
+skeleton = NodePath("../..")
+
+[node name="RoadTile255" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 110, 0, 20)
+mesh = ExtResource("259_mc3aj")
+skeleton = NodePath("../..")
+
+[node name="RoadTile256" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 110, 0, 25)
+mesh = ExtResource("260_68alt")
+skeleton = NodePath("../..")
+
+[node name="RoadTile257" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 110, 0, 30)
+mesh = ExtResource("261_1mysx")
+skeleton = NodePath("../..")
+
+[node name="RoadTile258" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 110, 0, 35)
+mesh = ExtResource("262_e33hp")
+skeleton = NodePath("../..")
+
+[node name="RoadTile259" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 110, 0, 40)
+mesh = ExtResource("263_elnwy")
+skeleton = NodePath("../..")
+
+[node name="RoadTile260" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 110, 0, 45)
+mesh = ExtResource("264_yiylr")
+skeleton = NodePath("../..")
+
+[node name="RoadTile261" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 110, 0, 50)
+mesh = ExtResource("265_ho316")
+skeleton = NodePath("../..")
+
+[node name="RoadTile262" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 110, 0, 55)
+mesh = ExtResource("266_iuga3")
+skeleton = NodePath("../..")
+
+[node name="RoadTile263" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 115, 0, 5)
+mesh = ExtResource("267_w4sxs")
+skeleton = NodePath("../..")
+
+[node name="RoadTile264" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 115, 0, 10)
+mesh = ExtResource("268_25fps")
+skeleton = NodePath("../..")
+
+[node name="RoadTile265" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 115, 0, 15)
+mesh = ExtResource("269_72ggm")
+skeleton = NodePath("../..")
+
+[node name="RoadTile266" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 115, 0, 20)
+mesh = ExtResource("270_gvo1s")
+skeleton = NodePath("../..")
+
+[node name="RoadTile267" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 115, 0, 25)
+mesh = ExtResource("271_h4a44")
+skeleton = NodePath("../..")
+
+[node name="RoadTile268" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 115, 0, 30)
+mesh = ExtResource("272_je260")
+skeleton = NodePath("../..")
+
+[node name="RoadTile269" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 115, 0, 35)
+mesh = ExtResource("273_ikc2g")
+skeleton = NodePath("../..")
+
+[node name="RoadTile270" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 115, 0, 40)
+mesh = ExtResource("274_2sdff")
+skeleton = NodePath("../..")
+
+[node name="RoadTile271" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 115, 0, 45)
+mesh = ExtResource("275_d8sj3")
+skeleton = NodePath("../..")
+
+[node name="RoadTile272" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 115, 0, 50)
+mesh = ExtResource("276_6w2st")
+skeleton = NodePath("../..")
+
+[node name="RoadTile273" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 115, 0, 55)
+mesh = ExtResource("277_krjee")
+skeleton = NodePath("../..")
+
+[node name="RoadTile274" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 120, 0, 5)
+mesh = ExtResource("278_8fbe4")
+skeleton = NodePath("../..")
+
+[node name="RoadTile275" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 120, 0, 10)
+mesh = ExtResource("279_b2bbo")
+skeleton = NodePath("../..")
+
+[node name="RoadTile276" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 120, 0, 15)
+mesh = ExtResource("280_q8we8")
+skeleton = NodePath("../..")
+
+[node name="RoadTile277" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 120, 0, 20)
+mesh = ExtResource("281_kc2ty")
+skeleton = NodePath("../..")
+
+[node name="RoadTile278" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 120, 0, 25)
+mesh = ExtResource("282_x0hji")
+skeleton = NodePath("../..")
+
+[node name="RoadTile279" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 120, 0, 30)
+mesh = ExtResource("283_gqk24")
+skeleton = NodePath("../..")
+
+[node name="RoadTile280" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 120, 0, 35)
+mesh = ExtResource("284_582ew")
+skeleton = NodePath("../..")
+
+[node name="RoadTile281" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 120, 0, 40)
+mesh = ExtResource("285_5k1oc")
+skeleton = NodePath("../..")
+
+[node name="RoadTile282" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 120, 0, 45)
+mesh = ExtResource("286_h2mfg")
+skeleton = NodePath("../..")
+
+[node name="RoadTile283" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 120, 0, 50)
+mesh = ExtResource("287_nj6b4")
+skeleton = NodePath("../..")
+
+[node name="RoadTile284" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 120, 0, 55)
+mesh = ExtResource("288_y2c34")
+skeleton = NodePath("../..")
+
+[node name="RoadTile285" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 125, 0, 5)
+mesh = ExtResource("289_jlrim")
+skeleton = NodePath("../..")
+
+[node name="RoadTile286" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 125, 0, 10)
+mesh = ExtResource("290_q5x7d")
+skeleton = NodePath("../..")
+
+[node name="RoadTile287" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 125, 0, 15)
+mesh = ExtResource("291_73ga1")
+skeleton = NodePath("../..")
+
+[node name="RoadTile288" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 125, 0, 20)
+mesh = ExtResource("292_8rdd8")
+skeleton = NodePath("../..")
+
+[node name="RoadTile289" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 125, 0, 25)
+mesh = ExtResource("293_y4lg7")
+skeleton = NodePath("../..")
+
+[node name="RoadTile290" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 125, 0, 30)
+mesh = ExtResource("294_pomo2")
+skeleton = NodePath("../..")
+
+[node name="RoadTile291" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 125, 0, 35)
+mesh = ExtResource("295_d073r")
+skeleton = NodePath("../..")
+
+[node name="RoadTile292" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 125, 0, 40)
+mesh = ExtResource("296_fvlg7")
+skeleton = NodePath("../..")
+
+[node name="RoadTile293" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 125, 0, 45)
+mesh = ExtResource("297_ouilq")
+skeleton = NodePath("../..")
+
+[node name="RoadTile294" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 125, 0, 50)
+mesh = ExtResource("298_6v0qd")
+skeleton = NodePath("../..")
+
+[node name="RoadTile295" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 125, 0, 55)
+mesh = ExtResource("299_cqnt8")
+skeleton = NodePath("../..")
+
+[node name="RoadTile296" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 130, 0, 5)
+mesh = ExtResource("300_l6mnb")
+skeleton = NodePath("../..")
+
+[node name="RoadTile297" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 130, 0, 10)
+mesh = ExtResource("301_p35yc")
+skeleton = NodePath("../..")
+
+[node name="RoadTile298" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 130, 0, 15)
+mesh = ExtResource("302_gy2ag")
+skeleton = NodePath("../..")
+
+[node name="RoadTile299" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 130, 0, 20)
+mesh = ExtResource("303_kw03p")
+skeleton = NodePath("../..")
+
+[node name="RoadTile300" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 130, 0, 25)
+mesh = ExtResource("304_0yvk1")
+skeleton = NodePath("../..")
+
+[node name="RoadTile301" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 130, 0, 30)
+mesh = ExtResource("305_8co00")
+skeleton = NodePath("../..")
+
+[node name="RoadTile302" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 130, 0, 35)
+mesh = ExtResource("306_yv4op")
+skeleton = NodePath("../..")

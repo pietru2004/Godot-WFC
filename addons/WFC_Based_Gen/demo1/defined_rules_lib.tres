@@ -1,0 +1,499 @@
+[gd_resource type="Resource" script_class="MeshLibRulesSet" load_steps=68 format=3 uid="uid://cyogmdntlsesr"]
+
+[ext_resource type="Script" path="res://addons/WFC_Based_Gen/scripts/mesh_lib_rule_item.gd" id="1_d4o32"]
+[ext_resource type="Script" path="res://addons/WFC_Based_Gen/scripts/mesh_lib_rule.gd" id="2_lkibc"]
+[ext_resource type="Script" path="res://addons/WFC_Based_Gen/scripts/mesh_lib_rule_set.gd" id="3_gcx8e"]
+
+[sub_resource type="Resource" id="Resource_uykww"]
+script = ExtResource("1_d4o32")
+id = 2
+object_name = "RiverEnd"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_6bbt0"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_xyjia"]
+script = ExtResource("1_d4o32")
+id = 3
+object_name = "RiverBend"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_davlx"]
+script = ExtResource("1_d4o32")
+id = 1
+object_name = "Pond"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_dmtxa"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_vfs2w"]
+script = ExtResource("1_d4o32")
+id = 2
+object_name = "RiverEnd"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_1drgq"]
+script = ExtResource("1_d4o32")
+id = 3
+object_name = "RiverBend"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_lyry0"]
+script = ExtResource("1_d4o32")
+id = 1
+object_name = "Pond"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_6cd1g"]
+script = ExtResource("1_d4o32")
+id = 2
+object_name = "RiverEnd"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_cc68i"]
+script = ExtResource("1_d4o32")
+id = 2
+object_name = "RiverEnd"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_4gmvs"]
+script = ExtResource("1_d4o32")
+id = 4
+object_name = "RiverStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_tnbyp"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_x1fy3"]
+script = ExtResource("1_d4o32")
+id = 3
+object_name = "RiverBend"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_g68xl"]
+script = ExtResource("1_d4o32")
+id = 1
+object_name = "Pond"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_t44dm"]
+script = ExtResource("1_d4o32")
+id = 4
+object_name = "RiverStraight"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_vljbk"]
+script = ExtResource("1_d4o32")
+id = 2
+object_name = "RiverEnd"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_1cfyk"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_f4xf6"]
+script = ExtResource("1_d4o32")
+id = 3
+object_name = "RiverBend"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_bpx8p"]
+script = ExtResource("1_d4o32")
+id = 4
+object_name = "RiverStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_yu1sb"]
+script = ExtResource("1_d4o32")
+id = 2
+object_name = "RiverEnd"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_6e5o3"]
+script = ExtResource("1_d4o32")
+id = 1
+object_name = "Pond"
+rotation = 16
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_h0256"]
+script = ExtResource("1_d4o32")
+id = 4
+object_name = "RiverStraight"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_cwe4w"]
+script = ExtResource("2_lkibc")
+id = 0
+object_name = "Grass"
+rotation = 0
+front = [SubResource("Resource_dmtxa"), SubResource("Resource_vfs2w"), SubResource("Resource_1drgq"), SubResource("Resource_lyry0")]
+back = [SubResource("Resource_uykww"), SubResource("Resource_6bbt0"), SubResource("Resource_xyjia"), SubResource("Resource_davlx")]
+left = [SubResource("Resource_6cd1g"), SubResource("Resource_cc68i"), SubResource("Resource_4gmvs"), SubResource("Resource_tnbyp"), SubResource("Resource_x1fy3"), SubResource("Resource_g68xl"), SubResource("Resource_t44dm")]
+right = [SubResource("Resource_vljbk"), SubResource("Resource_1cfyk"), SubResource("Resource_f4xf6"), SubResource("Resource_bpx8p"), SubResource("Resource_yu1sb"), SubResource("Resource_6e5o3"), SubResource("Resource_h0256")]
+down = []
+up = []
+
+[sub_resource type="Resource" id="Resource_jd7ut"]
+script = ExtResource("1_d4o32")
+id = 4
+object_name = "RiverStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_5s1sd"]
+script = ExtResource("1_d4o32")
+id = 4
+object_name = "RiverStraight"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_derpt"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_hs8vu"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_rgvgs"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_eryb4"]
+script = ExtResource("2_lkibc")
+id = 2
+object_name = "RiverEnd"
+rotation = 10
+front = [SubResource("Resource_derpt")]
+back = [SubResource("Resource_jd7ut"), SubResource("Resource_5s1sd")]
+left = [SubResource("Resource_hs8vu")]
+right = [SubResource("Resource_rgvgs")]
+down = []
+up = []
+
+[sub_resource type="Resource" id="Resource_0047p"]
+script = ExtResource("1_d4o32")
+id = 2
+object_name = "RiverEnd"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_qd22f"]
+script = ExtResource("1_d4o32")
+id = 3
+object_name = "RiverBend"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_xlrwi"]
+script = ExtResource("1_d4o32")
+id = 2
+object_name = "RiverEnd"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_mwbbl"]
+script = ExtResource("1_d4o32")
+id = 3
+object_name = "RiverBend"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_ndafh"]
+script = ExtResource("1_d4o32")
+id = 4
+object_name = "RiverStraight"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_8v875"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_6gm2u"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_3n5fe"]
+script = ExtResource("2_lkibc")
+id = 4
+object_name = "RiverStraight"
+rotation = 10
+front = [SubResource("Resource_xlrwi"), SubResource("Resource_mwbbl"), SubResource("Resource_ndafh")]
+back = [SubResource("Resource_0047p"), SubResource("Resource_qd22f")]
+left = [SubResource("Resource_8v875")]
+right = [SubResource("Resource_6gm2u")]
+down = []
+up = []
+
+[sub_resource type="Resource" id="Resource_84vnh"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_08iqn"]
+script = ExtResource("1_d4o32")
+id = 4
+object_name = "RiverStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_60cxx"]
+script = ExtResource("1_d4o32")
+id = 4
+object_name = "RiverStraight"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_lqlvc"]
+script = ExtResource("1_d4o32")
+id = 3
+object_name = "RiverBend"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_d54o4"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_bq2uh"]
+script = ExtResource("2_lkibc")
+id = 3
+object_name = "RiverBend"
+rotation = 0
+front = [SubResource("Resource_08iqn"), SubResource("Resource_60cxx")]
+back = [SubResource("Resource_84vnh")]
+left = [SubResource("Resource_lqlvc")]
+right = [SubResource("Resource_d54o4")]
+down = []
+up = []
+
+[sub_resource type="Resource" id="Resource_0l7nb"]
+script = ExtResource("1_d4o32")
+id = 4
+object_name = "RiverStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_1bctm"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_6d45f"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_qdeeg"]
+script = ExtResource("1_d4o32")
+id = 3
+object_name = "RiverBend"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_6yc1i"]
+script = ExtResource("2_lkibc")
+id = 3
+object_name = "RiverBend"
+rotation = 10
+front = [SubResource("Resource_1bctm")]
+back = [SubResource("Resource_0l7nb")]
+left = [SubResource("Resource_6d45f")]
+right = [SubResource("Resource_qdeeg")]
+down = []
+up = []
+
+[sub_resource type="Resource" id="Resource_gw4is"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_sdtch"]
+script = ExtResource("1_d4o32")
+id = 4
+object_name = "RiverStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_nmeun"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_mwlqk"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_ouedd"]
+script = ExtResource("2_lkibc")
+id = 2
+object_name = "RiverEnd"
+rotation = 0
+front = [SubResource("Resource_sdtch")]
+back = [SubResource("Resource_gw4is")]
+left = [SubResource("Resource_nmeun")]
+right = [SubResource("Resource_mwlqk")]
+down = []
+up = []
+
+[sub_resource type="Resource" id="Resource_c7c8r"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_27cd6"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_etw2l"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_6n88s"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_2wlb2"]
+script = ExtResource("2_lkibc")
+id = 1
+object_name = "Pond"
+rotation = 0
+front = [SubResource("Resource_27cd6")]
+back = [SubResource("Resource_c7c8r")]
+left = [SubResource("Resource_etw2l")]
+right = [SubResource("Resource_6n88s")]
+down = []
+up = []
+
+[sub_resource type="Resource" id="Resource_tlfnt"]
+script = ExtResource("1_d4o32")
+id = 3
+object_name = "RiverBend"
+rotation = 0
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_q1lok"]
+script = ExtResource("1_d4o32")
+id = 4
+object_name = "RiverStraight"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_esdpw"]
+script = ExtResource("1_d4o32")
+id = 2
+object_name = "RiverEnd"
+rotation = 10
+weight = 1.0
+
+[sub_resource type="Resource" id="Resource_sv682"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_t3vbv"]
+script = ExtResource("1_d4o32")
+id = 0
+object_name = "Grass"
+rotation = 0
+weight = 3.0
+
+[sub_resource type="Resource" id="Resource_pkpm3"]
+script = ExtResource("2_lkibc")
+id = 4
+object_name = "RiverStraight"
+rotation = 0
+front = [SubResource("Resource_esdpw")]
+back = [SubResource("Resource_tlfnt"), SubResource("Resource_q1lok")]
+left = [SubResource("Resource_sv682")]
+right = [SubResource("Resource_t3vbv")]
+down = []
+up = []
+
+[resource]
+script = ExtResource("3_gcx8e")
+items = [SubResource("Resource_cwe4w"), SubResource("Resource_eryb4"), SubResource("Resource_3n5fe"), SubResource("Resource_bq2uh"), SubResource("Resource_6yc1i"), SubResource("Resource_ouedd"), SubResource("Resource_2wlb2"), SubResource("Resource_pkpm3")]
+force_list_fix = false
+force_integrity_check = true

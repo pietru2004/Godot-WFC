@@ -33,6 +33,7 @@ func run_generate_meshlib(val):
 ##Rule Generation##
 ###################
 @export_category("RuleSetCreation")
+@export var add_mode : bool = false ## Should add to existing rule set.
 @export var generate_rules : bool = false : set = run_generate_rules
 @export var mesh_lib_rule_set : MeshLibRulesSet = MeshLibRulesSet.new()
 
@@ -40,7 +41,8 @@ func run_generate_rules(val):
 	generate_rules=false
 	if generation_lock or running:
 		return
-	mesh_lib_rule_set=MeshLibRulesSet.new()
+	if !add_mode:
+		mesh_lib_rule_set=MeshLibRulesSet.new()
 	var cells := {}
 	for vec in get_used_cells():
 		var id = get_cell_item(vec)
@@ -107,6 +109,18 @@ func add_rule_UP(item:MeshLibRule,vec:Vector3):
 	var rot = get_cell_item_orientation(dir)
 	item.add_item_up(id,dir_item,rot)
 
+###############
+##Map Cleaner##
+###############
+@export_category("MapCleaning")
+@export var clear_map : bool = false : set = run_clear_map
+
+func run_clear_map(val):
+	clear_map=false
+	if generation_lock or running:
+		return
+	clear()
+	clear_baked_meshes()
 
 ##################
 ##Map Generation##
@@ -116,10 +130,12 @@ func add_rule_UP(item:MeshLibRule,vec:Vector3):
 @export var allow_up: bool = true
 @export var allow_down: bool = false
 @export var conflict_repair: bool = true
+@export var allow_empty_cells: bool = true ##for 3D Maps
 
 @export var delay_between_tries := 0.05
 
 var start_point := Vector3.ZERO
+var had_start_point := false
 
 @export var generate_map : bool = false : set = run_generate_map
 
@@ -137,6 +153,7 @@ func run_generate_map(val):
 	clear_baked_meshes()
 	waiting.append(start_point)
 	running=true
+	had_start_point = false
 
 @export var time:=0.0
 @export var remaining_cells := 0
@@ -159,9 +176,12 @@ func _process(delta):
 			waiting.remove_at(0)
 
 func sort_entropy(a, b):
-	return a[1] < b[1]
+	return (a[1] < b[1]) and !(a[1]<=0)
 
 func generate_cell(vec:Vector3)->bool:
+	if !can_check_cell(vec) and had_start_point:
+		waiting.remove_at(0)
+		return get_cell_item(vec)!=-1
 	var cell_front = get_rule(vec+Vector3.FORWARD)#.back
 	var cell_back = get_rule(vec+Vector3.BACK)#.front
 	var cell_left = get_rule(vec+Vector3.LEFT)#.left
@@ -172,10 +192,16 @@ func generate_cell(vec:Vector3)->bool:
 	var use_cells := [cell_front.id!=-1,cell_back.id!=-1,cell_left.id!=-1,cell_right.id!=-1,cell_down.id!=-1,cell_up.id!=-1]
 	var similar_cells:Array=findSimilarCells(data_cells,use_cells)
 	var weights = get_weights(similar_cells)
-	var starter :bool= (cell_front.id==-1 and cell_back.id==-1 and cell_left.id==-1 and cell_right.id==-1 and cell_down.id==-1 and cell_up.id==-1)
-	if starter:
-		var id = mesh_lib_rule_set.items.pick_random().id
-		set_cell_item(vec,id)
+	var empty :bool= (cell_front.back.size()==0 and cell_back.front.size()==0 and cell_left.right.size()==0 and cell_right.left.size()==0 and cell_down.up.size()==0 and cell_up.down.size()==0)
+	if !had_start_point:
+		had_start_point=true
+		var starter :bool= (cell_front.id==-1 and cell_back.id==-1 and cell_left.id==-1 and cell_right.id==-1 and cell_down.id==-1 and cell_up.id==-1)
+		if starter:
+			var id = mesh_lib_rule_set.items.pick_random().id
+			set_cell_item(vec,id)
+			return true
+	if empty:
+		set_cell_item(vec,INF)
 		return true
 	if similar_cells.size()==0:
 		error_out=[]
@@ -192,6 +218,15 @@ func generate_cell(vec:Vector3)->bool:
 	var selected :MeshLibRuleItem=pickRandomValue(similar_cells,weights)
 	set_cell_item(vec,selected.id,selected.rotation)
 	return true
+
+func can_check_cell(vec:Vector3)->bool:
+	var cell_front = get_cell_item(vec+Vector3.FORWARD)
+	var cell_back = get_cell_item(vec+Vector3.BACK)
+	var cell_left = get_cell_item(vec+Vector3.LEFT)
+	var cell_right = get_cell_item(vec+Vector3.RIGHT)
+	var cell_down = get_cell_item(vec+Vector3.DOWN)
+	var cell_up = get_cell_item(vec+Vector3.UP)
+	return (cell_front!=-1 or cell_back!=-1 or cell_left!=-1 or cell_right!=-1 or cell_down!=-1 or cell_up!=-1)
 
 func add_new_cells_to_list(vec:Vector3):
 	if vec.z-1>=0:
@@ -211,7 +246,7 @@ func add_new_cells_to_list(vec:Vector3):
 		
 func try_add_cell(vec:Vector3):
 	if get_cell_item(vec)==-1:
-		if !waiting.has(vec):
+		if !waiting.has(vec) and can_check_cell(vec):
 			waiting.append(vec)
 
 func add_repairs(vec:Vector3):
@@ -265,9 +300,9 @@ func add_repairs(vec:Vector3):
 		
 func try_regen_cell(vec:Vector3):
 	if get_cell_item(vec)!=-1:
-		if !waiting.has(vec):
+		set_cell_item(vec,-1)
+		if !waiting.has(vec) and can_check_cell(vec):
 			waiting.append(vec)
-			set_cell_item(vec,-1)
 
 
 func pickRandomValue(data: Array, dataWeights: Array):

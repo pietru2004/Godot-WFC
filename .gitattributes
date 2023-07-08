@@ -1,7 +1,2 @@
-*.gd eol=lf
-*.tscn eol=lf
-*.cfg eol=lf
-*.godot eol=lf
-*.tres eol=lf
-*.import eol=lf
-*.gdshader eol=lf
+# Normalize EOL for all files that Git considers text files.
+* text=auto eol=lf
