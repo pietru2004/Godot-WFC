@@ -7,8 +7,8 @@
 [ext_resource type="ArrayMesh" uid="uid://cqf1s8l4yd4a7" path="res://Assets/Kenney/Nature/ground_riverBend.obj" id="4_b0cgf"]
 [ext_resource type="ArrayMesh" uid="uid://d4iusgsl8uvh3" path="res://Assets/Kenney/Nature/ground_riverStraight.obj" id="5_f8jo0"]
 [ext_resource type="Script" path="res://addons/WFC_Based_Gen/scripts/mesh_lib_rule_item.gd" id="5_oi8l6"]
-[ext_resource type="Resource" uid="uid://br6td7cbfwuta" path="res://addons/WFC_Based_Gen/demo1/defined_mesh_lib.tres" id="8_aj18a"]
-[ext_resource type="Resource" uid="uid://cyogmdntlsesr" path="res://addons/WFC_Based_Gen/demo1/defined_rules_lib.tres" id="9_oli8c"]
+[ext_resource type="Resource" uid="uid://br6td7cbfwuta" path="res://addons/WFC_Based_Gen/demo2/defined_mesh_lib.tres" id="8_aj18a"]
+[ext_resource type="Resource" uid="uid://cyogmdntlsesr" path="res://addons/WFC_Based_Gen/demo2/defined_rules_lib.tres" id="9_oli8c"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_iy4fo"]
 data = PackedVector3Array(0.5, 0, 0.5, -0.5, 0, -0.5, 0.5, 0, -0.5, -0.5, 0, -0.5, 0.5, 0, 0.5, -0.5, 0, 0.5)
@@ -161,7 +161,6 @@ generation_lock = false
 error_out = [Vector3(18, 0, 3), [[SubResource("Resource_uykww"), SubResource("Resource_6bbt0"), SubResource("Resource_xyjia"), SubResource("Resource_davlx")], [SubResource("Resource_08iqn"), SubResource("Resource_60cxx")], [SubResource("Resource_vljbk"), SubResource("Resource_1cfyk"), SubResource("Resource_f4xf6"), SubResource("Resource_bpx8p"), SubResource("Resource_yu1sb"), SubResource("Resource_6e5o3"), SubResource("Resource_h0256")], [], [], []], [true, true, true, false, false, false]]
 mesh_lib_data = ExtResource("8_aj18a")
 mesh_lib_rule_set = ExtResource("9_oli8c")
-map_size = 20
 allow_up = false
 allow_empty_cells = false
 delay_between_tries = 0.001
