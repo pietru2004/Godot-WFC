@@ -16,6 +16,12 @@ class GetInterface extends EditorScript:
 
 func get_meshlib()->MeshLibrary:
 	var meshlib = MeshLibrary.new()
+	
+	#generate previews (code from RonYanDaik)
+	var gei := GetInterface.new()
+	var ei = gei.get_editor_interface()
+	###########
+	
 	for i in items.size():
 		var item :MeshLibItem = items[i]
 		meshlib.create_item(i)
@@ -24,11 +30,9 @@ func get_meshlib()->MeshLibrary:
 		meshlib.set_item_name(i,item.object_name)
 		
 		#generate previews (code from RonYanDaik)
-		var gei := GetInterface.new()
-		var ei = gei.get_editor_interface()
 		var prv := ei.make_mesh_previews([item.mesh],preview_resolution)
 		meshlib.set_item_preview(i,prv[0])
-		
+		###########
 		
 		if item.auto_generate_collision and item.mesh!=null:
 			meshlib.set_item_shapes(i,[item.mesh.create_trimesh_shape()])
