@@ -21,3 +21,11 @@ after that check error out
 - value 0 is tile position
 - value 1 are all possible tiles from each side that can be placed at that spot
 - value 2 shows which arrays are being used for that cell
+
+
+# Error Out
+It shows last cell that had 0 possible outcomes
+Array elements:
+0. Position of cell.
+1. List with all neighbours of cell and tiles that they allow in place of cell.
+2. List of arrays from neighbour cells that were used.
