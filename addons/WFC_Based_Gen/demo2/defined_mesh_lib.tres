@@ -96,3 +96,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.5, 0)
 [resource]
 script = ExtResource("7_dptuw")
 items = [SubResource("Resource_quxci"), SubResource("Resource_6tp58"), SubResource("Resource_dkis8"), SubResource("Resource_3t6nt"), SubResource("Resource_l4ssl"), SubResource("Resource_n0vky"), SubResource("Resource_x7qqr"), SubResource("Resource_sjde3")]
+preview_resolution = 64
