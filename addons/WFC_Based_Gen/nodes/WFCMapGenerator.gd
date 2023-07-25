@@ -189,7 +189,8 @@ func _process(delta):
 			running=false
 			return
 		var data = calc_celc_entropy()
-		waiting.sort_custom(sort_entropy)
+		data.sort_custom(sort_entropy)
+		waiting=get_sorted_vectors_from_entropy_data(data)
 		var cell = waiting[0]
 		var suc = generate_cell(cell)
 		if suc:
@@ -197,8 +198,14 @@ func _process(delta):
 			waiting.remove_at(0)
 
 func sort_entropy(a, b):
-	return (a[1] < b[1]) and !(a[1]<=0)
+	return (a[1] < b[1]) #and !(a[1]<=0)
 
+func get_sorted_vectors_from_entropy_data(input:Array)->Array:
+	var export := []
+	#[cell,entropy] => set
+	for set in input:
+		export.append(set[0])
+	return export
 
 func generate_cell(vec:Vector3)->bool:
 	if !can_check_cell(vec) and had_start_point:
