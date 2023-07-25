@@ -130,6 +130,14 @@ func run_clear_map(val):
 @export_category("MapGeneration")
 @export var map_start := Vector3.ZERO
 @export var map_end := Vector3(10,10,10)
+
+enum sorting_mode {
+	entropy, ##sort using entropy
+	xzy, ##sort using vec 3
+	no_sorting ##use order as cells were added...
+}
+@export var cell_sorting:=sorting_mode.entropy
+
 @export var allow_up: bool = true
 @export var allow_down: bool = false
 @export var conflict_repair: bool = true
@@ -188,17 +196,32 @@ func _process(delta):
 				return
 			running=false
 			return
-		var data = calc_celc_entropy()
-		data.sort_custom(sort_entropy)
-		waiting=get_sorted_vectors_from_entropy_data(data)
-		var cell = waiting[0]
-		var suc = generate_cell(cell)
+		var cell_n := 0
+		if cell_sorting==sorting_mode.entropy:
+			var data = calc_celc_entropy()
+			data.sort_custom(sort_entropy)
+			waiting=get_sorted_vectors_from_entropy_data(data)
+			var rang := get_the_same_entropy_range(data)
+			cell_n = randi_range(0,rang)
+		elif cell_sorting==sorting_mode.xzy:
+			waiting.sort_custom(sort_xzy)
+		var cell = waiting[cell_n]
+		var suc = generate_cell(cell,cell_n)
 		if suc:
 			add_new_cells_to_list(cell)
-			waiting.remove_at(0)
+			waiting.remove_at(cell_n)
 
 func sort_entropy(a, b):
 	return (a[1] < b[1]) #and !(a[1]<=0)
+
+func sort_xzy(a:Vector3, b:Vector3):
+	if a.x != b.x:
+		return a.x < b.x
+	elif a.z != b.z:
+		return a.z < b.z
+	else:
+		return a.y < b.y
+	return false
 
 func get_sorted_vectors_from_entropy_data(input:Array)->Array:
 	var export := []
@@ -207,9 +230,21 @@ func get_sorted_vectors_from_entropy_data(input:Array)->Array:
 		export.append(set[0])
 	return export
 
-func generate_cell(vec:Vector3)->bool:
+func get_the_same_entropy_range(input:Array)->int:
+	var _i := 0
+	var entropy = input[0][1]
+	#[cell,entropy] => set
+	for set in input:
+		if _i!=set[1]:
+			break
+		_i+=1
+	if _i==0:
+		return 0
+	return _i-1
+
+func generate_cell(vec:Vector3,cell_n:int)->bool:
 	if !can_check_cell(vec) and had_start_point:
-		waiting.remove_at(0)
+		waiting.remove_at(cell_n)
 		return get_cell_item(vec)!=-1
 	var cell_front = get_rule(vec+Vector3.FORWARD)#.back
 	var cell_back = get_rule(vec+Vector3.BACK)#.front
@@ -231,7 +266,7 @@ func generate_cell(vec:Vector3)->bool:
 			return true
 	if empty:
 		set_cell_item(vec,-1)
-		waiting.remove_at(0)
+		waiting.remove_at(cell_n)
 		return false
 	if similar_cells.size()==0:
 		error_out=[]
@@ -242,7 +277,7 @@ func generate_cell(vec:Vector3)->bool:
 		#findSimilarCells(data_cells,use_cells,true)
 		if conflict_repair:
 			add_repairs(vec)
-			waiting.remove_at(0)
+			waiting.remove_at(cell_n)
 			return false
 		running=false
 		return false

@@ -3,6 +3,3 @@ res://addons/WFC_Based_Gen/demo2/demo.tscn
 res://addons/WFC_Based_Gen/demo2/defined_mesh_lib.tres
 res://addons/WFC_Based_Gen/demo2/defined_rules_lib.tres
 res://addons/WFC_Based_Gen/nodes/WFCMapGenerator.gd
-res://addons/WFC_Based_Gen/demo1/defined_rules_lib.tres
-res://addons/WFC_Based_Gen/demo1/demo.tscn
-res://addons/WFC_Based_Gen/demo1/defined_mesh_lib.tres
