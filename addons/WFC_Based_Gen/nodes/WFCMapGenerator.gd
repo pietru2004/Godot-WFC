@@ -16,6 +16,7 @@ class_name WFCMapGenerator
 
 @export var generation_lock: bool = true
 @export var error_out := []
+@export var debug_error_print_out := true
 #########################
 ##Mesh Library Creation##
 #########################
@@ -140,6 +141,14 @@ enum sorting_mode {
 
 @export var allow_up: bool = true
 @export var allow_down: bool = false
+
+enum cell_adding_mode {
+	always, ##add cell always
+	when_one_can_add, ##when one of cells has more than 0 options in that direction
+	when_all_can_add ##when all cells has more than 0 options in that direction
+}
+@export var cell_add_to_gen_list:=cell_adding_mode.always
+
 @export var conflict_repair: bool = true
 @export var allow_empty_cells: bool = true ##for 3D Maps
 
@@ -273,7 +282,8 @@ func generate_cell(vec:Vector3,cell_n:int)->bool:
 		error_out.append(vec)
 		error_out.append(data_cells)
 		error_out.append(use_cells)
-		printerr(vec)
+		if debug_error_print_out:
+			printerr(vec)
 		#findSimilarCells(data_cells,use_cells,true)
 		if conflict_repair:
 			add_repairs(vec)
@@ -313,33 +323,39 @@ func add_new_cells_to_list(vec:Vector3):
 func try_add_cell(vec:Vector3,mode:=0):
 	if get_cell_item(vec)==-1:
 		if can_check_cell(vec):
-			if !waiting.has(vec) and mode==0:
+			if !waiting.has(vec) and mode==0 and check_side_allowement(vec):
 				waiting.append(vec)
-			if !up_wait.has(vec) and mode==1: #up
+			if !up_wait.has(vec) and mode==1 and check_side_allowement(vec): #up
 				up_wait.append(vec)
-			if !down_wait.has(vec) and mode==2: #down
+			if !down_wait.has(vec) and mode==2 and check_side_allowement(vec): #down
 				down_wait.append(vec)
 	
 
 func add_repairs(vec:Vector3):
-	if vec.z-1>=map_start.z:
-		try_regen_cell(vec+Vector3.FORWARD)
-		if vec.x-1>=map_start.x:
-			try_regen_cell(vec+Vector3.FORWARD+Vector3.LEFT)
-		if vec.x+1<map_end.x:
-			try_regen_cell(vec+Vector3.FORWARD+Vector3.RIGHT)
-	if vec.z+1<map_end.z:
-		try_regen_cell(vec+Vector3.BACK)
-		if vec.x-1>=map_start.x:
-			try_regen_cell(vec+Vector3.BACK+Vector3.LEFT)
-		if vec.x+1<map_end.x:
-			try_regen_cell(vec+Vector3.BACK+Vector3.RIGHT)
-		
-		
-	if vec.x-1>=map_start.x:
-		try_regen_cell(vec+Vector3.LEFT)
-	if vec.x+1<map_end.x:
-		try_regen_cell(vec+Vector3.RIGHT)
+	var list := [-1,0,1]
+	for x in list:
+		if vec.x+x>=map_start.x and vec.x+x<map_end.x:
+			for z in list:
+				if vec.z+z>=map_start.z and vec.z+z<map_end.z:
+					try_regen_cell(vec+Vector3(x,0,z))
+#	if vec.z-1>=map_start.z:
+#		try_regen_cell(vec+Vector3.FORWARD)
+#		if vec.x-1>=map_start.x:
+#			try_regen_cell(vec+Vector3.FORWARD+Vector3.LEFT)
+#		if vec.x+1<map_end.x:
+#			try_regen_cell(vec+Vector3.FORWARD+Vector3.RIGHT)
+#	if vec.z+1<map_end.z:
+#		try_regen_cell(vec+Vector3.BACK)
+#		if vec.x-1>=map_start.x:
+#			try_regen_cell(vec+Vector3.BACK+Vector3.LEFT)
+#		if vec.x+1<map_end.x:
+#			try_regen_cell(vec+Vector3.BACK+Vector3.RIGHT)
+#
+#
+#	if vec.x-1>=map_start.x:
+#		try_regen_cell(vec+Vector3.LEFT)
+#	if vec.x+1<map_end.x:
+#		try_regen_cell(vec+Vector3.RIGHT)
 
 #	if vec.y-1>=map_start.y and allow_down:
 #		try_regen_cell(vec+Vector3.DOWN)
@@ -372,17 +388,46 @@ func add_repairs(vec:Vector3):
 		
 func try_regen_cell(vec:Vector3,mode:=0):
 	if get_cell_item(vec)!=-1:
+		set_cell_item(vec,-1)
 		if can_check_cell(vec):
-			if !waiting.has(vec) and mode==0:
+			if !waiting.has(vec) and mode==0 and check_side_allowement(vec):
 				set_cell_item(vec,-1)
 				waiting.append(vec)
-			if !up_wait.has(vec) and mode==1: #up
+			if !up_wait.has(vec) and mode==1 and check_side_allowement(vec): #up
 				set_cell_item(vec,-1)
 				up_wait.append(vec)
-			if !down_wait.has(vec) and mode==2: #down
+			if !down_wait.has(vec) and mode==2 and check_side_allowement(vec): #down
 				set_cell_item(vec,-1)
 				down_wait.append(vec)
 
+func check_side_allowement(vec:Vector3)->bool:
+	match cell_add_to_gen_list:
+		cell_adding_mode.always:
+			return true
+		cell_adding_mode.when_one_can_add:
+			var cell_front = get_rule(vec+Vector3.FORWARD)#.back
+			var cell_back = get_rule(vec+Vector3.BACK)#.front
+			var cell_left = get_rule(vec+Vector3.LEFT)#.left
+			var cell_right = get_rule(vec+Vector3.RIGHT)#.right
+			var cell_down = get_rule(vec+Vector3.DOWN)#.up
+			var cell_up = get_rule(vec+Vector3.UP)#.down
+			return (cell_front.back.size()!=0 or cell_back.front.size()!=0 or cell_left.right.size()!=0 or cell_right.left.size()!=0 or cell_down.up.size()!=0 or cell_up.down.size()!=0)
+		cell_adding_mode.when_all_can_add:
+			var cell_front = get_rule(vec+Vector3.FORWARD)#.back
+			var cell_back = get_rule(vec+Vector3.BACK)#.front
+			var cell_left = get_rule(vec+Vector3.LEFT)#.left
+			var cell_right = get_rule(vec+Vector3.RIGHT)#.right
+			var cell_down = get_rule(vec+Vector3.DOWN)#.up
+			var cell_up = get_rule(vec+Vector3.UP)#.down
+			return add_mode_check_all_cell_sides([cell_front.id, cell_back.id, cell_left.id, cell_right.id, cell_down.id, cell_up.id],[cell_front.back, cell_back.front, cell_left.right, cell_right.left, cell_down.up, cell_up.down])
+	return false
+
+func add_mode_check_all_cell_sides(ids:Array,arrs:Array)->bool:
+	for _i in ids.size():
+		if ids[_i]!=-1:
+			if arrs[_i].size()==0:
+				return false
+	return true
 
 func pickRandomValue(data: Array, dataWeights: Array):
 	randomize()

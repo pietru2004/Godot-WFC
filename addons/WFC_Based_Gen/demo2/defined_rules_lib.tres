@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="MeshLibRulesSet" load_steps=262 format=3 uid="uid://cyogmdntlsesr"]
+[gd_resource type="Resource" script_class="MeshLibRulesSet" load_steps=264 format=3 uid="uid://cyogmdntlsesr"]
 
 [ext_resource type="Script" path="res://addons/WFC_Based_Gen/scripts/mesh_lib_rule_item.gd" id="1_xu8t8"]
 [ext_resource type="Script" path="res://addons/WFC_Based_Gen/scripts/mesh_lib_rule.gd" id="2_2ylii"]
@@ -996,6 +996,13 @@ object_name = "WatterOuter"
 rotation = 16
 weight = 1.0
 
+[sub_resource type="Resource" id="Resource_so4p1"]
+script = ExtResource("1_xu8t8")
+id = 4
+object_name = "WatterOuter"
+rotation = 0
+weight = 1.0
+
 [sub_resource type="Resource" id="Resource_twqpm"]
 script = ExtResource("1_xu8t8")
 id = 3
@@ -1071,7 +1078,7 @@ script = ExtResource("2_2ylii")
 id = 5
 object_name = "Ground"
 rotation = 22
-front = [SubResource("Resource_nty1b"), SubResource("Resource_lpu5v"), SubResource("Resource_d2fub")]
+front = [SubResource("Resource_nty1b"), SubResource("Resource_lpu5v"), SubResource("Resource_d2fub"), SubResource("Resource_so4p1")]
 back = [SubResource("Resource_svdlk"), SubResource("Resource_r8xdg"), SubResource("Resource_g3lvv")]
 left = [SubResource("Resource_twqpm"), SubResource("Resource_w882s"), SubResource("Resource_mauqu"), SubResource("Resource_x7wiv")]
 right = [SubResource("Resource_g6tde"), SubResource("Resource_v671h"), SubResource("Resource_r7gly"), SubResource("Resource_sbinl")]
@@ -1450,6 +1457,13 @@ object_name = "WatterOuter"
 rotation = 10
 weight = 1.0
 
+[sub_resource type="Resource" id="Resource_xxdvg"]
+script = ExtResource("1_xu8t8")
+id = 5
+object_name = "Ground"
+rotation = 0
+weight = 9.0
+
 [sub_resource type="Resource" id="Resource_2tiq3"]
 script = ExtResource("1_xu8t8")
 id = 2
@@ -1533,7 +1547,7 @@ id = 4
 object_name = "WatterOuter"
 rotation = 0
 front = [SubResource("Resource_2tiq3"), SubResource("Resource_eyvel"), SubResource("Resource_vxd5t")]
-back = [SubResource("Resource_riod8"), SubResource("Resource_e6rmv"), SubResource("Resource_fqtqx")]
+back = [SubResource("Resource_riod8"), SubResource("Resource_e6rmv"), SubResource("Resource_fqtqx"), SubResource("Resource_xxdvg")]
 left = [SubResource("Resource_j3n8e"), SubResource("Resource_hb4y6"), SubResource("Resource_c6vsr"), SubResource("Resource_hby5b")]
 right = [SubResource("Resource_m23wv"), SubResource("Resource_30ahd"), SubResource("Resource_kq08o")]
 down = []
