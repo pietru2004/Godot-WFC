@@ -7,7 +7,7 @@
  1. Disable Generation Lock.
  2. Define meshes in mesh lib data.
  3. Press Generate Mesh Lib.
- 4. Paint rules, how tiles can connect.
+ 4. Paint rules, how tiles can connect. You can paint stuff like in gridmap.
  5. Press Generate Rules.
  6. Define Map Generation Settings.
  7. Press Generate Map.
