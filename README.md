@@ -7,10 +7,12 @@
  1. Disable Generation Lock.
  2. Define meshes in mesh lib data.
  3. Press Generate Mesh Lib.
- 4. Paint rules, hwo tiles can connect.
+ 4. Paint rules, how tiles can connect.
  5. Press Generate Rules.
  6. Define Map Generation Settings.
  7. Press Generate Map.
+
+![instruction](./instruction.png)
 
 exported vars Running, Time and Remaining cells shows is generator working.
 
