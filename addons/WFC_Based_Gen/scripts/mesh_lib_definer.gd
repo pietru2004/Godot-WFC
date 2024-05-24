@@ -18,8 +18,6 @@ func get_meshlib()->MeshLibrary:
 	var meshlib = MeshLibrary.new()
 	
 	#generate previews (code from RonYanDaik)
-	var gei := GetInterface.new()
-	var ei = gei.get_editor_interface()
 	###########
 	
 	for i in items.size():
@@ -30,7 +28,8 @@ func get_meshlib()->MeshLibrary:
 		meshlib.set_item_name(i,item.object_name)
 		
 		#generate previews (code from RonYanDaik)
-		var prv := ei.make_mesh_previews([item.mesh],preview_resolution)
+		#updated for gd 4.2.2
+		var prv := EditorInterface.make_mesh_previews([item.mesh],preview_resolution)
 		meshlib.set_item_preview(i,prv[0])
 		###########
 		

@@ -13,7 +13,7 @@ config_version=5
 config/name="Wave Function Collapse"
 config/tags=PackedStringArray("plugin")
 run/main_scene="res://demo/MainScene.tscn"
-config/features=PackedStringArray("4.1")
+config/features=PackedStringArray("4.2")
 config/icon="res://addons/WFC_Based_Gen/icon.png"
 
 [physics]
